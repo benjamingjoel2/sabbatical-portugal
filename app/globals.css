@@ -1,0 +1,274 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Porto Season design tokens
+   One shared set for both reference languages (Flyward / Kultiveret).
+   ------------------------------------------------------------------ */
+@theme {
+  --color-harbor: #14263b;
+  --color-harbor-deep: #0c1826;
+  --color-azulejo: #2f5e9a;
+  --color-azulejo-mist: #c6d3df;
+  --color-terracotta: #c2643a;
+  --color-port: #6b1e2c;
+  --color-limestone: #e7e0d2;
+  --color-shell: #f8f5ee;
+  --color-line: rgb(20 38 59 / 0.12);
+
+  --font-display: var(--font-gilda), 'Times New Roman', serif;
+  --font-sans: var(--font-hanken), 'Helvetica Neue', Arial, sans-serif;
+
+  /* Type scale (mobile → 1440px) */
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1.2;
+  --text-display-xl: clamp(2.75rem, 1.6rem + 4.6vw, 5rem);
+  --text-display-xl--line-height: 0.9;
+  --text-display-l: clamp(2.25rem, 1.5rem + 3.2vw, 3.875rem);
+  --text-display-l--line-height: 0.9;
+  --text-display-m: clamp(1.875rem, 1.3rem + 2.4vw, 3.25rem);
+  --text-display-m--line-height: 0.92;
+  --text-statement: clamp(1.5rem, 1.05rem + 1.6vw, 2.5rem);
+  --text-statement--line-height: 1.12;
+  --text-mega: clamp(3rem, 1.2rem + 6.4vw, 6rem);
+  --text-mega--line-height: 0.92;
+
+  --ease-harbor: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --breakpoint-xs: 30rem;
+}
+
+:root {
+  --header-h: 4rem;
+  --gutter: 1rem;
+  color-scheme: light;
+}
+@media (min-width: 768px) {
+  :root {
+    --gutter: 2rem;
+  }
+}
+
+html {
+  background: var(--color-shell);
+  color: var(--color-harbor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.45;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-terracotta);
+  color: var(--color-shell);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-azulejo);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- Typographic roles ---------- */
+@utility font-display-caps {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+@utility tight-display {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+}
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+}
+@utility nav-caps {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+@utility px-gutter {
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+@utility outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px currentColor;
+}
+
+/* ---------- Grid lines (Flyward-style) ---------- */
+.grid-lines {
+  position: absolute;
+  inset: 0 var(--gutter);
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, var(--grid-c, rgb(20 38 59 / 0.07)) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-c, rgb(20 38 59 / 0.07)) 1px, transparent 1px);
+  background-size: 25% 50%;
+  border-right: 1px solid var(--grid-c, rgb(20 38 59 / 0.07));
+  border-bottom: 1px solid var(--grid-c, rgb(20 38 59 / 0.07));
+}
+@media (max-width: 767px) {
+  .grid-lines {
+    background-size: 50% 33.33%;
+  }
+}
+
+/* ---------- Azulejo tile pattern (sparing accent) ---------- */
+.azulejo-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23C6D3DF' stroke-width='1'%3E%3Cpath d='M24 4c4 8 12 12 20 20-8 8-16 12-20 20-4-8-12-12-20-20 8-8 16-12 20-20z'/%3E%3Ccircle cx='24' cy='24' r='5'/%3E%3Cpath d='M0 0h48v48H0z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 48px 48px;
+}
+
+/* ---------- Underlined form fields (Flyward) ---------- */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.field-label {
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+.field-input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  padding: 0.5rem 0 0.6rem;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.field-input::placeholder {
+  color: color-mix(in srgb, currentColor 40%, transparent);
+}
+.field-input:focus-visible {
+  outline: none;
+  border-bottom-color: var(--color-terracotta);
+  box-shadow: 0 1px 0 0 var(--color-terracotta);
+}
+.field-error {
+  font-size: 0.8125rem;
+  color: var(--color-port);
+}
+
+/* ---------- Marquee ---------- */
+@keyframes marquee-x {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.marquee-track {
+  animation: marquee-x var(--marquee-duration, 60s) linear infinite;
+  animation-direction: var(--marquee-direction, normal);
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ---------- Sound wave icon ---------- */
+@keyframes wave-shift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-8px);
+  }
+}
+.wave-anim {
+  animation: wave-shift 0.9s linear infinite;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* ---------- Long-form prose (journal, legal) ---------- */
+.prose-season {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  max-width: 40rem;
+}
+.prose-season > * + * {
+  margin-top: 1.1em;
+}
+.prose-season h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin-top: 2em;
+}
+.prose-season h3 {
+  font-weight: 600;
+  margin-top: 1.6em;
+}
+.prose-season ul,
+.prose-season ol {
+  padding-left: 1.2em;
+}
+.prose-season ul {
+  list-style: disc;
+}
+.prose-season ol {
+  list-style: decimal;
+}
+.prose-season li + li {
+  margin-top: 0.4em;
+}
+.prose-season a {
+  color: var(--color-azulejo);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-season strong {
+  font-weight: 600;
+}
+.prose-season blockquote {
+  border-left: 2px solid var(--color-terracotta);
+  padding-left: 1em;
+  font-style: italic;
+}
