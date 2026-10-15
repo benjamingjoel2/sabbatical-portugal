@@ -1,7 +1,7 @@
 'use client';
 
 import Lenis from 'lenis';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 
 let lenisInstance: Lenis | null = null;
@@ -28,8 +28,13 @@ export function SmoothScroll() {
     };
   }, []);
 
+  // Reset to top on real page changes, but not when the planner opens or closes as a modal.
+  const prev = useRef<string | null>(null);
   useEffect(() => {
-    if (window.location.hash) return;
+    const from = prev.current;
+    prev.current = pathname;
+    if (from === null || window.location.hash) return;
+    if (pathname === '/plan-my-season' || from === '/plan-my-season') return;
     lenisInstance?.scrollTo(0, { immediate: true });
   }, [pathname]);
 

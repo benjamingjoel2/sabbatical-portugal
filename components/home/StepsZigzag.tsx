@@ -1,9 +1,6 @@
 import { Photo } from '@/components/shared/Photo';
 import { NumberBadge } from '@/components/shared/NumberBadge';
-import { GridLines } from '@/components/shared/GridLines';
-import { Parallax } from '@/components/motion/Parallax';
-import { Reveal, RevealLines } from '@/components/motion/Reveal';
-import { PortugalLineMap } from '@/components/svg/PortugalLineMap';
+import { Reveal } from '@/components/motion/Reveal';
 import type { ImageKey } from '@/data/images';
 
 export interface Step {
@@ -35,49 +32,28 @@ export const homeSteps: Step[] = [
   },
 ];
 
-// Desktop placement for the staggered layout (column start / span on a 12-col grid, parallax distance)
-const layout = [
-  { col: 'md:col-start-8 md:col-span-3', mt: 'md:mt-0', d: 40 },
-  { col: 'md:col-start-2 md:col-span-3', mt: 'md:-mt-24', d: 90 },
-  { col: 'md:col-start-7 md:col-span-3', mt: 'md:-mt-10', d: 60 },
-  { col: 'md:col-start-3 md:col-span-3', mt: 'md:-mt-32', d: 110 },
-];
-
-/** Flyward A5: numbered image-led steps in a staggered zig-zag, each with its own parallax speed. */
+/** Kultiveret numbered list ("How to purchase"): boxed numbers, bold lead, a photo per step. */
 export function StepsZigzag({ title = ['How we make', 'it easy'], steps = homeSteps }: { title?: [string, string]; steps?: Step[] }) {
   return (
-    <section className="relative overflow-hidden bg-shell pb-32 pt-24 md:pb-48 md:pt-32" aria-labelledby="steps-title">
-      <GridLines />
-      <PortugalLineMap className="pointer-events-none absolute -right-[10%] top-[8%] h-[120%] w-auto text-harbor/10" />
-      <div className="relative px-gutter">
-        <RevealLines
-          id="steps-title"
-          as="h2"
-          lines={title}
-          className="font-display-caps text-display-l text-center"
-        />
-        <ol className="mt-20 grid gap-16 md:mt-28 md:grid-cols-12 md:gap-x-6 md:gap-y-0">
-          {steps.map((s, i) => {
-            const l = layout[i % layout.length];
-            return (
-              <li key={s.title} className={`${l.col} ${l.mt}`}>
-                <Parallax distance={l.d}>
-                  <Reveal>
-                    <div className="relative">
-                      <div className="relative aspect-[4/5] w-full overflow-hidden">
-                        <Photo k={s.image} sizes="(min-width: 768px) 22vw, 90vw" />
-                      </div>
-                      <NumberBadge n={i + 1} className="absolute -right-3 -top-3" />
-                    </div>
-                    <h3 className="mt-5 font-display text-[1.375rem] uppercase leading-[1.05] tracking-[0.04em] md:text-[1.5rem]">
-                      {s.title}
-                    </h3>
-                    <p className="mt-3 max-w-[18rem] text-[0.875rem] leading-relaxed text-harbor/80">{s.text}</p>
-                  </Reveal>
-                </Parallax>
-              </li>
-            );
-          })}
+    <section className="bg-shell px-gutter py-20 md:py-28" aria-labelledby="steps-title">
+      <h2 id="steps-title" className="tight-display text-mega">
+        {title.join(' ')}
+      </h2>
+      <div className="mt-12 border-t border-line pt-3 md:ml-[25%]">
+        <p className="eyebrow mb-8 text-harbor/55">Before, during and after</p>
+        <ol className="flex flex-col gap-10">
+          {steps.map((s, i) => (
+            <Reveal as="li" key={s.title} className="grid grid-cols-[2.5rem_1fr] gap-x-4 gap-y-4 md:grid-cols-[2.5rem_1fr_minmax(0,14rem)] md:gap-x-8">
+              <NumberBadge n={i + 1} className="mt-1" />
+              <div>
+                <h3 className="text-[clamp(1.375rem,1.1rem+1vw,2rem)] leading-tight tracking-[-0.02em]">{s.title}</h3>
+                <p className="mt-2 max-w-md text-[1rem] leading-relaxed text-harbor/75">{s.text}</p>
+              </div>
+              <div className="relative col-start-2 aspect-[4/3] w-full max-w-[14rem] overflow-hidden md:col-start-3">
+                <Photo k={s.image} sizes="14rem" />
+              </div>
+            </Reveal>
+          ))}
         </ol>
       </div>
     </section>

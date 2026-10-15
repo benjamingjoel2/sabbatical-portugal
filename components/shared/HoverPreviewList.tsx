@@ -51,11 +51,11 @@ export function HoverPreviewList({
           {img && (
             <motion.div
               key={img}
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.85, x: 24, y: '-50%' }}
+              animate={{ opacity: 1, scale: 1, x: 24, y: '-50%' }}
+              exit={{ opacity: 0, scale: 0.9, x: 24, y: '-50%' }}
               transition={{ duration: 0.35 }}
-              className="absolute -translate-y-1/2 translate-x-6 border border-harbor/20 bg-shell p-1.5"
+              className="absolute border border-harbor/20 bg-shell p-1.5"
             >
               <div className="relative h-[9.5rem] w-[8rem] overflow-hidden">
                 <Photo k={img} sizes="8rem" />

@@ -1,10 +1,8 @@
 import { Photo } from './Photo';
-import { GridLines } from './GridLines';
-import { ShoreEdge } from '@/components/svg/ShoreEdge';
 import type { ImageKey } from '@/data/images';
-import { RevealLines, Reveal } from '@/components/motion/Reveal';
+import { Reveal } from '@/components/motion/Reveal';
 
-/** Flyward inner-page hero: grid lines, centred uppercase title, intro, wide photo with a shoreline edge. */
+/** Kultiveret inner-page opening: huge tight title, offset intro column, then a wide photo. */
 export function PageHero({
   eyebrow,
   title,
@@ -19,22 +17,19 @@ export function PageHero({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-shell pt-[calc(var(--header-h)+3rem)]">
-      <GridLines />
-      <div className="relative px-gutter text-center">
+    <section className="bg-shell pt-[calc(var(--header-h)+2.5rem)]">
+      <div className="px-gutter">
         {eyebrow && <p className="eyebrow mb-5 text-harbor/60">{eyebrow}</p>}
-        <RevealLines as="h1" lines={title} className="font-display-caps text-display-xl mx-auto max-w-5xl" />
-        {intro && (
-          <Reveal delay={0.2} className="mx-auto mt-6 max-w-xl text-[1rem] leading-relaxed text-harbor/80">
-            {intro}
+        <h1 className="tight-display max-w-6xl text-mega">{title.join(' ')}</h1>
+        {(intro || children) && (
+          <Reveal className="mt-10 max-w-md text-[1.0625rem] leading-relaxed text-harbor/80 md:ml-[50%]">
+            {intro && <div>{intro}</div>}
+            {children && <div className="mt-6 flex flex-wrap gap-2">{children}</div>}
           </Reveal>
         )}
-        {children && <div className="mt-8 flex flex-wrap justify-center gap-2">{children}</div>}
       </div>
-      <div className="relative mt-14 h-[62vh] min-h-[22rem]">
-        <ShoreEdge position="top" fillClass="fill-shell" variant={1} />
+      <div className="relative mt-14 aspect-[4/3] w-full sm:aspect-[16/9] lg:aspect-[21/9]">
         <Photo k={image} sizes="100vw" priority />
-        <ShoreEdge fillClass="fill-shell" />
       </div>
     </section>
   );
@@ -51,10 +46,10 @@ export function EditorialHero({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="bg-shell px-gutter pb-16 pt-[calc(var(--header-h)+3.5rem)] md:pb-24">
+    <section className="bg-shell px-gutter pb-16 pt-[calc(var(--header-h)+2.5rem)] md:pb-24">
       {eyebrow && <p className="eyebrow mb-6 text-harbor/60">{eyebrow}</p>}
       <h1 className="tight-display max-w-6xl text-mega">{title}</h1>
-      {children && <div className="mt-12 grid gap-8 md:ml-[33%] md:grid-cols-2 md:gap-10">{children}</div>}
+      {children && <div className="mt-12 grid gap-8 text-harbor/75 md:ml-[33%] md:grid-cols-2 md:gap-10">{children}</div>}
     </section>
   );
 }

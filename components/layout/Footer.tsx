@@ -1,93 +1,119 @@
 import Link from 'next/link';
 import { legalNav, mainNav } from '@/config/nav';
 import { site } from '@/config/site';
+import { testimonials } from '@/data/testimonials';
 import { LiveClock } from './LiveClock';
 import { Photo } from '@/components/shared/Photo';
+import { ArrowLink } from '@/components/shared/Buttons';
 
-/** Flyward-style footer: photo, Menu / Socials / Location (live Lisbon clock), registration, giant wordmark. */
+/**
+ * Kultiveret contact block as the site footer: "Get in touch", large email and phone,
+ * "plan my season →", office hours, menu, live Lisbon clock, testimonial box, micro legal row.
+ */
 export function Footer() {
+  const t = testimonials[1] ?? testimonials[0];
   return (
-    <footer className="relative isolate overflow-hidden bg-harbor-deep text-shell">
-      <div className="absolute inset-0 -z-10">
-        <Photo k="portoBridgeNight" sizes="100vw" className="opacity-55" />
-        <div className="absolute inset-0 bg-gradient-to-b from-harbor-deep/40 via-harbor-deep/55 to-harbor-deep/90" />
-      </div>
-
-      <div className="px-gutter pt-[clamp(8rem,22vw,18rem)]">
-        <p className="font-display text-[clamp(1.75rem,1.2rem+2vw,3rem)] uppercase leading-none tracking-[0.02em]">
-          {site.signOff}
-        </p>
-
-        <div className="mt-12 grid grid-cols-2 gap-10 md:grid-cols-[repeat(3,minmax(0,12rem))_1fr]">
-          <div>
-            <h2 className="eyebrow mb-5 tracking-[0.18em]">Menu</h2>
-            <ul className="space-y-2.5 text-[1rem]">
-              {mainNav.map((n) => (
-                <li key={n.href}>
-                  <Link href={n.href} className="transition-opacity hover:opacity-60">
-                    {n.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2 className="eyebrow mb-5 tracking-[0.18em]">Socials</h2>
-            <ul className="space-y-2.5 text-[1rem]">
-              <li>
-                <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-60">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:opacity-60">
-                  WhatsApp
-                </a>
-              </li>
-              <li>
-                <a href={`mailto:${site.contact.email}`} className="hover:opacity-60">
-                  Email
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-2 md:col-span-1">
-            <h2 className="eyebrow mb-5 tracking-[0.18em]">Location</h2>
-            <div className="space-y-2.5 text-[1rem]">
-              <p>{site.location.city}</p>
-              <LiveClock className="space-y-2.5" />
+    <footer className="border-t border-line bg-shell text-harbor" aria-labelledby="footer-title">
+      <div className="grid md:grid-cols-[1.6fr_1fr]">
+        <div className="flex flex-col gap-14 px-gutter pb-8 pt-8 md:min-h-[36rem]">
+          <h2 id="footer-title" className="text-[1.125rem]">
+            Get in touch
+          </h2>
+          <div className="mt-auto">
+            <a href={`mailto:${site.contact.email}`} className="text-statement block break-all transition-colors hover:text-terracotta">
+              {site.contact.email}
+            </a>
+            <a href={site.contact.phoneHref} className="text-statement block transition-colors hover:text-terracotta">
+              {site.contact.phone}
+            </a>
+            <ArrowLink href="/plan-my-season" large>
+              plan my season
+            </ArrowLink>
+            <div className="mt-8 flex flex-wrap gap-x-12 gap-y-2 text-[0.9375rem]">
+              <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
+                WhatsApp
+              </a>
+              <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
+                Instagram
+              </a>
             </div>
           </div>
-          <div className="col-span-2 self-end text-[0.75rem] leading-relaxed text-shell/80 md:col-span-1 md:text-right">
-            <p>{site.company.legalName}</p>
-            <p>{site.company.registration}</p>
-            <p>{site.company.travelLicence}</p>
+          <div className="grid gap-8 text-[0.8125rem] sm:grid-cols-3">
+            <nav aria-label="Footer">
+              <p className="eyebrow mb-2 text-harbor/55">Menu</p>
+              <ul className="space-y-1">
+                {mainNav.map((n) => (
+                  <li key={n.href}>
+                    <Link href={n.href} className="hover:text-terracotta">
+                      {n.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div>
+              <p className="eyebrow mb-2 text-harbor/55">Office hours · Lisbon time</p>
+              <ul className="space-y-1">
+                {site.officeHours.map((h) => (
+                  <li key={h.days}>
+                    {h.days}: {h.hours}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="eyebrow mb-2 text-harbor/55">Location</p>
+              <p>{site.location.city}</p>
+              <LiveClock className="mt-1 space-y-1" />
+            </div>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-shell/15 py-5 text-[0.75rem] md:flex-row md:items-center md:justify-between">
-          <p>
-            © {new Date().getFullYear()} {site.company.legalName}. All rights reserved.
-          </p>
-          <p className="text-shell/70">{site.tagline}</p>
-          <ul className="flex gap-4">
-            {legalNav.map((n) => (
-              <li key={n.href}>
-                <Link href={n.href} className="hover:opacity-60">
-                  {n.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {t && (
+          <figure className="flex flex-col bg-harbor p-2 text-shell">
+            <blockquote className="relative px-8 pb-6 pt-5 text-[0.875rem] leading-snug">
+              <span aria-hidden className="absolute left-2 top-4">“</span>
+              {t.quote}
+              <span aria-hidden className="absolute right-2 top-4">”</span>
+            </blockquote>
+            <figcaption className="px-8 pb-6 text-[0.75rem] text-shell/60">
+              {t.name}, {t.stay} · Placeholder testimonial
+            </figcaption>
+            <div className="relative mt-auto aspect-[4/3] w-full">
+              <Photo k={t.image} sizes="(min-width: 768px) 38vw, 100vw" />
+            </div>
+          </figure>
+        )}
       </div>
 
-      <p
-        aria-hidden
-        className="pointer-events-none -mb-[0.2em] select-none whitespace-nowrap text-center font-display text-[15.4vw] uppercase leading-[0.82] tracking-[0.04em]"
-      >
-        Porto Season
-      </p>
+      <div className="px-gutter pb-6 pt-10">
+        <p className="tight-display text-[clamp(2.5rem,1rem+6vw,6rem)] leading-[0.9]">{site.signOff}</p>
+      </div>
+
+      <div className="grid gap-4 border-t border-line px-gutter py-4 text-[0.6875rem] uppercase leading-snug md:grid-cols-3">
+        <p>
+          {site.company.legalName}
+          <br />
+          {site.company.registration} · {site.company.travelLicence}
+        </p>
+        <p>
+          {legalNav.map((n, i) => (
+            <span key={n.href}>
+              <Link href={n.href} className="hover:text-terracotta">
+                {n.label}
+              </Link>
+              {i < legalNav.length - 1 ? ' · ' : ''}
+            </span>
+          ))}
+          <br />
+          {site.name} © {new Date().getFullYear()}
+        </p>
+        <p className="md:text-right">
+          {site.tagline}
+          <br />
+          Photography: Unsplash (placeholders)
+        </p>
+      </div>
     </footer>
   );
 }

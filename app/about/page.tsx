@@ -4,7 +4,6 @@ import { testimonials } from '@/data/testimonials';
 import { site } from '@/config/site';
 import { Photo } from '@/components/shared/Photo';
 import { PlaceholderFlag } from '@/components/shared/PlaceholderFlag';
-import { ContactBlock } from '@/components/layout/ContactBlock';
 import { PeopleMarquee } from '@/components/home/StatsPeople';
 import { Reveal } from '@/components/motion/Reveal';
 import { RotatingWord } from '@/components/motion/RotatingWord';
@@ -46,8 +45,8 @@ export default function AboutPage() {
       </section>
 
       <section className="grid gap-6 bg-shell pb-20 md:grid-cols-[2fr_1fr]">
-        <Parallax distance={30} className="relative aspect-[16/10] overflow-hidden md:aspect-auto md:min-h-[34rem]">
-          <div className="relative h-[115%] w-full">
+        <Parallax distance={30} className="relative aspect-[16/10] overflow-hidden md:aspect-auto md:h-[34rem]">
+          <div className="absolute inset-x-0 -top-[8%] h-[116%]">
             <Photo k="lisbonRooftopsSea" sizes="66vw" />
           </div>
         </Parallax>
@@ -181,7 +180,6 @@ export default function AboutPage() {
         </section>
       )}
 
-      <ContactBlock withTestimonial={false} />
     </>
   );
 }

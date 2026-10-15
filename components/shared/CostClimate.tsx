@@ -27,7 +27,7 @@ export function CostSnapshot({ d }: { d: Destination }) {
       <ul className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
         {items.map((it) => (
           <li key={it.label} className="border-t border-harbor/20 pt-5">
-            <p className="font-display text-[clamp(2.25rem,1.6rem+2vw,3.5rem)] leading-none">
+            <p className="font-display font-semibold text-[clamp(2.25rem,1.6rem+2vw,3.5rem)] leading-none">
               <Price eur={it.eur} />
             </p>
             <p className="mt-4 text-[1rem]">{it.label}</p>
@@ -86,8 +86,8 @@ export function ClimateStrip({ d }: { d: Destination }) {
                   <div className="mx-auto flex h-full w-full max-w-[2.5rem] flex-col justify-end">
                     <span className="mb-1 tabular-nums">{m.highC}°</span>
                     <div
-                      className="w-full bg-gradient-to-t from-azulejo/70 to-terracotta/80"
-                      style={{ height: `${(m.highC / max) * 100}%` }}
+                      className="w-full shrink-0 bg-gradient-to-t from-azulejo/70 to-terracotta/80"
+                      style={{ height: `calc(${(m.highC / max) * 100}% - 1.5rem)` }}
                       aria-hidden
                     />
                   </div>

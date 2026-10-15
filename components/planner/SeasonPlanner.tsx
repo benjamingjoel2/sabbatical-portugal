@@ -315,7 +315,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
           </p>
           <div className="border border-shell/20 p-5">
             <p className="eyebrow text-shell/60">Likely visa path · guidance only</p>
-            <p className="mt-2 font-display text-[1.375rem] uppercase leading-tight tracking-[0.02em]">{guidance.title}</p>
+            <p className="mt-2 font-display font-semibold text-[1.375rem] leading-tight tracking-[-0.04em]">{guidance.title}</p>
             <p className="mt-3 text-[0.875rem] leading-relaxed text-shell/85">{guidance.summary}</p>
             <ul className="mt-3 list-disc space-y-1.5 pl-5 text-[0.8125rem] text-shell/80">
               {guidance.points.map((p) => (
@@ -324,9 +324,9 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
             </ul>
             <VisaDisclaimer tone="light" className="mt-5" />
           </div>
-          <p className="font-display text-[1.5rem] uppercase tracking-[0.04em]">{site.signOff}</p>
+          <p className="font-display font-semibold text-[1.5rem] tracking-[-0.04em]">{site.signOff}</p>
           {onDone && (
-            <button type="button" onClick={onDone} className="nav-caps h-10 rounded-full bg-shell px-5 text-harbor hover:bg-terracotta hover:text-shell">
+            <button type="button" onClick={onDone} className="h-11 bg-shell px-5 text-[0.9375rem] font-medium text-harbor hover:bg-terracotta hover:text-shell">
               Close
             </button>
           )}
@@ -378,7 +378,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
             <p className="eyebrow text-shell/50">
               Step {step + 1} of {STEP_KEYS.length}
             </p>
-            <h2 ref={headingRef} tabIndex={-1} className="mt-2 font-display text-[1.5rem] uppercase leading-none tracking-[0.03em] outline-none">
+            <h2 ref={headingRef} tabIndex={-1} className="mt-2 font-display font-semibold text-[1.5rem] leading-none tracking-[-0.04em] outline-none">
               {STEP_TITLES[key]}
             </h2>
             <ol className="mt-4 flex gap-1.5" aria-label="Steps">

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { site } from '@/config/site';
-import { ContactBlock } from '@/components/layout/ContactBlock';
 import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({ title: 'Privacy Policy', description: 'How Porto Season collects, uses, protects and deletes your personal data and documents.', path: '/privacy' });
@@ -46,7 +45,6 @@ export default function PrivacyPage() {
           </p>
         </div>
       </section>
-      <ContactBlock withTestimonial={false} />
     </>
   );
 }

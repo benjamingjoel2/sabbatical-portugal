@@ -1,25 +1,23 @@
 import { Photo } from '@/components/shared/Photo';
 import { ContactForm } from '@/components/shared/ContactForm';
-import { RevealLines, Reveal } from '@/components/motion/Reveal';
-import { ShoreEdge } from '@/components/svg/ShoreEdge';
+import { Reveal } from '@/components/motion/Reveal';
 
-/** Flyward A9: statement over a photo, then the 3-column form card rising into view. */
+/** Kultiveret booking section: blurred photo with the dark form card ("Shall we begin?"). */
 export function BeginForm() {
   return (
-    <section id="begin" className="relative isolate overflow-hidden px-gutter pb-28 pt-36 text-shell md:pb-40" aria-labelledby="begin-title">
+    <section id="begin" className="relative isolate overflow-hidden px-gutter py-20 md:py-28" aria-labelledby="begin-title">
       <div className="absolute inset-0 -z-10">
-        <Photo k="portoRiverside" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-b from-harbor-deep/50 via-harbor-deep/20 to-harbor-deep/60" />
+        <Photo k="portoRiverside" sizes="100vw" className="scale-110 blur-md" />
+        <div className="absolute inset-0 bg-harbor-deep/30" />
       </div>
-      <ShoreEdge position="top" fillClass="fill-shell" />
-      <RevealLines
-        id="begin-title"
-        lines={['The best seasons start', 'with a conversation']}
-        className="font-display-caps text-display-l mx-auto max-w-5xl text-center"
-      />
-      <Reveal y={80} className="mx-auto mt-16 max-w-4xl md:mt-24">
-        <ContactForm />
-      </Reveal>
+      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_minmax(0,34rem)] lg:items-end">
+        <h2 id="begin-title" className="tight-display text-mega text-shell [text-shadow:0_1px_30px_rgba(12,24,38,0.35)]">
+          The best seasons start with a conversation
+        </h2>
+        <Reveal y={60}>
+          <ContactForm />
+        </Reveal>
+      </div>
     </section>
   );
 }

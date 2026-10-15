@@ -23,7 +23,7 @@ const rotating = ['living', 'working', 'slowing down', 'belonging'];
 function HeroCopy() {
   return (
     <>
-      <h1 className="font-display-caps text-display-xl">
+      <h1 className="hero-caps text-display-xl lg:text-[clamp(2.75rem,4.2vw,5rem)]">
         <span className="block">Your harbor</span>
         <span className="block">in Portugal</span>
       </h1>
@@ -71,7 +71,7 @@ function HeroAside() {
 function IntroCopy({ light = true }: { light?: boolean }) {
   return (
     <div className={`grid gap-8 md:grid-cols-2 ${light ? 'text-shell' : 'text-harbor'}`}>
-      <h2 className="font-display-caps text-display-xl">
+      <h2 className="hero-caps text-display-xl">
         <span className="block">We make a big move</span>
         <span className="block">feel simple</span>
       </h2>
@@ -98,7 +98,7 @@ export function MaskHero() {
   const { scrollYProgress: p } = useScroll({ target: ref, offset: ['start start', 'end end'] });
 
   // Smaller silhouette on narrow screens so the copy above and below stays clear.
-  const [baseH, setBaseH] = useState(74);
+  const [baseH, setBaseH] = useState(34);
   useEffect(() => {
     const set = () => setBaseH(window.innerWidth < 1024 ? 34 : 74);
     set();
@@ -179,7 +179,7 @@ export function MaskHero() {
 
       {/* Text scrolls normally over the stage, so the two blocks can never overlap */}
       <div className="relative -mt-[100vh]">
-        <motion.div style={{ opacity: heroOpacity }} className="grid h-screen grid-rows-[auto_1fr_auto] px-gutter pb-8 pt-[calc(var(--header-h)+1.5rem)] lg:grid-cols-[1fr_minmax(16rem,22vw)_1fr] lg:grid-rows-1 lg:items-center lg:gap-10 lg:pb-0">
+        <motion.div style={{ opacity: heroOpacity }} className="grid h-screen grid-rows-[auto_1fr_auto] px-gutter pb-8 pt-[calc(var(--header-h)+1.5rem)] supports-[height:100svh]:h-[100svh] lg:grid-cols-[minmax(0,1fr)_minmax(16rem,22vw)_minmax(0,1fr)] lg:grid-rows-1 lg:items-center lg:gap-10 lg:pb-0">
           <div className="lg:self-center">
             <HeroCopy />
           </div>
@@ -194,7 +194,7 @@ export function MaskHero() {
         </div>
       </div>
 
-      <ShoreEdge fillClass="fill-harbor-deep" />
+      <ShoreEdge fillClass="fill-shell" />
     </section>
   );
 }

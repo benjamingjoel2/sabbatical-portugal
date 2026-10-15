@@ -14,7 +14,7 @@ export function CurrencySwitcher({ className = '', id = 'currency' }: { classNam
         id={id}
         value={currency}
         onChange={(e) => setCurrency(e.target.value as CurrencyCode)}
-        className="nav-caps h-8 cursor-pointer appearance-none rounded-full border border-current bg-transparent pl-3 pr-6 transition-colors hover:border-current"
+        className="h-9 cursor-pointer appearance-none border border-current bg-transparent pl-3 pr-7 text-[0.8125rem] transition-colors"
       >
         {currencies.map((c) => (
           <option key={c} value={c} className="text-harbor">

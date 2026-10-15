@@ -84,7 +84,7 @@ export default async function HomePage({ params }: { params: Promise<{ slug: str
           </Reveal>
           <aside className="h-fit bg-limestone/60 p-6 md:sticky md:top-24 md:p-8">
             <p className="eyebrow text-harbor/60">From</p>
-            <p className="mt-2 font-display text-[2.75rem] leading-none">
+            <p className="mt-2 font-display font-semibold text-[2.75rem] leading-none">
               <Price eur={h.perMonth} />
             </p>
             <p className="mt-1 text-[0.8125rem] text-harbor/60">per month for the home · placeholder price</p>

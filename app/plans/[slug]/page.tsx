@@ -58,7 +58,7 @@ export default async function PlanPage({ params }: { params: Promise<{ slug: str
         <Reveal className="mx-auto grid max-w-5xl gap-8 border-y border-line py-10 md:grid-cols-3 md:items-center">
           <div>
             <p className="eyebrow text-harbor/60">From</p>
-            <p className="mt-2 font-display text-[clamp(2.5rem,2rem+2vw,4rem)] leading-none">
+            <p className="mt-2 font-display font-semibold text-[clamp(2.5rem,2rem+2vw,4rem)] leading-none">
               <Price eur={p.fromPerMonth} />
             </p>
             <p className="mt-2 text-[0.875rem] text-harbor/70">per month · placeholder price</p>

@@ -4,7 +4,6 @@ import { plans } from '@/data/plans';
 import { faqs } from '@/data/faqs';
 import { FaqTabs } from '@/components/shared/FaqTabs';
 import { Price } from '@/components/shared/Price';
-import { ContactBlock } from '@/components/layout/ContactBlock';
 import { Photo } from '@/components/shared/Photo';
 import { Pill } from '@/components/shared/Buttons';
 import { VisaDisclaimer } from '@/components/shared/VisaDisclaimer';
@@ -101,7 +100,7 @@ export default function InfoPage() {
         <div className="relative mx-auto mb-12 aspect-[4/3] w-[min(14rem,60%)] rotate-[-4deg] border-[6px] border-shell shadow-xl">
           <Photo k="planning" sizes="14rem" />
         </div>
-        <h2 id="how-title" className="tight-display -mt-20 text-center text-mega relative">
+        <h2 id="how-title" className="tight-display relative -mt-6 text-center text-mega">
           How booking works
         </h2>
         <p className="mx-auto mt-6 max-w-md text-center text-[1rem] text-harbor/75">From first hello to your first morning coffee in Portugal.</p>
@@ -125,7 +124,6 @@ export default function InfoPage() {
         </div>
       </section>
 
-      <ContactBlock />
     </>
   );
 }

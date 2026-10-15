@@ -4,7 +4,6 @@ import { plans } from '@/data/plans';
 import { EditorialHero } from '@/components/shared/PageHero';
 import { Photo } from '@/components/shared/Photo';
 import { Price } from '@/components/shared/Price';
-import { ArrowUpRight } from '@/components/svg/Icons';
 import { StepsZigzag } from '@/components/home/StepsZigzag';
 import { CtaHero } from '@/components/shared/CtaHero';
 import { pageMeta } from '@/lib/seo';
@@ -27,24 +26,20 @@ export default function PlansPage() {
           Prices are “from” per month for one or two guests, before flights. Your quote lists everything, with no surprises.
         </p>
       </EditorialHero>
-      <section aria-label="Plans" className="grid gap-1.5 bg-harbor-deep md:grid-cols-2">
+      <section aria-label="Plans" className="grid gap-1.5 bg-shell md:grid-cols-2">
         {plans.map((p) => (
-          <Link key={p.slug} href={`/plans/${p.slug}`} className="group relative block h-[80vh] min-h-[30rem] overflow-hidden text-shell">
-            <Photo k={p.image} sizes="(min-width: 768px) 50vw, 100vw" className="transition-transform duration-[1.4s] ease-[var(--ease-harbor)] group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-t from-harbor-deep/85 via-harbor-deep/15 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 grid gap-4 p-5 md:grid-cols-[1fr_minmax(0,15rem)] md:items-end md:p-8">
-              <div>
-                <span className="nav-caps inline-flex h-6 items-center gap-1.5 rounded-full border border-shell/80 px-2.5 text-[0.5625rem] group-hover:bg-shell group-hover:text-harbor">
-                  {p.duration} <ArrowUpRight className="h-2 w-2" />
-                </span>
-                <h2 className="font-display-caps text-display-m mt-3">{p.name}</h2>
-              </div>
-              <div className="text-[0.875rem] leading-snug">
-                <p className="text-shell/90">{p.tagline}</p>
-                <p className="mt-3">
-                  From <Price eur={p.fromPerMonth} className="font-medium" /> / month
-                </p>
-              </div>
+          <Link key={p.slug} href={`/plans/${p.slug}`} className="group relative block h-[75vh] min-h-[30rem] overflow-hidden">
+            <Photo k={p.image} sizes="(min-width: 768px) 50vw, 100vw" className="transition-transform duration-[1.4s] ease-harbor group-hover:scale-[1.04]" />
+            <div className="absolute left-0 top-0 max-w-[24rem] bg-harbor p-5 text-shell md:p-6">
+              <p className="eyebrow text-shell/60">{p.duration}</p>
+              <h2 className="tight-display mt-2 text-[clamp(2rem,1.5rem+1.8vw,3rem)] leading-none">{p.name}</h2>
+              <p className="mt-3 text-[0.9375rem] font-light leading-snug text-shell/85">{p.tagline}</p>
+              <p className="mt-4 text-[0.9375rem]">
+                From <Price eur={p.fromPerMonth} className="font-medium" /> / month
+              </p>
+              <p className="mt-4 inline-flex items-center gap-2 border-b border-current pb-0.5 text-[0.875rem] text-azulejo-mist group-hover:text-terracotta">
+                see the plan <span aria-hidden>→</span>
+              </p>
             </div>
           </Link>
         ))}
