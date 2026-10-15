@@ -19,14 +19,15 @@ const config: Config = {
       },
       borderColor: { DEFAULT: 'currentColor' },
       fontFamily: {
-        display: ['var(--font-gilda)', '"Times New Roman"', 'serif'],
+        display: ['var(--font-hanken)', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        serif: ['var(--font-gilda)', '"Times New Roman"', 'serif'],
         sans: ['var(--font-hanken)', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
       fontSize: {
         micro: ['0.6875rem', { lineHeight: '1.2' }],
         'display-xl': ['clamp(2.75rem, 1.6rem + 4.6vw, 5rem)', { lineHeight: '0.9' }],
-        'display-l': ['clamp(2.25rem, 1.5rem + 3.2vw, 3.875rem)', { lineHeight: '0.9' }],
-        'display-m': ['clamp(1.875rem, 1.3rem + 2.4vw, 3.25rem)', { lineHeight: '0.92' }],
+        'display-l': ['clamp(2.25rem, 1.4rem + 3.4vw, 4.25rem)', { lineHeight: '0.95' }],
+        'display-m': ['clamp(1.75rem, 1.2rem + 2vw, 2.75rem)', { lineHeight: '1' }],
         statement: ['clamp(1.5rem, 1.05rem + 1.6vw, 2.5rem)', { lineHeight: '1.12' }],
         mega: ['clamp(3rem, 1.2rem + 6.4vw, 6rem)', { lineHeight: '0.92' }],
       },

@@ -1,34 +1,30 @@
 import { stats } from '@/data/stats';
 import { people } from '@/data/people';
-import { Photo } from '@/components/shared/Photo';
 import { Counter } from '@/components/motion/Counter';
 import { Marquee } from '@/components/motion/Marquee';
-import { CompassStar } from '@/components/svg/Icons';
-import { ShoreEdge } from '@/components/svg/ShoreEdge';
 import { PlaceholderFlag } from '@/components/shared/PlaceholderFlag';
-import { RevealLines, Reveal } from '@/components/motion/Reveal';
+import { Reveal } from '@/components/motion/Reveal';
 
 export function StatsRow({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
   return (
-    <ul className={`grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-5 ${tone === 'light' ? 'text-shell' : 'text-harbor'}`}>
+    <ul className={`grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-5 ${tone === 'light' ? 'text-shell' : 'text-harbor'}`}>
       {stats.map((s) => {
         const decimals = s.value % 1 === 0 ? 0 : 1;
         return (
-          <li key={s.label} className="flex flex-col items-center text-center">
-            <p className="eyebrow">{s.label}</p>
-            <p className="mt-4 font-display text-[clamp(3rem,2rem+3.4vw,5rem)] leading-none">
+          <li key={s.label} className="border-t border-harbor/20 pt-4">
+            <p className="tight-display text-[clamp(3rem,2rem+3.6vw,5.5rem)] leading-none">
               <Counter value={s.value} decimals={decimals} />
               {s.suffix}
+              {s.unit && <sup className="ml-1 text-[0.25em] font-medium tracking-normal">{s.unit}</sup>}
             </p>
-            {s.unit ? <p className="mt-3 font-display text-[1rem] uppercase tracking-[0.06em]">{s.unit}</p> : <CompassStar className="mt-4" size={12} />}
-            <p className="mt-3 max-w-[13rem] text-[0.75rem] leading-snug opacity-75">{s.description}</p>
+            <p className="mt-3 text-[0.9375rem]">{s.label}</p>
+            <p className="mt-1 max-w-[14rem] text-[0.8125rem] leading-snug opacity-70">{s.description}</p>
           </li>
         );
       })}
     </ul>
   );
 }
-
 export function PeopleMarquee({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
   const half = Math.ceil(people.length / 2);
   const rows = [people.slice(0, half), people.slice(half)];
@@ -53,36 +49,26 @@ export function PeopleMarquee({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
   );
 }
 
-/** Flyward A6 (pinned sunset photo, counters, partner strip) with Kultiveret's partner marquee content. */
+/** Kultiveret light-blue band: figures, then the "selected partners" marquee as "Our people in Portugal". */
 export function StatsPeople() {
   return (
-    <section className="relative isolate text-harbor" aria-label="Our track record and our people">
-      <ShoreEdge position="top" fillClass="fill-shell" />
-      <div className="sticky top-0 -z-10 h-screen overflow-hidden" aria-hidden>
-        <Photo k="beachSunset" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-b from-shell/30 via-shell/45 to-shell/20" />
-      </div>
-      <div className="-mt-[100vh]">
-        <div className="flex min-h-screen items-end px-gutter pb-[18vh]">
-          <RevealLines as="h2" lines={['A season', 'you can rely on']} className="font-display-caps text-display-l mx-auto text-center" />
-        </div>
-        <div className="flex min-h-screen flex-col justify-center gap-10 px-gutter py-20">
-          <StatsRow />
-          <p className="mx-auto flex items-center gap-2 text-center text-[0.75rem]">
+    <section className="bg-azulejo-mist pb-8 pt-20 text-harbor md:pt-28" aria-labelledby="stats-title">
+      <div className="px-gutter">
+        <div className="mb-14 grid gap-6 md:grid-cols-2 md:items-end">
+          <h2 id="stats-title" className="tight-display text-mega">
+            A season you can rely on
+          </h2>
+          <p className="flex flex-wrap items-center gap-2 text-[0.8125rem] md:justify-self-end">
             <PlaceholderFlag label="Placeholder figures" /> Real numbers will replace these before launch.
           </p>
         </div>
-        <div className="flex min-h-[80vh] flex-col justify-center gap-8 py-20">
-          <Reveal className="flex flex-col items-center gap-2 px-gutter">
-            <CompassStar size={12} />
-            <h2 className="eyebrow">Our people in Portugal</h2>
-            <p className="max-w-md text-center text-[0.875rem]">
-              Hosts, teachers, surf coaches, lawyers and makers we trust, in every place we work.
-            </p>
-            <PlaceholderFlag label="Placeholder names" className="mt-1" />
-          </Reveal>
-          <PeopleMarquee />
-        </div>
+        <StatsRow />
+      </div>
+      <Reveal className="mt-24 px-gutter">
+        <p className="eyebrow text-harbor/60">Our people in Portugal · placeholder names</p>
+      </Reveal>
+      <div className="mt-3">
+        <PeopleMarquee />
       </div>
     </section>
   );

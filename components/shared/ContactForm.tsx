@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { contactSchema, type ContactInput } from '@/lib/schemas';
 import { site } from '@/config/site';
-import { PillButton } from './Buttons';
 
 type Errors = Partial<Record<keyof ContactInput, string>>;
 
@@ -45,19 +44,19 @@ export function ContactForm({ className = '' }: { className?: string }) {
 
   const field = (name: keyof ContactInput, label: string, props: React.InputHTMLAttributes<HTMLInputElement> = {}) => (
     <div className="field">
-      <label htmlFor={`cf-${name}`} className="field-label">
+      <label htmlFor={`cf-${name}`} className="eyebrow text-shell/70">
         {label}
       </label>
       <input
         id={`cf-${name}`}
         name={name}
-        className="field-input"
+        className="field-input border-shell/30 text-[0.9375rem] focus:border-terracotta"
         aria-invalid={!!errors[name]}
         aria-describedby={errors[name] ? `cf-${name}-err` : undefined}
         {...props}
       />
       {errors[name] && (
-        <p id={`cf-${name}-err`} className="field-error">
+        <p id={`cf-${name}-err`} className="text-[0.8125rem] text-[#f1b49b]">
           {errors[name]}
         </p>
       )}
@@ -65,18 +64,21 @@ export function ContactForm({ className = '' }: { className?: string }) {
   );
 
   return (
-    <div className={`grid bg-shell text-harbor shadow-2xl shadow-harbor-deep/20 md:grid-cols-[1fr_15rem] ${className}`}>
+    <div className={`bg-harbor text-shell shadow-2xl shadow-harbor-deep/30 ${className}`}>
       {status === 'sent' ? (
-        <div className="flex min-h-[26rem] flex-col justify-center gap-4 p-8 md:col-span-2 md:p-12" role="status">
-          <p className="font-display-caps text-display-m">Thank you</p>
-          <p className="max-w-md text-[0.9375rem] leading-relaxed">
+        <div className="flex min-h-[24rem] flex-col justify-center gap-4 p-6 md:p-8" role="status">
+          <p className="tight-display text-[2.25rem]">Thank you</p>
+          <p className="max-w-md text-[0.9375rem] font-light leading-relaxed text-shell/85">
             Your message is with us. Your specialist will reply within one working day (Lisbon time). If it’s urgent, message
             us on WhatsApp.
           </p>
-          <p className="font-display text-xl uppercase tracking-[0.04em]">{site.signOff}</p>
+          <p className="tight-display text-[1.5rem]">{site.signOff}</p>
         </div>
       ) : (
-        <form onSubmit={onSubmit} noValidate className="contents" aria-label="Contact form">
+        <form onSubmit={onSubmit} noValidate aria-label="Contact form">
+          <p className="px-6 pt-6 text-[1rem] font-light text-shell/85 md:px-8">
+            Tell us a little about your season and we’ll come back with the best options.
+          </p>
           <div className="grid gap-x-8 gap-y-7 p-6 md:grid-cols-2 md:p-8">
             {field('firstName', 'First name', { autoComplete: 'given-name', required: true })}
             {field('lastName', 'Last name', { autoComplete: 'family-name', required: true })}
@@ -85,7 +87,7 @@ export function ContactForm({ className = '' }: { className?: string }) {
               {field('phone', 'Phone (with country code)', { type: 'tel', autoComplete: 'tel', placeholder: '+44 7700 900000' })}
             </div>
             <div className="field md:col-span-2">
-              <label htmlFor="cf-message" className="field-label">
+              <label htmlFor="cf-message" className="eyebrow text-shell/70">
                 Message: where, when, who’s coming
               </label>
               <textarea
@@ -93,12 +95,12 @@ export function ContactForm({ className = '' }: { className?: string }) {
                 name="message"
                 rows={4}
                 required
-                className="field-input resize-y"
+                className="field-input resize-y border-shell/30 text-[0.9375rem] focus:border-terracotta"
                 aria-invalid={!!errors.message}
                 aria-describedby={errors.message ? 'cf-message-err' : undefined}
               />
               {errors.message && (
-                <p id="cf-message-err" className="field-error">
+                <p id="cf-message-err" className="text-[0.8125rem] text-[#f1b49b]">
                   {errors.message}
                 </p>
               )}
@@ -107,27 +109,28 @@ export function ContactForm({ className = '' }: { className?: string }) {
               <label htmlFor="cf-company">Company</label>
               <input id="cf-company" name="company" tabIndex={-1} autoComplete="off" />
             </div>
-          </div>
-          <div className="relative flex flex-col justify-between gap-10 overflow-hidden bg-harbor p-6 text-shell md:p-6">
-            <div className="azulejo-pattern absolute inset-0 opacity-[0.12]" aria-hidden />
-            <p className="relative font-display text-[1.25rem] uppercase leading-tight tracking-[0.03em]">Shall we begin?</p>
-            <div className="relative space-y-4">
-              <p className="text-[0.8125rem] leading-snug text-shell/80">
-                Prefer to tell us everything at once?{' '}
-                <Link href="/plan-my-season" className="underline underline-offset-2 hover:text-terracotta">
-                  Use the full season planner →
-                </Link>
+            <p className="text-[0.8125rem] text-shell/70 md:col-span-2">
+              Prefer to tell us everything at once?{' '}
+              <Link href="/plan-my-season" className="underline underline-offset-2 hover:text-terracotta">
+                Use the full season planner →
+              </Link>
+            </p>
+            {status === 'error' && (
+              <p className="text-[0.8125rem] text-[#f1b49b] md:col-span-2" role="alert">
+                Something went wrong. Please try again or email {site.contact.email}.
               </p>
-              <PillButton type="submit" tone="light" disabled={status === 'sending'} className="w-full">
-                {status === 'sending' ? 'Sending…' : 'Send request'}
-              </PillButton>
-              {status === 'error' && (
-                <p className="text-[0.8125rem] text-shell" role="alert">
-                  Something went wrong. Please try again or email {site.contact.email}.
-                </p>
-              )}
-            </div>
+            )}
           </div>
+          <button
+            type="submit"
+            disabled={status === 'sending'}
+            className="group flex h-14 w-full items-center justify-between bg-shell px-6 text-[1rem] font-medium text-harbor transition-colors hover:bg-terracotta hover:text-shell disabled:opacity-60 md:px-8"
+          >
+            <span>{status === 'sending' ? 'Sending…' : 'Shall we begin?'}</span>
+            <span aria-hidden className="transition-transform group-hover:translate-x-1">
+              →
+            </span>
+          </button>
         </form>
       )}
     </div>

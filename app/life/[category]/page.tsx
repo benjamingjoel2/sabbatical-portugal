@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { categories, getCategory } from '@/data/categories';
 import { CategoryHeader } from '@/components/shared/CategoryHeader';
 import { ExperienceRows } from '@/components/shared/ExperienceRows';
-import { ContactBlock } from '@/components/layout/ContactBlock';
 import { Photo } from '@/components/shared/Photo';
 import { Reveal } from '@/components/motion/Reveal';
 import { pageMeta } from '@/lib/seo';
@@ -47,7 +46,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <section className="bg-shell px-gutter pb-24" aria-label={`${c.name} experiences`}>
         <ExperienceRows items={c.experiences} />
       </section>
-      <ContactBlock />
     </>
   );
 }

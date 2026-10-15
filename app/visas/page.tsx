@@ -44,7 +44,7 @@ function Card({
       </div>
       {figure && (
         <p>
-          <span className="font-display text-[clamp(2.5rem,2rem+2vw,3.75rem)] leading-none">{figure}</span>
+          <span className="font-display font-semibold text-[clamp(2.5rem,2rem+2vw,3.75rem)] leading-none">{figure}</span>
           {figureNote && <span className="mt-1 block text-[0.8125rem] text-harbor/60">{figureNote}</span>}
         </p>
       )}

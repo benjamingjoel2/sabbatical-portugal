@@ -1,56 +1,43 @@
 import { site } from '@/config/site';
-import { GridLines } from '@/components/shared/GridLines';
-import { Reveal, RevealLines } from '@/components/motion/Reveal';
-import { PortugalLineMap } from '@/components/svg/PortugalLineMap';
-import { CompassStar } from '@/components/svg/Icons';
+import { Reveal } from '@/components/motion/Reveal';
 
 const practices = [
-  'Encrypted upload links, never email attachments',
-  'Stored encrypted, in the EU, with access logged',
-  'Seen only by your specialist and, for visas, our partner lawyers',
-  'Never used for marketing, never sold, never shared beyond your plan',
+  'Encrypted upload links, never email attachments.',
+  'Stored encrypted, in the EU, with every access logged.',
+  'Seen only by your specialist and, for visas, our partner lawyers.',
+  'Never used for marketing, never sold, never shared beyond your plan.',
 ];
 
-/** Flyward A8 rebuilt as "Your documents, handled with care". */
+/** Kultiveret "Pricing and guidelines" layout, used for "Your documents, handled with care". */
 export function DocumentsTrust() {
   return (
-    <section className="relative overflow-hidden bg-shell px-gutter py-24 md:py-36" aria-labelledby="docs-title">
-      <GridLines />
-      <PortugalLineMap className="pointer-events-none absolute -left-[12%] top-0 h-full w-auto text-harbor/10" />
-      <div className="relative grid gap-y-14 md:grid-cols-4 md:gap-x-6">
-        <RevealLines
-          id="docs-title"
-          lines={['Your documents,', 'handled with care']}
-          className="font-display-caps text-display-xl md:col-span-3"
-        />
-        <Reveal className="text-[0.9375rem] leading-relaxed md:col-span-2 md:col-start-2 md:max-w-md">
+    <section className="bg-shell px-gutter py-20 md:py-28" aria-labelledby="docs-title">
+      <h2 id="docs-title" className="tight-display max-w-5xl text-mega">
+        Your documents, handled with care
+      </h2>
+      <div className="mt-12 grid gap-8 text-[1.0625rem] leading-relaxed text-harbor/75 md:ml-[33%] md:grid-cols-2 md:gap-10">
+        <Reveal className="space-y-4">
           <p>
-            Planning a season means sharing things that matter: passport scans, proof of income, bank statements, visa
+            Planning a season means sharing things that matter: passport scans, proof of income, bank statements and visa
             paperwork. We treat every page as if it were our own.
           </p>
+          <p className="text-harbor">
+            <span className="font-medium">Our deletion promise.</span> Ask, and we permanently delete every document you have
+            shared with us within {site.documentDeletionDays} days, and confirm it in writing.
+          </p>
         </Reveal>
-        <Reveal delay={0.1} className="md:col-span-2 md:col-start-3 md:max-w-md">
-          <ul className="space-y-3 text-[0.9375rem]">
-            {practices.map((p) => (
-              <li key={p} className="flex gap-3">
-                <CompassStar size={10} className="mt-1.5 shrink-0 text-terracotta" />
-                {p}
+        <Reveal delay={0.08}>
+          <ul className="space-y-3">
+            {practices.map((p, i) => (
+              <li key={p} className="grid grid-cols-[2.25rem_1fr] gap-3">
+                <span className="mt-1 inline-grid h-5 place-items-center border border-harbor text-[0.6875rem] tabular-nums text-harbor">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span>{p}</span>
               </li>
             ))}
           </ul>
         </Reveal>
-        <Reveal delay={0.15} className="text-[0.9375rem] leading-relaxed md:col-span-2 md:col-start-2 md:max-w-md">
-          <p className="font-medium">Our deletion promise</p>
-          <p className="mt-2">
-            Ask, and we permanently delete every document you have shared with us within {site.documentDeletionDays} days,
-            and confirm it in writing. You stay in charge of your own paperwork.
-          </p>
-        </Reveal>
-        <RevealLines
-          as="p"
-          lines={['Your papers are yours.', 'We just keep them safe.']}
-          className="font-display-caps text-display-m md:col-span-3 md:col-start-2 md:mt-10"
-        />
       </div>
     </section>
   );

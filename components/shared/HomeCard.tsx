@@ -16,7 +16,7 @@ export function HomeCard({ home }: { home: Home }) {
       </div>
       <div className="mt-4 flex items-start justify-between gap-4">
         <div>
-          <h3 className="font-display text-[1.375rem] uppercase leading-none tracking-[0.03em] transition-colors group-hover:text-terracotta">{home.name}</h3>
+          <h3 className="font-display font-semibold text-[1.375rem] leading-none tracking-[-0.04em] transition-colors group-hover:text-terracotta">{home.name}</h3>
           <p className="mt-2 text-[0.8125rem] text-harbor/70">
             {home.area}, {dest?.shortName} · {home.bedrooms === 0 ? 'Studio' : `${home.bedrooms} bed`} · {home.mbps} Mbps
           </p>

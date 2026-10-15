@@ -10,7 +10,7 @@ const tones: Record<Tone, string> = {
   'outline-light': 'border border-shell/80 text-shell hover:bg-shell hover:text-harbor',
 };
 
-/** Flyward-style pill: uppercase, tracked, fully rounded. */
+/** Kultiveret-style square button: sentence case, medium weight, no radius. */
 export function Pill({
   href,
   children,
@@ -30,8 +30,8 @@ export function Pill({
   return (
     <Link
       href={href}
-      className={`nav-caps inline-flex items-center justify-center gap-1.5 rounded-full transition-colors duration-300 ${
-        small ? 'h-7 px-3 text-[0.625rem]' : 'h-11 px-6 text-[0.8125rem] tracking-[0.1em]'
+      className={`inline-flex items-center justify-center gap-2 font-medium tracking-[-0.01em] transition-colors duration-300 ${
+        small ? 'h-7 px-2.5 text-[0.75rem]' : 'h-12 px-5 text-[0.9375rem]'
       } ${tones[tone]} ${className}`}
       {...rest}
     >
@@ -49,7 +49,7 @@ export function PillButton({
 }: { tone?: Tone; className?: string } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
-      className={`nav-caps inline-flex h-11 items-center justify-center gap-2 rounded-full px-6 text-[0.8125rem] tracking-[0.1em] transition-colors duration-300 disabled:opacity-50 ${tones[tone]} ${className}`}
+      className={`inline-flex h-12 items-center justify-center gap-2 px-5 text-[0.9375rem] font-medium tracking-[-0.01em] transition-colors duration-300 disabled:opacity-50 ${tones[tone]} ${className}`}
       {...rest}
     >
       {children}

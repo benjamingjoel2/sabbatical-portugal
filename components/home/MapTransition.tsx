@@ -1,11 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
+import { useState } from 'react';
 import { PortugalLineMap } from '@/components/svg/PortugalLineMap';
 import { MAINLAND_PINS } from '@/components/svg/paths';
 import { destinations } from '@/data/destinations';
+import { Reveal } from '@/components/motion/Reveal';
 import { ease } from '@/config/theme';
 
 /** Pin positions in the 520×540 PortugalLineMap space. */
@@ -17,51 +18,41 @@ function pinFor(slug: string): { x: number; y: number } | null {
   return null;
 }
 
-/** Flyward A3: dark section, outlined headline, line-art map. Our map adds every destination. */
+/** Kultiveret-style intro statement plus a line map of every destination, mainland and islands. */
 export function MapTransition() {
-  const ref = useRef<HTMLElement>(null);
   const reduce = useReducedMotion();
   const [hover, setHover] = useState<string | null>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
-  const titleX = useTransform(scrollYProgress, [0, 1], reduce ? ['0%', '0%'] : ['6%', '-10%']);
 
   return (
-    <section ref={ref} className="relative overflow-hidden bg-harbor-deep pb-28 pt-16 text-shell md:pb-40" aria-labelledby="map-title">
-      <div className="azulejo-pattern absolute inset-0 opacity-[0.05]" aria-hidden />
-      <motion.h2
-        id="map-title"
-        style={{ x: titleX }}
-        className="font-display-caps outline-text relative whitespace-nowrap px-gutter text-[clamp(3rem,1rem+8vw,8.5rem)] leading-[0.9] text-shell/80"
-      >
-        A season designed around you
-      </motion.h2>
+    <section className="bg-shell px-gutter pb-24 pt-16 md:pb-32 md:pt-24" aria-labelledby="map-title">
+      <Reveal>
+        <h2 id="map-title" className="text-statement indent-[clamp(2rem,30vw,28rem)]">
+          All of Portugal, not just Porto. Twelve places we know street by street, from the Douro’s terraces and Lisbon’s
+          hills to the Algarve coast and two Atlantic archipelagos.
+        </h2>
+      </Reveal>
 
-      <div className="relative mt-10 grid gap-12 px-gutter md:grid-cols-[1fr_1.1fr] md:items-center">
-        <div className="max-w-md">
-          <p className="text-statement">
-            All of Portugal, not just Porto. Twelve places we know street by street, from the Minho to the Algarve and out
-            into the Atlantic.
-          </p>
-          <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-1.5 text-[0.875rem] text-shell/75">
-            {destinations.map((d, i) => (
-              <li key={d.slug}>
-                <Link
-                  href={`/destinations/${d.slug}`}
-                  onMouseEnter={() => setHover(d.slug)}
-                  onMouseLeave={() => setHover(null)}
-                  onFocus={() => setHover(d.slug)}
-                  onBlur={() => setHover(null)}
-                  className={`inline-flex gap-2 transition-colors hover:text-terracotta ${hover === d.slug ? 'text-terracotta' : ''}`}
-                >
-                  <span className="tabular-nums text-shell/40">{String(i + 1).padStart(2, '0')}</span>
-                  {d.shortName}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="mt-16 grid gap-12 md:grid-cols-[1fr_1fr] md:items-center">
+        <ol className="tight-display order-2 text-[clamp(1.5rem,1.1rem+1.6vw,2.5rem)] leading-[1.15] md:order-1">
+          {destinations.map((d, i) => (
+            <li key={d.slug}>
+              <Link
+                href={`/destinations/${d.slug}`}
+                onMouseEnter={() => setHover(d.slug)}
+                onMouseLeave={() => setHover(null)}
+                onFocus={() => setHover(d.slug)}
+                onBlur={() => setHover(null)}
+                className={`inline-flex items-start gap-1 transition-colors ${hover && hover !== d.slug ? 'text-harbor/30' : 'hover:text-terracotta'}`}
+              >
+                {d.shortName}
+                <sup className="mt-[0.35em] text-[0.35em] font-medium tracking-normal">{String(i + 1).padStart(2, '0')}</sup>
+              </Link>
+            </li>
+          ))}
+        </ol>
 
-        <div className="relative mx-auto w-full max-w-[34rem]">
+        <div className="relative order-1 mx-auto w-full max-w-[32rem] md:order-2">
+          <PortugalLineMap className="h-auto w-full text-harbor/45" />
           <svg viewBox="0 0 520 540" className="absolute inset-0 h-full w-full" aria-hidden>
             {destinations.map((d, i) => {
               const pos = pinFor(d.slug);
@@ -70,28 +61,19 @@ export function MapTransition() {
               return (
                 <motion.g
                   key={d.slug}
-                  initial={reduce ? false : { opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={reduce ? false : { opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, ease, delay: 0.6 + i * 0.07 }}
-                  style={{ transformOrigin: `${pos.x}px ${pos.y}px` }}
+                  transition={{ duration: 0.5, ease, delay: 0.3 + i * 0.06 }}
                 >
-                  <circle cx={pos.x} cy={pos.y} r={on ? 9 : 5} className="fill-terracotta/25 transition-all duration-300" />
-                  <circle cx={pos.x} cy={pos.y} r="2.6" className={on ? 'fill-terracotta' : 'fill-shell'} />
+                  <circle cx={pos.x} cy={pos.y} r={on ? 11 : 6} className="fill-terracotta/25 transition-all duration-300" />
+                  <circle cx={pos.x} cy={pos.y} r="3" className={on ? 'fill-terracotta' : 'fill-harbor'} />
                 </motion.g>
               );
             })}
           </svg>
-          <motion.div
-            initial={reduce ? false : { opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.6, ease }}
-          >
-            <PortugalLineMap className="h-auto w-full text-shell/55" />
-          </motion.div>
-          <p className="eyebrow absolute left-[2%] top-[19%] text-shell/50">Azores</p>
-          <p className="eyebrow absolute left-[2%] top-[58%] text-shell/50">Madeira</p>
+          <p className="eyebrow absolute left-[2%] top-[17%] text-harbor/50">Azores</p>
+          <p className="eyebrow absolute left-[2%] top-[57%] text-harbor/50">Madeira</p>
         </div>
       </div>
     </section>

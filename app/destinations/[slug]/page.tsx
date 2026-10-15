@@ -13,7 +13,6 @@ import { CtaHero } from '@/components/shared/CtaHero';
 import { Pill, ArrowLink } from '@/components/shared/Buttons';
 import { Price } from '@/components/shared/Price';
 import { Reveal } from '@/components/motion/Reveal';
-import { GridLines } from '@/components/shared/GridLines';
 import { pageMeta } from '@/lib/seo';
 import { unsplash } from '@/data/images';
 
@@ -61,7 +60,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
       </PageHero>
 
       <section className="relative bg-shell px-gutter py-20 md:py-28">
-        <GridLines />
         <div className="relative grid gap-12 md:grid-cols-4">
           <Reveal className="md:col-span-2">
             <p className="text-statement">{d.overview}</p>

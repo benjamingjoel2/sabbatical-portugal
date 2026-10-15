@@ -11,7 +11,6 @@ import { Pill } from '@/components/shared/Buttons';
 import { Price } from '@/components/shared/Price';
 import { Photo } from '@/components/shared/Photo';
 import { VisaNote } from '@/components/shared/VisaNote';
-import { GridLines } from '@/components/shared/GridLines';
 import { Reveal, RevealLines } from '@/components/motion/Reveal';
 import { CompassStar } from '@/components/svg/Icons';
 import { pageMeta } from '@/lib/seo';
@@ -49,7 +48,6 @@ export default function FamiliesPage() {
       </PageHero>
 
       <section className="relative bg-shell px-gutter py-20 md:py-28" aria-labelledby="schools-title">
-        <GridLines />
         <div className="relative grid gap-12 md:grid-cols-[1fr_1.2fr]">
           <RevealLines id="schools-title" lines={['School,', 'sorted early']} className="font-display-caps text-display-l" />
           <Reveal>
