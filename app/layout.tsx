@@ -4,7 +4,6 @@ import './globals.css';
 import { site } from '@/config/site';
 import { CurrencyProvider } from '@/lib/currency';
 import { SoundProvider } from '@/components/sound/SoundProvider';
-import { SoundGate } from '@/components/sound/SoundGate';
 import { UIProvider } from '@/components/layout/UIProvider';
 import { Header } from '@/components/layout/Header';
 import { MegaMenu } from '@/components/layout/MegaMenu';
@@ -60,7 +59,6 @@ export default function RootLayout({ children, modal }: { children: React.ReactN
               <main id="main">{children}</main>
               <Footer />
               <WhatsAppFab />
-              <SoundGate />
               {modal}
             </UIProvider>
           </SoundProvider>
