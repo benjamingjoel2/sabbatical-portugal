@@ -2,7 +2,7 @@ import { Pill } from '@/components/shared/Buttons';
 
 export default function NotFound() {
   return (
-    <section className="relative flex min-h-svh flex-col items-center justify-center overflow-hidden bg-shell px-gutter text-center">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-shell px-gutter text-center">
       <div className="azulejo-pattern absolute inset-0 opacity-40" aria-hidden />
       <div className="relative bg-shell p-8">
         <p className="eyebrow text-harbor/60">404</p>

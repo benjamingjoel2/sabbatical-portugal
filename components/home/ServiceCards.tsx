@@ -29,7 +29,7 @@ export function ServiceCards() {
           <Link
             key={c.href}
             href={c.href}
-            className="group relative block h-[88svh] min-h-[32rem] overflow-hidden text-shell md:h-[100svh]"
+            className="group relative block h-[88vh] min-h-[32rem] overflow-hidden text-shell md:h-[100vh]"
           >
             <Parallax distance={50} className="absolute inset-[-8%_0]">
               <div className="relative h-full w-full transition-transform duration-[1.4s] ease-[var(--ease-harbor)] group-hover:scale-[1.05]">

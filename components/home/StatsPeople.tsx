@@ -58,21 +58,21 @@ export function StatsPeople() {
   return (
     <section className="relative isolate text-harbor" aria-label="Our track record and our people">
       <ShoreEdge position="top" fillClass="fill-shell" />
-      <div className="sticky top-0 -z-10 h-svh overflow-hidden" aria-hidden>
+      <div className="sticky top-0 -z-10 h-screen overflow-hidden" aria-hidden>
         <Photo k="beachSunset" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-shell/30 via-shell/45 to-shell/20" />
       </div>
-      <div className="-mt-[100svh]">
-        <div className="flex min-h-svh items-end px-gutter pb-[18vh]">
+      <div className="-mt-[100vh]">
+        <div className="flex min-h-screen items-end px-gutter pb-[18vh]">
           <RevealLines as="h2" lines={['A season', 'you can rely on']} className="font-display-caps text-display-l mx-auto text-center" />
         </div>
-        <div className="flex min-h-svh flex-col justify-center gap-10 px-gutter py-20">
+        <div className="flex min-h-screen flex-col justify-center gap-10 px-gutter py-20">
           <StatsRow />
           <p className="mx-auto flex items-center gap-2 text-center text-[0.75rem]">
             <PlaceholderFlag label="Placeholder figures" /> Real numbers will replace these before launch.
           </p>
         </div>
-        <div className="flex min-h-[80svh] flex-col justify-center gap-8 py-20">
+        <div className="flex min-h-[80vh] flex-col justify-center gap-8 py-20">
           <Reveal className="flex flex-col items-center gap-2 px-gutter">
             <CompassStar size={12} />
             <h2 className="eyebrow">Our people in Portugal</h2>

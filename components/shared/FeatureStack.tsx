@@ -70,8 +70,8 @@ export function FeatureStack({ title, steps }: { title: string[]; steps: StackSt
   }
 
   return (
-    <section ref={ref} className="relative bg-shell" style={{ height: `${steps.length * 90 + 30}svh` }}>
-      <div className="sticky top-0 flex h-svh flex-col overflow-hidden px-gutter pb-10 pt-[calc(var(--header-h)+1.5rem)]">
+    <section ref={ref} className="relative bg-shell" style={{ height: `${steps.length * 90 + 30}vh` }}>
+      <div className="sticky top-0 flex h-screen flex-col overflow-hidden px-gutter pb-10 pt-[calc(var(--header-h)+1.5rem)]">
         <GridLines />
         <div className="relative">{heading}</div>
         <div className="relative mx-auto mt-10 w-full max-w-5xl grow md:mt-14">

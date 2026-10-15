@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMeta({
 /** Kultiveret booking card over a blurred photo, styled with the shared tokens. */
 export default function PlanMySeasonPage() {
   return (
-    <section className="relative isolate min-h-svh px-gutter pb-24 pt-[calc(var(--header-h)+3rem)]">
+    <section className="relative isolate min-h-screen px-gutter pb-24 pt-[calc(var(--header-h)+3rem)]">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <Photo k="portoRibeira" sizes="100vw" priority className="scale-110 blur-md" />
         <div className="absolute inset-0 bg-harbor-deep/45" />

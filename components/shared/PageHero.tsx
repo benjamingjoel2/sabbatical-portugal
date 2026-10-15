@@ -31,7 +31,7 @@ export function PageHero({
         )}
         {children && <div className="mt-8 flex flex-wrap justify-center gap-2">{children}</div>}
       </div>
-      <div className="relative mt-14 h-[62svh] min-h-[22rem]">
+      <div className="relative mt-14 h-[62vh] min-h-[22rem]">
         <ShoreEdge position="top" fillClass="fill-shell" variant={1} />
         <Photo k={image} sizes="100vw" priority />
         <ShoreEdge fillClass="fill-shell" />

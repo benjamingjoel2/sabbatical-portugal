@@ -91,7 +91,7 @@ export function TestimonialSlider() {
         </div>
       </div>
 
-      <div className="relative h-[60svh] min-h-[22rem]">
+      <div className="relative h-[60vh] min-h-[22rem]">
         <ShoreEdge position="top" fillClass="fill-[#d9b49c]" variant={1} />
         <Photo k="lisbonRooftopsSea" sizes="100vw" />
         <ShoreEdge fillClass="fill-shell" />

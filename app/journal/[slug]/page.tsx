@@ -54,7 +54,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <h1 className="tight-display mt-6 max-w-6xl text-mega">{p.title}</h1>
           <p className="mt-10 max-w-3xl text-statement md:ml-[33%]">{p.excerpt}</p>
         </header>
-        <div className="relative h-[70svh] min-h-[22rem]">
+        <div className="relative h-[70vh] min-h-[22rem]">
           <Photo k={p.image} sizes="100vw" priority />
         </div>
         <div className="bg-shell px-gutter py-20">
