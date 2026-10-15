@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, useMotionTemplate, useReducedMotion, useScroll, useTransform } from 'framer-motion';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { PORTUGAL_PATH, PORTUGAL_VIEWBOX } from '@/components/svg/paths';
 import Image from 'next/image';
 import { Photo } from '@/components/shared/Photo';
@@ -33,8 +33,8 @@ function HeroCopy() {
 
 function DiscoverButton() {
   const onClick = () => {
-    const el = document.getElementById('hero');
-    const target = el ? el.offsetTop + window.innerHeight * 1.75 : window.innerHeight;
+    const el = document.getElementById('intro');
+    const target = el ? el.getBoundingClientRect().top + window.scrollY : window.innerHeight;
     const lenis = getLenis();
     if (lenis) lenis.scrollTo(target, { duration: 2.2 });
     else window.scrollTo({ top: target, behavior: 'smooth' });
@@ -54,7 +54,7 @@ function HeroAside() {
         <RotatingWord words={rotating} className="text-azulejo" srPrefix="a season of " />
         <span className="block text-harbor/45">in Portugal</span>
       </p>
-      <p className="mt-6 text-[0.9375rem] leading-relaxed text-harbor/80">
+      <p className="mt-6 hidden text-[0.9375rem] leading-relaxed text-harbor/80 sm:block">
         One to twelve months in Portugal’s best cities, coastlines, countryside and islands. Your home, workspace,
         visa guidance and community, planned end to end by one specialist.
       </p>
@@ -93,31 +93,30 @@ function IntroCopy({ light = true }: { light?: boolean }) {
  */
 export function MaskHero() {
   const reduce = useReducedMotion();
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
+  // Progress across the whole 300vh section: 0 = hero at rest, 1 = intro fully in view.
   const { scrollYProgress: p } = useScroll({ target: ref, offset: ['start start', 'end end'] });
 
   // Smaller silhouette on narrow screens so the copy above and below stays clear.
-  const baseH = useRef(74);
+  const [baseH, setBaseH] = useState(74);
   useEffect(() => {
-    baseH.current = window.innerWidth < 1024 ? 42 : 74;
-    p.set(p.get());
-  }, [p]);
-  const maskH = useTransform(p, (v) => {
-    const b = baseH.current;
-    if (v <= 0.08) return b;
-    const k = Math.min(1, (v - 0.08) / 0.42);
-    return b + (1100 - b) * k * k;
-  });
+    const set = () => setBaseH(window.innerWidth < 1024 ? 34 : 74);
+    set();
+    window.addEventListener('resize', set);
+    return () => window.removeEventListener('resize', set);
+  }, []);
+  // The silhouette grows while the hero copy scrolls away (first half of the section).
+  const maskH = useTransform(p, [0, 0.1, 0.45], [baseH, baseH, 900]);
   const maskSize = useMotionTemplate`auto ${maskH}vh`;
-  const imgScale = useTransform(p, [0, 0.5], [1.25, 1]);
-  const heroOpacity = useTransform(p, [0.06, 0.2], [1, 0]);
-  const heroY = useTransform(p, [0.06, 0.25], [0, -60]);
-  const shade = useTransform(p, [0.3, 0.55], [0, 0.45]);
-  const roofClip = useTransform(p, [0.5, 0.78], [100, 0]);
+  const imgScale = useTransform(p, [0, 0.45], [1.2, 1]);
+  // Once the silhouette is big, an unmasked full-bleed copy fades in so no edge of the shape is ever visible.
+  const fullOpacity = useTransform(p, [0.3, 0.42], [0, 1]);
+  // Second photo layer (golden-hour harbor) and shade arrive with the intro copy.
+  const roofClip = useTransform(p, [0.45, 0.75], [100, 0]);
   const roofClipPath = useMotionTemplate`inset(${roofClip}% 0 0 0)`;
-  const roofY = useTransform(p, [0.5, 1], ['12%', '0%']);
-  const introOpacity = useTransform(p, [0.42, 0.56], [0, 1]);
-  const introY = useTransform(p, [0.42, 0.6], [80, 0]);
+  const shade = useTransform(p, [0.35, 0.6], [0, 0.5]);
+  // Hero copy fades out quickly as it scrolls away, before the silhouette grows under it.
+  const heroOpacity = useTransform(p, [0, 0.12], [1, 0]);
 
   if (reduce) {
     return (
@@ -148,11 +147,10 @@ export function MaskHero() {
   }
 
   return (
-    <section id="hero" ref={ref} className="relative h-[330vh] bg-shell" aria-label="Introduction">
-      <div className="sticky top-0 h-screen overflow-hidden">
+    <section id="hero" ref={ref} className="relative bg-shell" aria-label="Introduction">
+      {/* Pinned image stage: only images move here, never text */}
+      <div className="sticky top-0 h-screen overflow-hidden" aria-hidden>
         <GridLines />
-
-        {/* Masked photo layers */}
         <motion.div
           className="absolute inset-0"
           style={{
@@ -160,29 +158,28 @@ export function MaskHero() {
             WebkitMaskImage: maskUrl,
             maskRepeat: 'no-repeat',
             WebkitMaskRepeat: 'no-repeat',
-            maskPosition: '50% 54%',
-            WebkitMaskPosition: '50% 54%',
+            maskPosition: '50% 50%',
+            WebkitMaskPosition: '50% 50%',
             maskSize,
             WebkitMaskSize: maskSize,
           }}
         >
           <motion.div className="absolute inset-0" style={{ scale: imgScale }}>
-            <Image src={heroSrc} alt={heroAlt} fill priority sizes="100vw" className="object-cover" />
-          </motion.div>
-          <motion.div className="absolute inset-0 bg-harbor-deep" style={{ opacity: shade }} />
-          <motion.div className="absolute inset-0" style={{ clipPath: roofClipPath }}>
-            <motion.div className="absolute inset-[-12%_0_0_0]" style={{ y: roofY }}>
-              <Photo k="portoGoldenHour" sizes="100vw" />
-            </motion.div>
-            <div className="absolute inset-0 bg-harbor-deep/55" />
+            <Image src={heroSrc} alt="" fill priority sizes="100vw" className="object-cover" />
           </motion.div>
         </motion.div>
+        <motion.div className="absolute inset-0" style={{ opacity: fullOpacity }}>
+          <Image src={heroSrc} alt="" fill sizes="100vw" className="object-cover" />
+        </motion.div>
+        <motion.div className="absolute inset-0" style={{ clipPath: roofClipPath, WebkitClipPath: roofClipPath }}>
+          <Photo k="portoGoldenHour" sizes="100vw" />
+        </motion.div>
+        <motion.div className="absolute inset-0 bg-harbor-deep" style={{ opacity: shade }} />
+      </div>
 
-        {/* Hero copy flanking the silhouette */}
-        <motion.div
-          style={{ opacity: heroOpacity, y: heroY }}
-          className="pointer-events-auto relative grid h-full grid-rows-[auto_1fr_auto] px-gutter pb-8 pt-[calc(var(--header-h)+1.5rem)] lg:grid-cols-[1fr_minmax(16rem,22vw)_1fr] lg:grid-rows-1 lg:items-center lg:gap-10 lg:pb-0"
-        >
+      {/* Text scrolls normally over the stage, so the two blocks can never overlap */}
+      <div className="relative -mt-[100vh]">
+        <motion.div style={{ opacity: heroOpacity }} className="grid h-screen grid-rows-[auto_1fr_auto] px-gutter pb-8 pt-[calc(var(--header-h)+1.5rem)] lg:grid-cols-[1fr_minmax(16rem,22vw)_1fr] lg:grid-rows-1 lg:items-center lg:gap-10 lg:pb-0">
           <div className="lg:self-center">
             <HeroCopy />
           </div>
@@ -191,17 +188,13 @@ export function MaskHero() {
             <HeroAside />
           </div>
         </motion.div>
-
-        {/* Intro (Flyward A2) */}
-        <motion.div
-          style={{ opacity: introOpacity, y: introY }}
-          className="pointer-events-none absolute inset-x-0 bottom-[14vh] px-gutter"
-        >
+        <div className="h-[80vh]" />
+        <div id="intro" className="flex min-h-screen items-end px-gutter pb-[18vh]">
           <IntroCopy />
-        </motion.div>
-
-        <ShoreEdge fillClass="fill-harbor-deep" />
+        </div>
       </div>
+
+      <ShoreEdge fillClass="fill-harbor-deep" />
     </section>
   );
 }
