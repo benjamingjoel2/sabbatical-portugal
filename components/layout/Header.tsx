@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { useMotionValueEvent, useScroll } from 'framer-motion';
 import { useState } from 'react';
 import { headerNav } from '@/config/nav';
 import { Logo } from './Logo';
@@ -21,24 +21,17 @@ export function Header() {
   const pathname = usePathname();
   const { menuOpen, setMenuOpen } = useUI();
   const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false);
   const [atTop, setAtTop] = useState(true);
 
-  useMotionValueEvent(scrollY, 'change', (y) => {
-    const prev = scrollY.getPrevious() ?? 0;
-    setAtTop(y < 40);
-    setHidden(y > 200 && y > prev && !menuOpen);
-  });
+  useMotionValueEvent(scrollY, 'change', (y) => setAtTop(y < 40));
 
   const light = atTop && lightTopRoutes.includes(pathname) && !menuOpen;
 
   return (
-    <motion.header
+    <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
         light ? 'text-shell' : 'text-harbor'
       } ${!atTop && !menuOpen ? 'bg-shell/85 backdrop-blur-md' : 'bg-transparent'}`}
-      animate={{ y: hidden ? '-100%' : '0%' }}
-      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
     >
       <a
         href="#main"
@@ -94,6 +87,6 @@ export function Header() {
           </button>
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 }

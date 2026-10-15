@@ -8,7 +8,7 @@ export function CurrencySwitcher({ className = '', id = 'currency' }: { classNam
   return (
     <div className={`relative ${className}`}>
       <label htmlFor={id} className="sr-only">
-        Display prices in
+        Display prices in ({currencyMeta[currency].label})
       </label>
       <select
         id={id}
@@ -18,7 +18,7 @@ export function CurrencySwitcher({ className = '', id = 'currency' }: { classNam
       >
         {currencies.map((c) => (
           <option key={c} value={c} className="text-harbor">
-            {c} · {currencyMeta[c].label}
+            {c}
           </option>
         ))}
       </select>

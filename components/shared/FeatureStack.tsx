@@ -16,9 +16,9 @@ export interface StackStep {
 
 function StepView({ s, i }: { s: StackStep; i: number }) {
   return (
-    <div className="grid gap-8 md:grid-cols-[minmax(0,20rem)_1fr] md:gap-12">
-      <div className="relative">
-        <div className="relative aspect-[4/5] w-full overflow-hidden">
+    <div className="grid gap-8 md:grid-cols-[auto_1fr] md:gap-12">
+      <div className="relative w-full max-w-[20rem] md:w-auto">
+        <div className="relative aspect-[4/5] w-full overflow-hidden md:h-[min(25rem,48vh)] md:w-auto">
           <Photo k={s.image} sizes="(min-width: 768px) 20rem, 90vw" />
         </div>
         <NumberBadge n={i + 1} className="absolute -right-3 -top-3" />
@@ -55,22 +55,24 @@ export function FeatureStack({ title, steps }: { title: string[]; steps: StackSt
     </h2>
   );
 
-  if (reduce) {
-    return (
-      <section className="relative bg-shell px-gutter py-24">
-        <GridLines />
-        <div className="relative">{heading}</div>
-        <div className="relative mx-auto mt-16 max-w-5xl space-y-20">
-          {steps.map((s, i) => (
-            <StepView key={s.title} s={s} i={i} />
-          ))}
-        </div>
-      </section>
-    );
-  }
+  const staticList = (
+    <section className={`relative bg-shell px-gutter py-24 ${reduce ? '' : 'md:hidden'}`}>
+      <GridLines />
+      <div className="relative">{heading}</div>
+      <div className="relative mx-auto mt-16 max-w-5xl space-y-20">
+        {steps.map((s, i) => (
+          <StepView key={s.title} s={s} i={i} />
+        ))}
+      </div>
+    </section>
+  );
+
+  if (reduce) return staticList;
 
   return (
-    <section ref={ref} className="relative bg-shell" style={{ height: `${steps.length * 90 + 30}vh` }}>
+    <>
+    {staticList}
+    <section ref={ref} className="relative hidden bg-shell md:block" style={{ height: `${steps.length * 90 + 30}vh` }}>
       <div className="sticky top-0 flex h-screen flex-col overflow-hidden px-gutter pb-10 pt-[calc(var(--header-h)+1.5rem)]">
         <GridLines />
         <div className="relative">{heading}</div>
@@ -94,5 +96,6 @@ export function FeatureStack({ title, steps }: { title: string[]; steps: StackSt
         </ol>
       </div>
     </section>
+    </>
   );
 }
