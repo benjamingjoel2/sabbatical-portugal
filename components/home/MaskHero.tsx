@@ -3,7 +3,11 @@
 import { motion, useMotionTemplate, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { PORTUGAL_PATH, PORTUGAL_VIEWBOX } from '@/components/svg/paths';
+import Image from 'next/image';
 import { Photo } from '@/components/shared/Photo';
+
+const heroSrc = '/images/hero-lisbon-rooftops.webp';
+const heroAlt = 'Terracotta rooftops of Lisbon stepping down to the Tagus, with a white church tower';
 import { Pill, PillButton } from '@/components/shared/Buttons';
 import { getLenis } from '@/components/motion/SmoothScroll';
 import { GridLines } from '@/components/shared/GridLines';
@@ -126,14 +130,14 @@ export function MaskHero() {
               className="relative mx-auto h-[60vh] w-[30vh]"
               style={{ maskImage: maskUrl, WebkitMaskImage: maskUrl, maskSize: 'contain', WebkitMaskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskRepeat: 'no-repeat', maskPosition: 'center' }}
             >
-              <Photo k="portoGoldenHour" priority sizes="40vh" />
+              <Image src={heroSrc} alt={heroAlt} fill priority sizes="40vh" className="object-cover" />
             </div>
             <HeroAside />
           </div>
         </section>
         <section id="intro" className="relative bg-harbor-deep px-gutter py-24">
           <div className="absolute inset-0">
-            <Photo k="lisbonAlfama" sizes="100vw" className="opacity-50" />
+            <Photo k="portoGoldenHour" sizes="100vw" className="opacity-50" />
           </div>
           <div className="relative">
             <IntroCopy />
@@ -163,12 +167,12 @@ export function MaskHero() {
           }}
         >
           <motion.div className="absolute inset-0" style={{ scale: imgScale }}>
-            <Photo k="portoGoldenHour" priority sizes="100vw" />
+            <Image src={heroSrc} alt={heroAlt} fill priority sizes="100vw" className="object-cover" />
           </motion.div>
           <motion.div className="absolute inset-0 bg-harbor-deep" style={{ opacity: shade }} />
           <motion.div className="absolute inset-0" style={{ clipPath: roofClipPath }}>
             <motion.div className="absolute inset-[-12%_0_0_0]" style={{ y: roofY }}>
-              <Photo k="lisbonAlfama" sizes="100vw" />
+              <Photo k="portoGoldenHour" sizes="100vw" />
             </motion.div>
             <div className="absolute inset-0 bg-harbor-deep/55" />
           </motion.div>
