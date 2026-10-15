@@ -36,8 +36,8 @@ export function SoundProvider({ children }: { children: React.ReactNode }) {
   const fadeRaf = useRef<number | null>(null);
 
   useEffect(() => {
-    // A returning visitor who said "yes" still has to press play again: browsers block
-    // autoplay with sound, and we never start audio without a fresh user gesture.
+    // Sound always starts off. Browsers block autoplay with sound anyway, and we never
+    // start audio without the visitor pressing the wave icon in the header.
     const saved = readStorage<Choice>(KEY, 'unset');
     setChoice(saved === 'on' ? 'off' : saved);
     setReady(true);
