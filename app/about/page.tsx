@@ -66,7 +66,7 @@ export default function AboutPage() {
       </section>
 
       {/* B4: meaning of the name */}
-      <section className="relative isolate min-h-[90svh] overflow-hidden" aria-labelledby="meaning-title">
+      <section className="relative isolate min-h-[90vh] overflow-hidden" aria-labelledby="meaning-title">
         <div className="absolute inset-0 -z-10">
           <Photo k="portoRibeira" sizes="100vw" />
         </div>
@@ -168,7 +168,7 @@ export default function AboutPage() {
 
       {/* B6: portrait + testimonial box */}
       {t && (
-        <section className="relative isolate min-h-[90svh] overflow-hidden">
+        <section className="relative isolate min-h-[90vh] overflow-hidden">
           <div className="absolute inset-0 -z-10">
             <Photo k="friendsView" sizes="100vw" />
           </div>

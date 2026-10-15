@@ -29,7 +29,7 @@ export default function PlansPage() {
       </EditorialHero>
       <section aria-label="Plans" className="grid gap-1.5 bg-harbor-deep md:grid-cols-2">
         {plans.map((p) => (
-          <Link key={p.slug} href={`/plans/${p.slug}`} className="group relative block h-[80svh] min-h-[30rem] overflow-hidden text-shell">
+          <Link key={p.slug} href={`/plans/${p.slug}`} className="group relative block h-[80vh] min-h-[30rem] overflow-hidden text-shell">
             <Photo k={p.image} sizes="(min-width: 768px) 50vw, 100vw" className="transition-transform duration-[1.4s] ease-[var(--ease-harbor)] group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-harbor-deep/85 via-harbor-deep/15 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 grid gap-4 p-5 md:grid-cols-[1fr_minmax(0,15rem)] md:items-end md:p-8">

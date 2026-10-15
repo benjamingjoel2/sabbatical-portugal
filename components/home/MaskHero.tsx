@@ -118,12 +118,12 @@ export function MaskHero() {
   if (reduce) {
     return (
       <>
-        <section id="hero" className="relative min-h-svh bg-shell pt-[var(--header-h)]">
+        <section id="hero" className="relative min-h-screen bg-shell pt-[var(--header-h)]">
           <GridLines />
-          <div className="relative grid min-h-[calc(100svh-var(--header-h))] items-center gap-10 px-gutter py-10 lg:grid-cols-[1fr_auto_1fr]">
+          <div className="relative grid min-h-[calc(100vh-var(--header-h))] items-center gap-10 px-gutter py-10 lg:grid-cols-[1fr_auto_1fr]">
             <HeroCopy />
             <div
-              className="relative mx-auto h-[60svh] w-[30svh]"
+              className="relative mx-auto h-[60vh] w-[30vh]"
               style={{ maskImage: maskUrl, WebkitMaskImage: maskUrl, maskSize: 'contain', WebkitMaskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskRepeat: 'no-repeat', maskPosition: 'center' }}
             >
               <Photo k="portoGoldenHour" priority sizes="40vh" />
@@ -144,8 +144,8 @@ export function MaskHero() {
   }
 
   return (
-    <section id="hero" ref={ref} className="relative h-[330svh] bg-shell" aria-label="Introduction">
-      <div className="sticky top-0 h-svh overflow-hidden">
+    <section id="hero" ref={ref} className="relative h-[330vh] bg-shell" aria-label="Introduction">
+      <div className="sticky top-0 h-screen overflow-hidden">
         <GridLines />
 
         {/* Masked photo layers */}

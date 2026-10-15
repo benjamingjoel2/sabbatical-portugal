@@ -17,7 +17,7 @@ export function CtaHero({
   label?: string;
 }) {
   return (
-    <section className="relative isolate flex min-h-[90svh] flex-col items-center px-gutter pt-28 text-center text-shell">
+    <section className="relative isolate flex min-h-[90vh] flex-col items-center px-gutter pt-28 text-center text-shell">
       <div className="absolute inset-0 -z-10">
         <Photo k={image} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-harbor-deep/45 via-harbor-deep/10 to-harbor-deep/30" />
