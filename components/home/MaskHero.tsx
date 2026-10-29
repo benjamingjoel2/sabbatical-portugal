@@ -103,15 +103,15 @@ export function MaskHero() {
     return () => window.removeEventListener('resize', set);
   }, []);
   // The silhouette grows while the hero copy scrolls away (first half of the section).
-  const maskH = useTransform(p, [0, 0.1, 0.45], [baseH, baseH, 900]);
+  const maskH = useTransform(p, [0, 0.06, 0.3], [baseH, baseH, 900]);
   const maskSize = useMotionTemplate`auto ${maskH}vh`;
-  const imgScale = useTransform(p, [0, 0.45], [1.2, 1]);
+  const imgScale = useTransform(p, [0, 0.3], [1.2, 1]);
   // Once the silhouette is big, an unmasked full-bleed copy fades in so no edge of the shape is ever visible.
-  const fullOpacity = useTransform(p, [0.3, 0.42], [0, 1]);
+  const fullOpacity = useTransform(p, [0.14, 0.24], [0, 1]);
   // Second photo layer (golden-hour harbor) and shade arrive with the intro copy.
-  const roofClip = useTransform(p, [0.45, 0.75], [100, 0]);
+  const roofClip = useTransform(p, [0.28, 0.5], [100, 0]);
   const roofClipPath = useMotionTemplate`inset(${roofClip}% 0 0 0)`;
-  const shade = useTransform(p, [0.35, 0.6], [0, 0.5]);
+  const shade = useTransform(p, [0.22, 0.45], [0, 0.45]);
   // Hero copy fades out quickly as it scrolls away, before the silhouette grows under it.
   const heroOpacity = useTransform(p, [0, 0.12], [1, 0]);
 
@@ -186,8 +186,12 @@ export function MaskHero() {
           </div>
         </motion.div>
         <div className="h-[80vh]" />
-        <div id="intro" className="flex min-h-screen items-end px-gutter pb-[18vh]">
-          <IntroCopy />
+        <div id="intro" className="relative flex min-h-screen items-end px-gutter pb-[14vh]">
+          {/* Guaranteed contrast for the intro copy, whatever the scroll-linked layers are doing */}
+          <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-harbor-deep/90 via-harbor-deep/50 to-transparent" />
+          <div className="relative w-full">
+            <IntroCopy />
+          </div>
         </div>
       </div>
 

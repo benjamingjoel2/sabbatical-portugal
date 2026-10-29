@@ -29,10 +29,10 @@ export function MapTransition() {
                 onMouseLeave={() => setHover(null)}
                 onFocus={() => setHover(d.slug)}
                 onBlur={() => setHover(null)}
-                className={`inline-flex items-start gap-1 transition-colors ${hover && hover !== d.slug ? 'text-harbor/30' : 'hover:text-terracotta'}`}
+                className={`transition-colors ${hover && hover !== d.slug ? 'text-harbor/30' : 'hover:text-terracotta'}`}
               >
                 {d.shortName}
-                <sup className="mt-[0.35em] text-[0.35em] font-medium tracking-normal">{String(i + 1).padStart(2, '0')}</sup>
+                <sup className="ml-1 text-[0.4em] font-medium tracking-normal">{String(i + 1).padStart(2, '0')}</sup>
               </Link>
             </li>
           ))}
