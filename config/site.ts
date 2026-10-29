@@ -9,11 +9,11 @@ export const site = {
   promise: 'A season in Portugal, planned end to end by one dedicated specialist.',
   description:
     'Porto Season plans one to twelve months of living, working and slowing down anywhere in Portugal: Lisbon, Porto, the coast, the Alentejo, the Douro, Madeira and the Azores. Home, workspace, visa guidance and community, handled by one specialist.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://porto-season.vercel.app',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portoseason.tourground.com',
   locale: 'en',
 
   contact: {
-    email: '[EMAIL]@portoseason.com',
+    email: 'hello@portoseason.tourground.com',
     phone: '+351 [PHONE NUMBER]',
     phoneHref: 'tel:+351000000000',
     /** Digits only, international format, no "+". Used for wa.me links. */

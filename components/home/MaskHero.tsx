@@ -9,7 +9,6 @@ import { Photo } from '@/components/shared/Photo';
 const heroSrc = '/images/hero-lisbon-rooftops.webp';
 const heroAlt = 'Terracotta rooftops of Lisbon stepping down to the Tagus, with a white church tower';
 import { Pill, PillButton } from '@/components/shared/Buttons';
-import { getLenis } from '@/components/motion/SmoothScroll';
 import { GridLines } from '@/components/shared/GridLines';
 import { RotatingWord } from '@/components/motion/RotatingWord';
 import { ShoreEdge } from '@/components/svg/ShoreEdge';
@@ -35,9 +34,7 @@ function DiscoverButton() {
   const onClick = () => {
     const el = document.getElementById('intro');
     const target = el ? el.getBoundingClientRect().top + window.scrollY : window.innerHeight;
-    const lenis = getLenis();
-    if (lenis) lenis.scrollTo(target, { duration: 2.2 });
-    else window.scrollTo({ top: target, behavior: 'smooth' });
+    window.scrollTo({ top: target, behavior: 'smooth' });
   };
   return (
     <PillButton type="button" tone="outline" onClick={onClick}>

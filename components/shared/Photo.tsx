@@ -18,12 +18,12 @@ export function Photo({
   const img = images[k];
   return (
     <Image
-      src={unsplash(k, 2000)}
+      src={unsplash(k)}
       alt={alt ?? img.alt}
       fill
       sizes={sizes}
       priority={priority}
-      className={`object-cover ${className}`}
+      className={`bg-limestone object-cover ${className}`}
     />
   );
 }

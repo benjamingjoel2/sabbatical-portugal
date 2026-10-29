@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 import { SeasonPlanner } from './SeasonPlanner';
-import { getLenis } from '@/components/motion/SmoothScroll';
 import { ease } from '@/config/theme';
 
 export function PlannerModal() {
@@ -13,8 +12,6 @@ export function PlannerModal() {
   const close = () => router.back();
 
   useEffect(() => {
-    const lenis = getLenis();
-    lenis?.stop();
     document.documentElement.style.overflow = 'hidden';
     const prev = document.activeElement as HTMLElement | null;
     ref.current?.focus();
@@ -24,14 +21,13 @@ export function PlannerModal() {
     window.addEventListener('keydown', onKey);
     return () => {
       window.removeEventListener('keydown', onKey);
-      lenis?.start();
       document.documentElement.style.overflow = '';
       prev?.focus?.();
     };
   }, [router]);
 
   return (
-    <div className="fixed inset-0 z-[70] overflow-y-auto" data-lenis-prevent>
+    <div className="fixed inset-0 z-[70] overflow-y-auto">
       <motion.div
         className="fixed inset-0 bg-harbor-deep/60 backdrop-blur-md"
         initial={{ opacity: 0 }}

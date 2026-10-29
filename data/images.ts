@@ -85,7 +85,7 @@ export const images = {
 
 export type ImageKey = keyof typeof images;
 
-export function unsplash(key: ImageKey | Img, w = 1600, q = 75): string {
+export function unsplash(key: ImageKey | Img, w = 1600, q = 68): string {
   const i = typeof key === 'string' ? images[key] : key;
   return `https://images.unsplash.com/photo-${i.id}?auto=format&fit=crop&w=${w}&q=${q}`;
 }

@@ -9,7 +9,6 @@ import { Header } from '@/components/layout/Header';
 import { MegaMenu } from '@/components/layout/MegaMenu';
 import { Footer } from '@/components/layout/Footer';
 import { WhatsAppFab } from '@/components/layout/WhatsAppFab';
-import { SmoothScroll } from '@/components/motion/SmoothScroll';
 
 const gilda = Gilda_Display({ subsets: ['latin', 'latin-ext'], weight: '400', variable: '--font-gilda', display: 'swap' });
 const hanken = Hanken_Grotesk({
@@ -48,12 +47,15 @@ export default function RootLayout({ children, modal }: { children: React.ReactN
   };
   return (
     <html lang="en" className={`${gilda.variable} ${hanken.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+      </head>
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
         <CurrencyProvider>
           <SoundProvider>
             <UIProvider>
-              <SmoothScroll />
               <Header />
               <MegaMenu />
               <main id="main">{children}</main>

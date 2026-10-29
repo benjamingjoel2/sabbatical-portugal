@@ -13,7 +13,6 @@ import { categories } from '@/data/categories';
 import { plans } from '@/data/plans';
 import { site } from '@/config/site';
 import type { ImageKey } from '@/data/images';
-import { getLenis } from '@/components/motion/SmoothScroll';
 import { ease } from '@/config/theme';
 
 interface Group {
@@ -78,13 +77,10 @@ export function MegaMenu() {
   useEffect(() => setMenuOpen(false), [pathname, setMenuOpen]);
 
   useEffect(() => {
-    const lenis = getLenis();
     if (menuOpen) {
-      lenis?.stop();
       document.documentElement.style.overflow = 'hidden';
       setTimeout(() => panel.current?.querySelector<HTMLElement>('a')?.focus(), 50);
     } else {
-      lenis?.start();
       document.documentElement.style.overflow = '';
     }
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setMenuOpen(false);

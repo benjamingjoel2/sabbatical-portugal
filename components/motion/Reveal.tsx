@@ -6,7 +6,7 @@ import { ease } from '@/config/theme';
 export function Reveal({
   children,
   delay = 0,
-  y = 28,
+  y = 16,
   className,
   as = 'div',
 }: {
@@ -23,8 +23,8 @@ export function Reveal({
       className={className}
       initial={reduce ? false : { opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '0px 0px -10% 0px' }}
-      transition={{ duration: 1, ease, delay }}
+      viewport={{ once: true, margin: '0px 0px -5% 0px' }}
+      transition={{ duration: 0.55, ease, delay: Math.min(delay, 0.15) }}
     >
       {children}
     </Comp>
@@ -58,7 +58,7 @@ export function RevealLines({
             initial={reduce ? false : { y: '105%' }}
             whileInView={{ y: '0%' }}
             viewport={{ once: true, margin: '0px 0px -8% 0px' }}
-            transition={{ duration: 1.1, ease, delay: delay + i * 0.08 }}
+            transition={{ duration: 0.6, ease, delay: delay + i * 0.05 }}
           >
             {l}
           </motion.span>
