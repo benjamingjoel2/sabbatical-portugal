@@ -28,6 +28,7 @@ export function CostSnapshot({ d }: { d: Destination }) {
         {items.map((it) => (
           <li key={it.label} className="border-t border-harbor/20 pt-5">
             <p className="font-display font-semibold text-[clamp(2.25rem,1.6rem+2vw,3.5rem)] leading-none">
+              <span className="mr-[0.2em] align-middle text-[0.35em] font-normal">From</span>
               <Price eur={it.eur} />
             </p>
             <p className="mt-4 text-[1rem]">{it.label}</p>
@@ -37,7 +38,7 @@ export function CostSnapshot({ d }: { d: Destination }) {
       </ul>
       <div className="mt-14 flex flex-wrap items-baseline gap-x-10 gap-y-4 border-t border-harbor/20 pt-6 text-[0.9375rem]">
         <p className="flex items-center gap-2">
-          <CompassStar size={10} className="text-terracotta" /> Typical all-in budget from <Price eur={d.monthlyBudgetFrom} className="font-medium" /> / month
+          <CompassStar size={10} className="text-terracotta" /> Typical all-in budget: From <Price eur={d.monthlyBudgetFrom} className="font-medium" /> / month
         </p>
         <p className="flex items-center gap-2">
           <CompassStar size={10} className="text-terracotta" /> Home internet around <Counter value={d.internet.typicalMbps} /> Mbps

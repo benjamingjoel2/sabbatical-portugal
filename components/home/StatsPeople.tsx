@@ -1,9 +1,6 @@
 import { stats } from '@/data/stats';
-import { people } from '@/data/people';
 import { Counter } from '@/components/motion/Counter';
-import { Marquee } from '@/components/motion/Marquee';
 import { PlaceholderFlag } from '@/components/shared/PlaceholderFlag';
-import { Reveal } from '@/components/motion/Reveal';
 
 export function StatsRow({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
   return (
@@ -25,34 +22,10 @@ export function StatsRow({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
     </ul>
   );
 }
-export function PeopleMarquee({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
-  const half = Math.ceil(people.length / 2);
-  const rows = [people.slice(0, half), people.slice(half)];
-  return (
-    <div className={tone === 'light' ? 'text-shell' : 'text-harbor'}>
-      {rows.map((row, r) => (
-        <Marquee key={r} duration={48 + r * 10} reverse={r === 1} className="py-2.5" label={r === 0 ? 'Our people in Portugal' : undefined}>
-          {row.map((p) => (
-            <span key={p.slug} className="flex items-baseline whitespace-nowrap pr-6">
-              <span className="text-[clamp(1rem,0.8rem+0.6vw,1.25rem)] uppercase tracking-[0.02em]">{p.name}</span>
-              <span className="ml-1.5 text-[0.75rem] opacity-70">
-                ({p.role}, {p.town})
-              </span>
-              <span aria-hidden className="ml-6 opacity-50">
-                —
-              </span>
-            </span>
-          ))}
-        </Marquee>
-      ))}
-    </div>
-  );
-}
-
-/** Kultiveret light-blue band: figures, then the "selected partners" marquee as "Our people in Portugal". */
+/** Kultiveret light-blue band: figures. */
 export function StatsPeople() {
   return (
-    <section className="bg-azulejo-mist pb-8 pt-20 text-harbor md:pt-28" aria-labelledby="stats-title">
+    <section className="bg-azulejo-mist pb-20 pt-20 text-harbor md:pb-28 md:pt-28" aria-labelledby="stats-title">
       <div className="px-gutter">
         <div className="mb-14 grid gap-6 md:grid-cols-2 md:items-end">
           <h2 id="stats-title" className="tight-display text-mega">
@@ -63,12 +36,6 @@ export function StatsPeople() {
           </p>
         </div>
         <StatsRow />
-      </div>
-      <Reveal className="mt-24 px-gutter">
-        <p className="eyebrow text-harbor/60">Our people in Portugal · placeholder names</p>
-      </Reveal>
-      <div className="mt-3">
-        <PeopleMarquee />
       </div>
     </section>
   );

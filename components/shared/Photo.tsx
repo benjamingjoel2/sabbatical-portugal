@@ -6,12 +6,15 @@ export function Photo({
   k,
   sizes = '100vw',
   priority = false,
+  eager = false,
   className = '',
   alt,
 }: {
   k: ImageKey;
   sizes?: string;
   priority?: boolean;
+  /** Load straight away but without a preload (for images that are needed soon but are not the LCP). */
+  eager?: boolean;
   className?: string;
   alt?: string;
 }) {
@@ -23,6 +26,7 @@ export function Photo({
       fill
       sizes={sizes}
       priority={priority}
+      loading={priority ? undefined : eager ? 'eager' : undefined}
       className={`bg-limestone object-cover ${className}`}
     />
   );

@@ -90,7 +90,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
               </p>
             </div>
             <p className="text-[0.875rem]">
-              Typical budget from <Price eur={d.monthlyBudgetFrom} className="font-medium" /> per month, all in.
+              Typical all-in budget: From <Price eur={d.monthlyBudgetFrom} className="font-medium" /> per month.
             </p>
           </Reveal>
         </div>

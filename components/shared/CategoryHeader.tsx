@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m as motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { categories } from '@/data/categories';
 import type { Category } from '@/data/types';

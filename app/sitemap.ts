@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/plan-my-season',
     '/privacy',
     '/terms',
+    '/cookies',
     ...destinations.map((d) => `/destinations/${d.slug}`),
     ...plans.map((p) => `/plans/${p.slug}`),
     ...homes.map((h) => `/homes/${h.slug}`),

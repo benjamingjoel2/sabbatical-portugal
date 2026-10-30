@@ -130,27 +130,6 @@ export interface Category {
   experiences: Experience[];
 }
 
-export interface Person {
-  slug: string;
-  /** PLACEHOLDER name */
-  name: string;
-  role: string;
-  town: string;
-  bio: string;
-  image: ImageKey;
-  placeholder: true;
-}
-
-export interface Testimonial {
-  name: string;
-  from: string;
-  stay: string;
-  title: string;
-  quote: string;
-  image: ImageKey;
-  placeholder: true;
-}
-
 export const faqTabs = [
   { slug: 'your-stay', label: 'Your stay' },
   { slug: 'payment-booking', label: 'Payment & booking' },

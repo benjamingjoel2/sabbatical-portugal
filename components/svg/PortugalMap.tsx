@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { motion, useReducedMotion } from 'framer-motion';
+import { m as motion, useReducedMotion } from 'framer-motion';
 import { AZORES, AZORES_VIEW, GEO_PINS, MADEIRA, MADEIRA_VIEW, MAINLAND_VIEW, PORTUGAL_MAINLAND, SPAIN } from './portugalGeo';
 import { destinations } from '@/data/destinations';
 

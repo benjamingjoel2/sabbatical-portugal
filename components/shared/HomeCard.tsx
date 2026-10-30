@@ -22,7 +22,7 @@ export function HomeCard({ home }: { home: Home }) {
           </p>
         </div>
         <p className="shrink-0 text-right text-[0.8125rem]">
-          <Price eur={home.perMonth} className="font-medium" />
+          From <Price eur={home.perMonth} className="font-medium" />
           <span className="block text-harbor/60">per month</span>
         </p>
       </div>

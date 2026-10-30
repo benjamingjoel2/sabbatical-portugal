@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m as motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { useUI } from './UIProvider';
 import { Photo } from '@/components/shared/Photo';
@@ -125,18 +125,6 @@ export function MegaMenu() {
                   </div>
                 </motion.div>
               </AnimatePresence>
-              <div className="absolute bottom-0 left-0 flex gap-12 text-[0.875rem]">
-                {site.channels.whatsapp && (
-                  <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
-                    WhatsApp
-                  </a>
-                )}
-                {site.channels.instagram && (
-                  <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
-                    Instagram
-                  </a>
-                )}
-              </div>
             </div>
 
             {/* Links column */}
@@ -170,26 +158,11 @@ export function MegaMenu() {
                 <a href={`mailto:${site.contact.email}`} className="text-statement block break-all hover:text-terracotta">
                   {site.contact.email}
                 </a>
-                {site.channels.phone && (
-                  <a href={site.contact.phoneHref} className="text-statement block hover:text-terracotta">
-                    {site.contact.phone}
-                  </a>
-                )}
                 <ArrowLink href="/plan-my-season" large>
                   plan my season
                 </ArrowLink>
                 <div className="mt-6 flex items-center gap-6 md:hidden">
                   <CurrencySwitcher id="currency-menu" />
-                  {site.channels.whatsapp && (
-                    <a href={site.contact.whatsappHref} className="text-sm">
-                      WhatsApp
-                    </a>
-                  )}
-                  {site.channels.instagram && (
-                    <a href={site.contact.instagram} className="text-sm">
-                      Instagram
-                    </a>
-                  )}
                 </div>
               </div>
             </div>

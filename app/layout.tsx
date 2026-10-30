@@ -8,7 +8,6 @@ import { UIProvider } from '@/components/layout/UIProvider';
 import { Header } from '@/components/layout/Header';
 import { MegaMenu } from '@/components/layout/MegaMenu';
 import { Footer } from '@/components/layout/Footer';
-import { WhatsAppFab } from '@/components/layout/WhatsAppFab';
 
 const gilda = Gilda_Display({ subsets: ['latin', 'latin-ext'], weight: '400', variable: '--font-gilda', display: 'swap' });
 const hanken = Hanken_Grotesk({
@@ -43,7 +42,7 @@ export default function RootLayout({ children, modal }: { children: React.ReactN
     url: site.url,
     email: site.contact.email,
     areaServed: { '@type': 'Country', name: 'Portugal' },
-    address: { '@type': 'PostalAddress', addressLocality: 'Lisbon', addressCountry: 'PT' },
+    address: { '@type': 'PostalAddress', ...site.location.postalAddress },
   };
   return (
     <html lang="en" className={`${gilda.variable} ${hanken.variable}`}>
@@ -60,7 +59,6 @@ export default function RootLayout({ children, modal }: { children: React.ReactN
               <MegaMenu />
               <main id="main">{children}</main>
               <Footer />
-              {site.channels.whatsapp && <WhatsAppFab />}
               {modal}
             </UIProvider>
           </SoundProvider>

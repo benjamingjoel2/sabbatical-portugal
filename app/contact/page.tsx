@@ -36,27 +36,7 @@ export default function ContactPage() {
           <a href={`mailto:${site.contact.email}`} className="block break-all hover:text-terracotta">
             {site.contact.email}
           </a>
-          {site.channels.phone && (
-            <a href={site.contact.phoneHref} className="block hover:text-terracotta">
-              {site.contact.phone}
-            </a>
-          )}
         </div>
-        {(site.channels.whatsapp || site.channels.instagram) && (
-          <div>
-            <p className="eyebrow mb-3 text-harbor/55">Chat</p>
-            {site.channels.whatsapp && (
-              <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="block hover:text-terracotta">
-                WhatsApp
-              </a>
-            )}
-            {site.channels.instagram && (
-              <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="block hover:text-terracotta">
-                Instagram {site.contact.instagramHandle}
-              </a>
-            )}
-          </div>
-        )}
         <div>
           <p className="eyebrow mb-3 text-harbor/55">Office hours · Lisbon time</p>
           <ul>
