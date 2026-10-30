@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { motion, useReducedMotion, useScroll, useTransform, type MotionValue } from 'framer-motion';
+import { m as motion, useReducedMotion, useScroll, useTransform, type MotionValue } from 'framer-motion';
 import { useRef } from 'react';
 import { categories } from '@/data/categories';
 import type { Category } from '@/data/types';

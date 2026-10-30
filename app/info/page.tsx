@@ -64,7 +64,7 @@ export default function InfoPage() {
               <tr className="eyebrow border-b border-harbor/30 text-harbor/60">
                 <th scope="col" className="py-3 font-normal">Plan</th>
                 <th scope="col" className="py-3 font-normal">Length</th>
-                <th scope="col" className="py-3 text-right font-normal">From / month</th>
+                <th scope="col" className="py-3 text-right font-normal">Price / month</th>
               </tr>
             </thead>
             <tbody>
@@ -77,7 +77,7 @@ export default function InfoPage() {
                   </th>
                   <td className="py-4 text-harbor/70">{p.duration}</td>
                   <td className="py-4 text-right">
-                    <Price eur={p.fromPerMonth} />
+                    From <Price eur={p.fromPerMonth} />
                   </td>
                 </tr>
               ))}

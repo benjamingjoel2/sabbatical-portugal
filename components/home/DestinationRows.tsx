@@ -37,7 +37,7 @@ export function DestinationRowList({ list = destinations }: { list?: Destination
                   </span>
                 </span>
                 <span className="text-[0.8125rem] md:text-right">
-                  <span className="text-harbor/60">from </span>
+                  <span className="text-harbor/60">From </span>
                   <Price eur={d.monthlyBudgetFrom} className="font-medium" />
                   <span className="text-harbor/60"> / mo</span>
                 </span>

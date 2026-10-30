@@ -26,6 +26,6 @@ export const secondaryNav: NavItem[] = [
 
 export const legalNav: NavItem[] = [
   { label: 'Privacy Policy', href: '/privacy' },
-  { label: 'Cookie Policy', href: '/privacy#cookies' },
-  { label: 'Terms of Use', href: '/terms' },
+  { label: 'Booking Terms', href: '/terms' },
+  { label: 'Cookie Policy', href: '/cookies' },
 ];

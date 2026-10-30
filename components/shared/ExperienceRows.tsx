@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m as motion } from 'framer-motion';
 import { useState } from 'react';
 import type { Experience } from '@/data/types';
 import { plans } from '@/data/plans';

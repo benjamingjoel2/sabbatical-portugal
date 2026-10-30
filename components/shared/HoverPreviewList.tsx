@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion, useMotionValue, useSpring } from 'framer-motion';
+import { AnimatePresence, m as motion, useMotionValue, useSpring } from 'framer-motion';
 import { useRef, useState } from 'react';
 import type { ImageKey } from '@/data/images';
 import { Photo } from './Photo';

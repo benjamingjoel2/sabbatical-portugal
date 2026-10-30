@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 import { SeasonPlanner } from './SeasonPlanner';

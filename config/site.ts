@@ -1,5 +1,5 @@
 /**
- * Brand, contact and company details. Everything in [BRACKETS] is a placeholder
+ * Brand, contact and business details. Anything in [BRACKETS] is a placeholder
  * to be replaced before launch.
  */
 export const site = {
@@ -12,24 +12,22 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portoseason.tourground.com',
   locale: 'en',
 
-  /** Contact channels shown on the site. Email only for now; switch these on when ready. */
-  channels: { phone: false, whatsapp: false, instagram: false },
-
   contact: {
     email: 'portoseason@tourground.com',
-    phone: '+351 [PHONE NUMBER]',
-    phoneHref: 'tel:+351000000000',
-    /** Digits only, international format, no "+". Used for wa.me links. */
-    whatsappNumber: '[NUMBER]',
-    whatsappHref: 'https://wa.me/[NUMBER]',
-    instagram: 'https://www.instagram.com/[HANDLE]',
-    instagramHandle: '@[HANDLE]',
   },
 
+  /** Business address: Second Home Lisboa (premium coworking, owner-approved arrangement). */
   location: {
     city: 'Lisbon, Portugal',
     timeZone: 'Europe/Lisbon',
-    address: '[STREET ADDRESS], [POSTCODE] Lisboa, Portugal',
+    address: 'Second Home Lisboa, Mercado da Ribeira, Avenida 24 de Julho 50, 1200-479 Lisboa, Portugal',
+    addressLines: ['Second Home Lisboa', 'Mercado da Ribeira', 'Avenida 24 de Julho 50', '1200-479 Lisboa, Portugal'],
+    postalAddress: {
+      streetAddress: 'Mercado da Ribeira, Avenida 24 de Julho 50',
+      postalCode: '1200-479',
+      addressLocality: 'Lisboa',
+      addressCountry: 'PT',
+    },
   },
 
   /** Office hours, always in Lisbon time. */
@@ -39,12 +37,6 @@ export const site = {
     { days: 'Sunday', hours: 'Closed' },
   ],
   officeHoursNote: 'All times are Lisbon time (WET/WEST).',
-
-  company: {
-    legalName: '[COMPANY NAME]',
-    registration: 'NIPC [COMPANY REGISTRATION NUMBER]',
-    travelLicence: 'RNAVT [RNAVT NUMBER]',
-  },
 
   /** Partner immigration lawyers. Placeholder until an agreement is signed. */
   visaPartner: '[PARTNER NAME]',

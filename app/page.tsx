@@ -6,7 +6,6 @@ import { StepsZigzag } from '@/components/home/StepsZigzag';
 import { CategoryScatter } from '@/components/home/CategoryScatter';
 import { DestinationRows } from '@/components/home/DestinationRows';
 import { StatsPeople } from '@/components/home/StatsPeople';
-import { TestimonialSlider } from '@/components/home/TestimonialSlider';
 import { DocumentsTrust } from '@/components/home/DocumentsTrust';
 import { BeginForm } from '@/components/home/BeginForm';
 import { site } from '@/config/site';
@@ -33,7 +32,6 @@ export default function HomePage() {
       <CategoryScatter />
       <DestinationRows />
       <StatsPeople />
-      <TestimonialSlider />
       <DocumentsTrust />
       <BeginForm />
     </>

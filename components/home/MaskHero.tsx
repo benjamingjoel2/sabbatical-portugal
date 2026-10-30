@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useMotionTemplate, useReducedMotion, useScroll, useTransform } from 'framer-motion';
+import { m as motion, useMotionTemplate, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { PORTUGAL_PATH, PORTUGAL_VIEWBOX } from '@/components/svg/paths';
 import Image from 'next/image';
@@ -170,7 +170,7 @@ export function MaskHero() {
           <Image src={heroSrc} alt="" fill sizes="100vw" className="object-cover" />
         </motion.div>
         <motion.div className="absolute inset-0" style={{ clipPath: roofClipPath, WebkitClipPath: roofClipPath }}>
-          <Photo k="portoGoldenHour" sizes="100vw" priority />
+          <Photo k="portoGoldenHour" sizes="100vw" eager />
         </motion.div>
         <motion.div className="absolute inset-0 bg-harbor-deep" style={{ opacity: shade }} />
       </div>
