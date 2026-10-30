@@ -103,11 +103,11 @@ export function MaskHero() {
     return () => window.removeEventListener('resize', set);
   }, []);
   // The silhouette grows while the hero copy scrolls away (first half of the section).
-  const maskH = useTransform(p, [0, 0.05, 0.22], [baseH, baseH, 900]);
+  const maskH = useTransform(p, [0, 0.05, 0.22], [baseH, baseH, 1600]);
   const maskSize = useMotionTemplate`auto ${maskH}vh`;
   const imgScale = useTransform(p, [0, 0.22], [1.2, 1]);
   // Once the silhouette is big, an unmasked full-bleed copy fades in so no edge of the shape is ever visible.
-  const fullOpacity = useTransform(p, [0.1, 0.15], [0, 1]);
+  const fullOpacity = useTransform(p, [0.17, 0.2], [0, 1]);
   // Second photo layer (golden-hour harbor) and shade arrive with the intro copy.
   const roofClip = useTransform(p, [0.28, 0.5], [100, 0]);
   const roofClipPath = useMotionTemplate`inset(${roofClip}% 0 0 0)`;
@@ -170,7 +170,7 @@ export function MaskHero() {
           <Image src={heroSrc} alt="" fill sizes="100vw" className="object-cover" />
         </motion.div>
         <motion.div className="absolute inset-0" style={{ clipPath: roofClipPath, WebkitClipPath: roofClipPath }}>
-          <Photo k="portoGoldenHour" sizes="100vw" />
+          <Photo k="portoGoldenHour" sizes="100vw" priority />
         </motion.div>
         <motion.div className="absolute inset-0 bg-harbor-deep" style={{ opacity: shade }} />
       </div>
