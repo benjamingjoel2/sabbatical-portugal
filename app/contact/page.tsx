@@ -6,7 +6,7 @@ import { pageMeta } from '@/lib/seo';
 
 export const metadata: Metadata = pageMeta({
   title: 'Contact',
-  description: `Talk to a Porto Season specialist. Office hours in Lisbon time, WhatsApp, email and phone. ${site.tagline}`,
+  description: `Talk to a Porto Season specialist by email. Office hours in Lisbon time. ${site.tagline}`,
   path: '/contact',
 });
 
@@ -23,32 +23,40 @@ export default function ContactPage() {
           <div className="text-shell">
             <h1 className="tight-display text-mega">Let’s plan your season</h1>
             <p className="mt-6 max-w-sm text-[1.0625rem] font-light leading-relaxed text-shell/90">
-              Write to us, call, or message on WhatsApp. Your specialist replies within one working day, Lisbon time.
+              Use the form or email us. Your specialist replies within one working day, Lisbon time.
             </p>
           </div>
           <ContactForm />
         </div>
       </section>
 
-      <section className="grid gap-10 bg-shell px-gutter py-16 md:grid-cols-4" aria-label="Contact details">
+      <section className="grid gap-10 bg-shell px-gutter py-16 md:grid-cols-3" aria-label="Contact details">
         <div>
-          <p className="eyebrow mb-3 text-harbor/55">Email & phone</p>
+          <p className="eyebrow mb-3 text-harbor/55">Email</p>
           <a href={`mailto:${site.contact.email}`} className="block break-all hover:text-terracotta">
             {site.contact.email}
           </a>
-          <a href={site.contact.phoneHref} className="block hover:text-terracotta">
-            {site.contact.phone}
-          </a>
+          {site.channels.phone && (
+            <a href={site.contact.phoneHref} className="block hover:text-terracotta">
+              {site.contact.phone}
+            </a>
+          )}
         </div>
-        <div>
-          <p className="eyebrow mb-3 text-harbor/55">Chat</p>
-          <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="block hover:text-terracotta">
-            WhatsApp
-          </a>
-          <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="block hover:text-terracotta">
-            Instagram {site.contact.instagramHandle}
-          </a>
-        </div>
+        {(site.channels.whatsapp || site.channels.instagram) && (
+          <div>
+            <p className="eyebrow mb-3 text-harbor/55">Chat</p>
+            {site.channels.whatsapp && (
+              <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="block hover:text-terracotta">
+                WhatsApp
+              </a>
+            )}
+            {site.channels.instagram && (
+              <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="block hover:text-terracotta">
+                Instagram {site.contact.instagramHandle}
+              </a>
+            )}
+          </div>
+        )}
         <div>
           <p className="eyebrow mb-3 text-harbor/55">Office hours · Lisbon time</p>
           <ul>

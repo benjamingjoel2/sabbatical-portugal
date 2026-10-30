@@ -69,8 +69,7 @@ export function ContactForm({ className = '' }: { className?: string }) {
         <div className="flex min-h-[24rem] flex-col justify-center gap-4 p-6 md:p-8" role="status">
           <p className="tight-display text-[2.25rem]">Thank you</p>
           <p className="max-w-md text-[0.9375rem] font-light leading-relaxed text-shell/85">
-            Your message is with us. Your specialist will reply within one working day (Lisbon time). If it’s urgent, message
-            us on WhatsApp.
+            Your message is with us. Your specialist will reply within one working day (Lisbon time).
           </p>
           <p className="tight-display text-[1.5rem]">{site.signOff}</p>
         </div>

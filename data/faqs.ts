@@ -17,7 +17,7 @@ export const faqs: Faq[] = [
     id: 'how-the-specialist-works',
     tab: 'your-stay',
     q: 'How does my specialist work with me?',
-    a: 'You have one dedicated specialist from your first call to the day you leave. They help you choose a destination and home, coordinate visa guidance and school visits where relevant, and stay in touch by WhatsApp, email or video call throughout your stay. Our local hosts take care of things on the ground, and your specialist makes sure nothing falls between the gaps.',
+    a: 'You have one dedicated specialist from your first call to the day you leave. They help you choose a destination and home, coordinate visa guidance and school visits where relevant, and stay in touch by email or video call throughout your stay. Our local hosts take care of things on the ground, and your specialist makes sure nothing falls between the gaps.',
   },
   {
     id: 'internet-and-coworking',
@@ -53,7 +53,7 @@ export const faqs: Faq[] = [
     id: 'what-if-something-goes-wrong',
     tab: 'your-stay',
     q: 'What happens if something goes wrong during my stay?',
-    a: 'Contact your specialist or local host on WhatsApp at any time. If the boiler breaks, we arrange a repair. If a home falls short of what we promised, we fix it or move you. For anything urgent at night or at weekends, there is an emergency line for guests in season. In a medical emergency, call 112 first, then let us know so we can help.',
+    a: 'Contact your specialist or local host at any time. If the boiler breaks, we arrange a repair. If a home falls short of what we promised, we fix it or move you. For anything urgent at night or at weekends, there is an emergency line for guests in season. In a medical emergency, call 112 first, then let us know so we can help.',
   },
 
   // Payment & booking

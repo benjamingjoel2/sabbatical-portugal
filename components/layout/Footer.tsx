@@ -23,20 +23,28 @@ export function Footer() {
             <a href={`mailto:${site.contact.email}`} className="text-statement block break-all transition-colors hover:text-terracotta">
               {site.contact.email}
             </a>
-            <a href={site.contact.phoneHref} className="text-statement block transition-colors hover:text-terracotta">
-              {site.contact.phone}
-            </a>
+            {site.channels.phone && (
+              <a href={site.contact.phoneHref} className="text-statement block transition-colors hover:text-terracotta">
+                {site.contact.phone}
+              </a>
+            )}
             <ArrowLink href="/plan-my-season" large>
               plan my season
             </ArrowLink>
-            <div className="mt-8 flex flex-wrap gap-x-12 gap-y-2 text-[0.9375rem]">
-              <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
-                WhatsApp
-              </a>
-              <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
-                Instagram
-              </a>
-            </div>
+            {(site.channels.whatsapp || site.channels.instagram) && (
+              <div className="mt-8 flex flex-wrap gap-x-12 gap-y-2 text-[0.9375rem]">
+                {site.channels.whatsapp && (
+                  <a href={site.contact.whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
+                    WhatsApp
+                  </a>
+                )}
+                {site.channels.instagram && (
+                  <a href={site.contact.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-terracotta">
+                    Instagram
+                  </a>
+                )}
+              </div>
+            )}
           </div>
           <div className="grid gap-8 text-[0.8125rem] sm:grid-cols-3">
             <nav aria-label="Footer">

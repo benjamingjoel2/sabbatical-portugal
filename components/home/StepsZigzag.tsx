@@ -27,7 +27,7 @@ export const homeSteps: Step[] = [
   },
   {
     title: 'Your season',
-    text: 'Community dinners, support on WhatsApp, and small problems solved before they grow.',
+    text: 'Community dinners, a specialist who answers quickly, and small problems solved before they grow.',
     image: 'communityDinner',
   },
 ];

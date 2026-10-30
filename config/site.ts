@@ -12,6 +12,9 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portoseason.tourground.com',
   locale: 'en',
 
+  /** Contact channels shown on the site. Email only for now; switch these on when ready. */
+  channels: { phone: false, whatsapp: false, instagram: false },
+
   contact: {
     email: 'portoseason@tourground.com',
     phone: '+351 [PHONE NUMBER]',
@@ -33,7 +36,7 @@ export const site = {
   officeHours: [
     { days: 'Monday to Friday', hours: '09:00 – 18:00' },
     { days: 'Saturday', hours: '10:00 – 13:00' },
-    { days: 'Sunday', hours: 'Closed (WhatsApp for guests in season)' },
+    { days: 'Sunday', hours: 'Closed' },
   ],
   officeHoursNote: 'All times are Lisbon time (WET/WEST).',
 

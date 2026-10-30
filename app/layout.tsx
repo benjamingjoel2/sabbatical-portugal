@@ -60,7 +60,7 @@ export default function RootLayout({ children, modal }: { children: React.ReactN
               <MegaMenu />
               <main id="main">{children}</main>
               <Footer />
-              <WhatsAppFab />
+              {site.channels.whatsapp && <WhatsAppFab />}
               {modal}
             </UIProvider>
           </SoundProvider>
