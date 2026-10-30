@@ -103,17 +103,18 @@ export function MaskHero() {
     return () => window.removeEventListener('resize', set);
   }, []);
   // The silhouette grows while the hero copy scrolls away (first half of the section).
-  const maskH = useTransform(p, [0, 0.06, 0.3], [baseH, baseH, 900]);
+  const maskH = useTransform(p, [0, 0.05, 0.22], [baseH, baseH, 900]);
   const maskSize = useMotionTemplate`auto ${maskH}vh`;
-  const imgScale = useTransform(p, [0, 0.3], [1.2, 1]);
+  const imgScale = useTransform(p, [0, 0.22], [1.2, 1]);
   // Once the silhouette is big, an unmasked full-bleed copy fades in so no edge of the shape is ever visible.
-  const fullOpacity = useTransform(p, [0.14, 0.24], [0, 1]);
+  const fullOpacity = useTransform(p, [0.1, 0.15], [0, 1]);
   // Second photo layer (golden-hour harbor) and shade arrive with the intro copy.
   const roofClip = useTransform(p, [0.28, 0.5], [100, 0]);
   const roofClipPath = useMotionTemplate`inset(${roofClip}% 0 0 0)`;
   const shade = useTransform(p, [0.22, 0.45], [0, 0.45]);
   // Hero copy fades out quickly as it scrolls away, before the silhouette grows under it.
-  const heroOpacity = useTransform(p, [0, 0.12], [1, 0]);
+  const heroOpacity = useTransform(p, [0, 0.04], [1, 0]);
+  const heroVisibility = useTransform(heroOpacity, (o) => (o < 0.02 ? 'hidden' : 'visible'));
 
   if (reduce) {
     return (
@@ -176,7 +177,7 @@ export function MaskHero() {
 
       {/* Text scrolls normally over the stage, so the two blocks can never overlap */}
       <div className="relative -mt-[100vh]">
-        <motion.div style={{ opacity: heroOpacity }} className="grid h-screen grid-rows-[auto_1fr_auto] px-gutter pb-8 pt-[calc(var(--header-h)+1.5rem)] supports-[height:100svh]:h-[100svh] lg:grid-cols-[minmax(0,1fr)_minmax(16rem,22vw)_minmax(0,1fr)] lg:grid-rows-1 lg:items-center lg:gap-10 lg:pb-0">
+        <motion.div style={{ opacity: heroOpacity, visibility: heroVisibility }} className="grid h-screen grid-rows-[auto_1fr_auto] px-gutter pb-8 pt-[calc(var(--header-h)+1.5rem)] supports-[height:100svh]:h-[100svh] lg:grid-cols-[minmax(0,1fr)_minmax(16rem,22vw)_minmax(0,1fr)] lg:grid-rows-1 lg:items-center lg:gap-10 lg:pb-0">
           <div className="lg:self-center">
             <HeroCopy />
           </div>
