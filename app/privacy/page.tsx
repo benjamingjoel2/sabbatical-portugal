@@ -14,7 +14,7 @@ export default function PrivacyPage() {
             <strong>Placeholder text.</strong> This policy must be reviewed by a qualified data protection adviser before launch.
           </p>
           <p>
-            {site.company.legalName} ({site.company.registration}) is the data controller for personal data collected through this
+            {site.name} is the data controller for personal data collected through this
             website and in planning your season. Contact: {site.contact.email}.
           </p>
           <h2>What we collect</h2>

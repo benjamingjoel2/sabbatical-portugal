@@ -14,7 +14,7 @@ export default function TermsPage() {
           finalised and reviewed by a lawyer.
         </p>
         <p>
-          This website is operated by {site.company.legalName}, {site.company.registration}, {site.company.travelLicence}.
+          This website is operated by {site.name}, based in {site.location.city}.
         </p>
         <h2>Information on this site</h2>
         <p>

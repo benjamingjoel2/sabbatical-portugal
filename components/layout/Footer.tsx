@@ -100,9 +100,9 @@ export function Footer() {
 
       <div className="grid gap-4 border-t border-line px-gutter py-4 text-[0.6875rem] uppercase leading-snug md:grid-cols-3">
         <p>
-          {site.company.legalName}
+          {site.name}
           <br />
-          {site.company.registration} · {site.company.travelLicence}
+          {site.location.city}
         </p>
         <p>
           {legalNav.map((n, i) => (
