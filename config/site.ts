@@ -13,7 +13,7 @@ export const site = {
   locale: 'en',
 
   contact: {
-    email: 'hello@portoseason.tourground.com',
+    email: 'portoseason@tourground.com',
     phone: '+351 [PHONE NUMBER]',
     phoneHref: 'tel:+351000000000',
     /** Digits only, international format, no "+". Used for wa.me links. */
