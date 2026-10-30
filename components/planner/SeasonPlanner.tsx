@@ -3,7 +3,6 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import {
-  contactMethodOptions,
   homeTypeOptions,
   incomeOptions,
   lengthOptions,
@@ -69,9 +68,6 @@ interface State {
   contact: {
     name: string;
     email: string;
-    phoneCountry: string;
-    phone: string;
-    methods: string[];
     notes: string;
     consent: boolean;
   };
@@ -82,7 +78,7 @@ const initial: State = {
   where: { vibes: [], destinations: [] },
   life: { remote: '', workspace: '', homeType: '', bedrooms: '1', mustHaves: [] },
   who: { adults: '1', children: [], nationality: '', nationalityDetail: '', income: '', budget: '' },
-  contact: { name: '', email: '', phoneCountry: '+44', phone: '', methods: [], notes: '', consent: false },
+  contact: { name: '', email: '', notes: '', consent: false },
 };
 
 const STORAGE_KEY = 'ps-season-planner-v1';
@@ -189,7 +185,6 @@ const L = {
     'visa-required': 'Needs a Schengen visa',
     unsure: 'Not sure',
   },
-  methods: { email: 'Email', whatsapp: 'WhatsApp', telephone: 'Telephone' },
 } as const;
 
 const vibeCards: Record<(typeof vibeOptions)[number], { label: string; image: ImageKey }> = {
@@ -311,7 +306,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
           </h2>
           <p className="text-[0.9375rem] leading-relaxed text-shell/85">
             Your season request is with us. Your specialist will be in touch within one working day (Lisbon time) by{' '}
-            {state.contact.methods.map((m) => L.methods[m as keyof typeof L.methods]).join(' or ')}.
+            email at {state.contact.email}.
           </p>
           <div className="border border-shell/20 p-5">
             <p className="eyebrow text-shell/60">Likely visa path · guidance only</p>
@@ -764,48 +759,6 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                   <ErrorText id="email-err" msg={err('email')} />
                 </div>
               </div>
-              <div className="grid grid-cols-[6rem_1fr] gap-4">
-                <div>
-                  <label htmlFor="phoneCountry" className={labelCls}>
-                    Code
-                  </label>
-                  <input
-                    id="phoneCountry"
-                    autoComplete="tel-country-code"
-                    value={state.contact.phoneCountry}
-                    onChange={(e) => update('contact', { phoneCountry: e.target.value })}
-                    placeholder="+44"
-                    className={inputCls}
-                    {...inv('phoneCountry')}
-                  />
-                  <ErrorText id="phoneCountry-err" msg={err('phoneCountry')} />
-                </div>
-                <div>
-                  <label htmlFor="phone" className={labelCls}>
-                    Phone
-                  </label>
-                  <input
-                    id="phone"
-                    type="tel"
-                    autoComplete="tel-national"
-                    value={state.contact.phone}
-                    onChange={(e) => update('contact', { phone: e.target.value })}
-                    className={inputCls}
-                    {...inv('phone')}
-                  />
-                  <ErrorText id="phone-err" msg={err('phone')} />
-                </div>
-              </div>
-              <Chips
-                name="methods"
-                legend="Preferred ways to reach you"
-                options={contactMethodOptions}
-                value={state.contact.methods}
-                onChange={(v) => update('contact', { methods: v as string[] })}
-                multiple
-                labels={L.methods}
-                error={err('methods')}
-              />
               <div>
                 <label htmlFor="notes" className={labelCls}>
                   Anything else? (optional)

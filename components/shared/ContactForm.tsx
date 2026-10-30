@@ -82,9 +82,6 @@ export function ContactForm({ className = '' }: { className?: string }) {
             {field('firstName', 'First name', { autoComplete: 'given-name', required: true })}
             {field('lastName', 'Last name', { autoComplete: 'family-name', required: true })}
             <div className="md:col-span-2">{field('email', 'Email address', { type: 'email', autoComplete: 'email', required: true })}</div>
-            <div className="md:col-span-2">
-              {field('phone', 'Phone (with country code)', { type: 'tel', autoComplete: 'tel', placeholder: '+44 7700 900000' })}
-            </div>
             <div className="field md:col-span-2">
               <label htmlFor="cf-message" className="eyebrow text-shell/70">
                 Message: where, when, who’s coming

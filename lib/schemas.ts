@@ -4,13 +4,6 @@ export const contactSchema = z.object({
   firstName: z.string().trim().min(1, 'Please add your first name').max(80),
   lastName: z.string().trim().min(1, 'Please add your last name').max(80),
   email: z.string().trim().email('Please check your email address'),
-  phone: z
-    .string()
-    .trim()
-    .max(30)
-    .regex(/^[+()\d\s.-]*$/, 'Use digits, spaces and an optional +country code')
-    .optional()
-    .or(z.literal('')),
   message: z.string().trim().min(10, 'Tell us a little about your season (10+ characters)').max(4000),
   /** Honeypot: must stay empty */
   company: z.string().max(0).optional().or(z.literal('')),
@@ -25,7 +18,6 @@ export const workspaceOptions = ['home-desk', 'coworking', 'both'] as const;
 export const homeTypeOptions = ['city-apartment', 'beach-house', 'quinta', 'island-home', 'no-preference'] as const;
 export const mustHaveOptions = ['sea-view', 'walkable', 'outdoor-space', 'pet-friendly'] as const;
 export const incomeOptions = ['remote-salary', 'freelance', 'passive', 'not-working'] as const;
-export const contactMethodOptions = ['email', 'whatsapp', 'telephone'] as const;
 export const nationalityGroups = ['eu-eea-swiss', 'visa-exempt', 'visa-required', 'unsure'] as const;
 
 const childSchema = z.object({
@@ -68,9 +60,6 @@ export const plannerSteps = {
   contact: z.object({
     name: z.string().trim().min(2, 'Please add your name').max(120),
     email: z.string().trim().email('Please check your email address'),
-    phoneCountry: z.string().trim().regex(/^\+\d{1,4}$/, 'Country code like +44'),
-    phone: z.string().trim().regex(/^[\d\s().-]{5,20}$/, 'Please check your phone number'),
-    methods: z.array(z.enum(contactMethodOptions)).min(1, 'Choose at least one way to reach you'),
     notes: z.string().trim().max(4000).optional().or(z.literal('')),
     consent: z.literal(true, { errorMap: () => ({ message: 'Please agree so we can contact you' }) }),
   }),
