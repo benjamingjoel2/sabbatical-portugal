@@ -1,3 +1,4 @@
+import { tp } from '@/lib/i18n/t';
 import Image from 'next/image';
 import { images, unsplash, type ImageKey } from '@/data/images';
 
@@ -22,7 +23,7 @@ export function Photo({
   return (
     <Image
       src={unsplash(k)}
-      alt={alt ?? img.alt}
+      alt={tp(alt ?? img.alt)}
       fill
       sizes={sizes}
       priority={priority}

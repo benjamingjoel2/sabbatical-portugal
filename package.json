@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "i18n:extract": "node scripts/i18n-extract.cjs"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",

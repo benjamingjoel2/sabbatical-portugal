@@ -1,7 +1,8 @@
 'use client';
 
+import { t } from '@/lib/i18n/t';
 import { m as motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/lib/i18n/navigation';
 import { useEffect, useRef } from 'react';
 import { SeasonPlanner } from './SeasonPlanner';
 import { ease } from '@/config/theme';
@@ -40,7 +41,7 @@ export function PlannerModal() {
         ref={ref}
         role="dialog"
         aria-modal="true"
-        aria-label="Plan my season"
+        aria-label={t("Plan my season")}
         tabIndex={-1}
         className="relative mx-auto my-6 w-[min(36rem,calc(100%-2rem))] outline-none md:my-12"
         initial={{ opacity: 0, y: 40 }}
@@ -52,7 +53,7 @@ export function PlannerModal() {
           onClick={close}
           className="nav-caps absolute right-3 top-3 z-10 flex h-8 items-center gap-2 bg-harbor px-3 text-shell hover:bg-terracotta"
         >
-          Close <span aria-hidden>×</span>
+          {t("Close ")}<span aria-hidden>×</span>
         </button>
         <SeasonPlanner onDone={close} compact />
       </motion.div>

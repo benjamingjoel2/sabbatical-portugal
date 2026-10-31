@@ -1,5 +1,6 @@
 'use client';
 
+import { tp } from '@/lib/i18n/t';
 import { AnimatePresence, m as motion, useMotionValue, useSpring } from 'framer-motion';
 import { useRef, useState } from 'react';
 import type { ImageKey } from '@/data/images';
@@ -41,7 +42,7 @@ export function HoverPreviewList({
 
   return (
     <div ref={ref} onMouseMove={onMove} className={`relative ${className}`}>
-      {children(bind)}
+      {tp(children(bind))}
       <motion.div
         aria-hidden
         className="pointer-events-none absolute left-0 top-0 z-20 hidden md:block"

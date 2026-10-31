@@ -1,0 +1,7898 @@
+[
+ {
+  "en": "About Porto Season",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "What “porto” means and how we plan a season anywhere in Portugal. {0}",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "Porto Season",
+  "files": [
+   "app/[locale]/about/page.tsx",
+   "components/layout/Logo.tsx",
+   "components/layout/MegaMenu.tsx",
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "— your harbor for",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "a season",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "a year",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "a summer",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "a school term",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "your harbor for",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "Porto Season plans long stays in Portugal: one to twelve months of living, working and slowing down in the country’s best towns, cities, coastlines and islands. We handle the hard parts so you can stay long enough to have a favorite café, a local market, and neighbors who know your name.",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "Most travel companies are built for a week. We’re built for a season. That changes everything: the home has to work on a Tuesday in February, the desk has to survive a long call, and someone has to know which pharmacy is open on Sunday.",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "One specialist plans your season end to end, from the first call to the day you leave, with partner lawyers for visas, vetted homes, workspaces, and a community waiting when you land.",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "We work across all of Portugal: not only Porto, but Lisbon, the coast, the Alentejo, the Douro, Madeira and the Azores.",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "Porto —",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "“port”, “harbor”",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "— the place you sail into, drop anchor, and stay a while.",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "It’s also the city that gave the country its name: the Roman harbor of Portus Cale became Portugal. We chose it because that’s what we want to be for you: a safe harbor in a new country, for a season or a year. Not just in Porto, but anywhere in Portugal you choose to drop anchor.",
+  "files": [
+   "app/[locale]/about/page.tsx"
+  ]
+ },
+ {
+  "en": "Contact",
+  "files": [
+   "app/[locale]/contact/page.tsx",
+   "components/layout/MegaMenu.tsx",
+   "data/legal.ts",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Talk to a Porto Season specialist by email. Office hours in Lisbon time. {0}",
+  "files": [
+   "app/[locale]/contact/page.tsx"
+  ]
+ },
+ {
+  "en": "Let’s plan your season",
+  "files": [
+   "app/[locale]/contact/page.tsx"
+  ]
+ },
+ {
+  "en": "Use the form or email us. Your specialist replies within one working day, Lisbon time.",
+  "files": [
+   "app/[locale]/contact/page.tsx"
+  ]
+ },
+ {
+  "en": "Contact details",
+  "files": [
+   "app/[locale]/contact/page.tsx"
+  ]
+ },
+ {
+  "en": "Email",
+  "files": [
+   "app/[locale]/contact/page.tsx",
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Office hours · Lisbon time",
+  "files": [
+   "app/[locale]/contact/page.tsx",
+   "components/layout/Footer.tsx"
+  ]
+ },
+ {
+  "en": "Find us",
+  "files": [
+   "app/[locale]/contact/page.tsx"
+  ]
+ },
+ {
+  "en": "Visits by appointment. We plan seasons all over Portugal.",
+  "files": [
+   "app/[locale]/contact/page.tsx"
+  ]
+ },
+ {
+  "en": "A season in {0}",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Plan my season here",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Who it’s for",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Best for",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx",
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Community",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx",
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Internet",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx",
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Around",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Mbps at home.",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Typical all-in budget: From",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx",
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "per month.",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Neighborhoods",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx",
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "we love",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Where we usually find homes in {0}, and why.",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Homes in",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "all homes",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "We source homes in",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "to order for each guest. Tell us what you need and your specialist will shortlist three or four vetted options.",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Good to know",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Next destination",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Your season",
+  "files": [
+   "app/[locale]/destinations/[slug]/page.tsx",
+   "components/home/StepsZigzag.tsx",
+   "components/shared/CtaHero.tsx"
+  ]
+ },
+ {
+  "en": "Destinations across Portugal",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "Twelve places for a long stay in Portugal: Lisbon, Porto, Cascais & Sintra, Ericeira, Comporta, the Algarve, Évora & the Alentejo, the Douro, Coimbra, Madeira and the Azores.",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "Destinations · all of Portugal",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "Twelve harbors for a season",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "Porto Season covers the whole country, not only the city of Porto. Cities with trams and tascas, surf towns, quiet countryside, wine valleys and two Atlantic archipelagos.",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "Budgets are typical monthly all-in costs for one person and are placeholders while we finalise partner prices. Switch currency in the header to see them in yours.",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "Not sure where yet?",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "That’s our job",
+  "files": [
+   "app/[locale]/destinations/page.tsx"
+  ]
+ },
+ {
+  "en": "Families: a school term or a year in Portugal",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Family seasons in Portugal with international school guidance, family-friendly towns, bigger homes and a specialist who has done it with children.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Curricula",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "International schools around Lisbon, Cascais, Porto, the Algarve and Madeira teach British, American, IB and other curricula.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Timing",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Places for popular year groups go early. We start school conversations as soon as your dates firm up.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Shorter stays",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Some schools accept term-length students; others suit a full year. We help you ask the right questions.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Portuguese schools",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Public schools are free and welcoming for residents, with Portuguese as the language of teaching.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Families",
+  "files": [
+   "app/[locale]/families/page.tsx",
+   "components/home/ServiceCards.tsx",
+   "components/layout/MegaMenu.tsx",
+   "data/destinations.ts",
+   "data/plans.ts",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "A season",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "they’ll remember",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "School-term and full-year stays in Portugal, with school guidance, homes with room to grow and towns where children can walk to the beach.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Plan a family season",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "School,",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "sorted early",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "We don’t name or rank schools on this site. Your specialist shares current options for your children’s ages and dates.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Family-friendly",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Walkable, safe, close to schools and to the sea.",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "From",
+  "files": [
+   "app/[locale]/families/page.tsx",
+   "app/[locale]/homes/[slug]/page.tsx",
+   "app/[locale]/info/page.tsx",
+   "app/[locale]/plans/[slug]/page.tsx",
+   "app/[locale]/plans/page.tsx",
+   "components/home/DestinationRows.tsx",
+   "components/shared/CostClimate.tsx",
+   "components/shared/ExperienceRows.tsx",
+   "components/shared/HomeCard.tsx"
+  ]
+ },
+ {
+  "en": "Families &",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Bring everyone",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "for a season",
+  "files": [
+   "app/[locale]/families/page.tsx"
+  ]
+ },
+ {
+  "en": "Bedrooms",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx",
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Studio",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx",
+   "components/planner/SeasonPlanner.tsx",
+   "components/shared/HomeCard.tsx"
+  ]
+ },
+ {
+  "en": "Bathrooms",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Sleeps",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "{0} Mbps",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Minimum stay",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "{0} month{1}",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Homes",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx",
+   "app/[locale]/homes/page.tsx",
+   "components/shared/HomesBrowser.tsx",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Placeholder home",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx",
+   "components/shared/HomeCard.tsx"
+  ]
+ },
+ {
+  "en": "Workspace",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "What you’ll love",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "per month for the home · placeholder price",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Area",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Request this home",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Homes are offered as part of a plan, with your specialist.",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "You might also like",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Make it",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "your home",
+  "files": [
+   "app/[locale]/homes/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Homes for a long stay in Portugal",
+  "files": [
+   "app/[locale]/homes/page.tsx"
+  ]
+ },
+ {
+  "en": "City apartments, beach houses, quintas and island homes, each visited and checked in person, with a real workspace and tested Wi-Fi.",
+  "files": [
+   "app/[locale]/homes/page.tsx"
+  ]
+ },
+ {
+  "en": "Homes we’d live in ourselves",
+  "files": [
+   "app/[locale]/homes/page.tsx"
+  ]
+ },
+ {
+  "en": "Every home is visited in person before a guest arrives: light, noise, beds, the desk, the Wi-Fi speed, and the walk to the nearest bakery.",
+  "files": [
+   "app/[locale]/homes/page.tsx"
+  ]
+ },
+ {
+  "en": "The homes below are placeholder examples while we finalise owner agreements. They show the kind of place we book.",
+  "files": [
+   "app/[locale]/homes/page.tsx"
+  ]
+ },
+ {
+  "en": "Tell us how you live",
+  "files": [
+   "app/[locale]/homes/page.tsx"
+  ]
+ },
+ {
+  "en": "we’ll find the home",
+  "files": [
+   "app/[locale]/homes/page.tsx"
+  ]
+ },
+ {
+  "en": "Booking info, pricing & FAQ",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "How Porto Season pricing works, how to book, deposits and cancellations, and answers about visas, families, homes, internet and life in Portugal.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Tell us about your season.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Use the season planner or simply write to us. Ten minutes is enough to start.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Talk to your specialist.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "A video call to understand how you live and work, and what you’re hoping for.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Receive your proposal.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Towns, two or three homes, the workspace, a sample month and a clear, itemised price.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Confirm and get ready.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "A deposit secures your home. We send your arrival guide, and begin visa and admin steps if needed.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "FAQPage",
+  "files": [
+   "app/[locale]/info/page.tsx",
+   "components/shared/FaqBlock.tsx"
+  ]
+ },
+ {
+  "en": "Question",
+  "files": [
+   "app/[locale]/info/page.tsx",
+   "components/shared/FaqBlock.tsx"
+  ]
+ },
+ {
+  "en": "Answer",
+  "files": [
+   "app/[locale]/info/page.tsx",
+   "components/shared/FaqBlock.tsx"
+  ]
+ },
+ {
+  "en": "Pricing and guidelines",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Every Porto Season plan is designed for you: the town, the home, the workspace and the pace. Prices are per month and include our planning, your specialist and everything listed in the plan.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Plans are priced for one or two guests sharing a home. Families and larger groups receive a tailored quote. Flights, daily living costs and optional experiences are not included unless stated.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Every season begins with a conversation. You’re welcome to",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "fill out the season planner",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "or write to us directly. We’ll reply within one working day, Lisbon time.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "All prices below are placeholders while partner agreements are finalised. Switch currency in the header to see your own.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Plan prices",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Plan",
+  "files": [
+   "app/[locale]/info/page.tsx",
+   "app/[locale]/plan-my-season/page.tsx"
+  ]
+ },
+ {
+  "en": "Length",
+  "files": [
+   "app/[locale]/info/page.tsx",
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Price / month",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Booking info & FAQs",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "How booking works",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "From first hello to your first morning coffee in Portugal.",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Step by step",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Start my season planner",
+  "files": [
+   "app/[locale]/info/page.tsx"
+  ]
+ },
+ {
+  "en": "Article",
+  "files": [
+   "app/[locale]/journal/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Organization",
+  "files": [
+   "app/[locale]/journal/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Journal",
+  "files": [
+   "app/[locale]/journal/[slug]/page.tsx",
+   "app/[locale]/journal/page.tsx",
+   "components/layout/MegaMenu.tsx",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "min read",
+  "files": [
+   "app/[locale]/journal/[slug]/page.tsx",
+   "app/[locale]/journal/page.tsx"
+  ]
+ },
+ {
+  "en": "Next article",
+  "files": [
+   "app/[locale]/journal/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Next in the journal",
+  "files": [
+   "app/[locale]/journal/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "all articles",
+  "files": [
+   "app/[locale]/journal/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Practical, honest writing about living in Portugal for a season: planning, places, visas and the small things that make a stay feel like home.",
+  "files": [
+   "app/[locale]/journal/page.tsx"
+  ]
+ },
+ {
+  "en": "Notes from the harbor",
+  "files": [
+   "app/[locale]/journal/page.tsx"
+  ]
+ },
+ {
+  "en": "More articles",
+  "files": [
+   "app/[locale]/journal/page.tsx"
+  ]
+ },
+ {
+  "en": "TravelAgency",
+  "files": [
+   "app/[locale]/layout.tsx"
+  ]
+ },
+ {
+  "en": "Country",
+  "files": [
+   "app/[locale]/layout.tsx"
+  ]
+ },
+ {
+  "en": "Portugal",
+  "files": [
+   "app/[locale]/layout.tsx"
+  ]
+ },
+ {
+  "en": "PostalAddress",
+  "files": [
+   "app/[locale]/layout.tsx"
+  ]
+ },
+ {
+  "en": "{0} · Life in Portugal",
+  "files": [
+   "app/[locale]/life/[category]/page.tsx"
+  ]
+ },
+ {
+  "en": ": life in Portugal",
+  "files": [
+   "app/[locale]/life/[category]/page.tsx"
+  ]
+ },
+ {
+  "en": "experiences · tap one to see details",
+  "files": [
+   "app/[locale]/life/[category]/page.tsx"
+  ]
+ },
+ {
+  "en": "{0} experiences",
+  "files": [
+   "app/[locale]/life/[category]/page.tsx"
+  ]
+ },
+ {
+  "en": "Life in Portugal",
+  "files": [
+   "app/[locale]/life/page.tsx",
+   "components/layout/MegaMenu.tsx",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Neighborhoods, surf, food and markets, language, wine country, hiking, craft and azulejos, community and island life: nine ways into a season in Portugal.",
+  "files": [
+   "app/[locale]/life/page.tsx"
+  ]
+ },
+ {
+  "en": "Life in Portugal: nine ways into a season",
+  "files": [
+   "app/[locale]/life/page.tsx"
+  ]
+ },
+ {
+  "en": "All categories",
+  "files": [
+   "app/[locale]/life/page.tsx"
+  ]
+ },
+ {
+  "en": "Build your season",
+  "files": [
+   "app/[locale]/life/page.tsx"
+  ]
+ },
+ {
+  "en": "around what you love",
+  "files": [
+   "app/[locale]/life/page.tsx"
+  ]
+ },
+ {
+  "en": "Lost at sea",
+  "files": [
+   "app/[locale]/not-found.tsx"
+  ]
+ },
+ {
+  "en": "This page has sailed. Let’s get you back to the harbor.",
+  "files": [
+   "app/[locale]/not-found.tsx"
+  ]
+ },
+ {
+  "en": "Home",
+  "files": [
+   "app/[locale]/not-found.tsx"
+  ]
+ },
+ {
+  "en": "Destinations",
+  "files": [
+   "app/[locale]/not-found.tsx",
+   "components/layout/MegaMenu.tsx",
+   "data/posts.ts",
+   "data/stats.ts",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Plan my season",
+  "files": [
+   "app/[locale]/plan-my-season/page.tsx",
+   "app/[locale]/plans/[slug]/page.tsx",
+   "app/[locale]/visas/page.tsx",
+   "components/home/MaskHero.tsx",
+   "components/layout/Header.tsx",
+   "components/planner/PlannerModal.tsx",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Tell us when, where and who. Five short steps and your Porto Season specialist will design your season in Portugal, with a first look at your likely visa path.",
+  "files": [
+   "app/[locale]/plan-my-season/page.tsx"
+  ]
+ },
+ {
+  "en": "my season",
+  "files": [
+   "app/[locale]/plan-my-season/page.tsx"
+  ]
+ },
+ {
+  "en": "Five short steps. Tell us when, where and who, and your specialist will come back with towns, homes and honest costs, plus a first look at your likely visa path.",
+  "files": [
+   "app/[locale]/plan-my-season/page.tsx"
+  ]
+ },
+ {
+  "en": "{0} plan ({1})",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Home & workspace",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Arrival & admin",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Your people & your weekends",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "And more",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Plan · {0}",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "per month · placeholder price",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "What’s included",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "A sample",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Every season is different. Here’s how a month often unfolds.",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Questions",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "about this plan",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Start your",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "{0} season",
+  "files": [
+   "app/[locale]/plans/[slug]/page.tsx"
+  ]
+ },
+ {
+  "en": "Plans: from one month to a full year",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "Taster, Season, Full year and Family season plans for living in Portugal, each planned end to end by one specialist.",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "Plans",
+  "files": [
+   "app/[locale]/plans/page.tsx",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "One month to a full year",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "Every plan includes a vetted home, a real workspace, airport pickup and a specialist who knows you by name. Longer plans add admin help, visa guidance and school guidance.",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "Prices are “from” per month for one or two guests, before flights. Your quote lists everything, with no surprises.",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "see the plan",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "Not sure which plan?",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "Tell us your season",
+  "files": [
+   "app/[locale]/plans/page.tsx"
+  ]
+ },
+ {
+  "en": "Visas for a long stay in Portugal",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "The 90/180 rule, the D8 digital nomad visa (€{0}/month in {1}), the D7, EES and ETIAS explained honestly. Guidance only, not legal advice.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Verified as of",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Visas & entry",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Visas, honestly",
+  "files": [
+   "app/[locale]/visas/page.tsx",
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "The right route depends on your passport, how long you stay and how you earn. Here is the plain-English version. The real answer for your situation always comes from our partner immigration lawyers,",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "The main routes",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Up to 3 months",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "days, in any rolling period",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Our Taster and Season plans are designed to fit inside this rule. Tell us about recent travel in Europe so we can check your dates.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Remote work",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "minimum monthly income, single applicant, {0} ({1}× the Portuguese minimum wage of {2})",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "The threshold rises when the minimum wage rises, and with each family member who joins you.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Passive income",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "guide monthly income, single applicant, {0}{1}",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "· figure to be verified",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "The amount increases for a spouse and for each child. Savings and accommodation are usually assessed too.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "In operation",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Allow a little extra time at passport control on your first entry.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Required",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Coming soon",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "expected {0}",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Only ever apply on the official EU portal. Unofficial sites charge more.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Who does what",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Your specialist: helps you understand the options, gathers documents and plans timings around your season.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "The authorities (consulates and AIMA) decide. Nobody can guarantee an outcome.",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Official sources",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "Visas & admin",
+  "files": [
+   "app/[locale]/visas/page.tsx",
+   "data/types.ts"
+  ]
+ },
+ {
+  "en": "Find your",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "visa path",
+  "files": [
+   "app/[locale]/visas/page.tsx"
+  ]
+ },
+ {
+  "en": "The best seasons start with a conversation",
+  "files": [
+   "components/home/BeginForm.tsx"
+  ]
+ },
+ {
+  "en": "start end",
+  "files": [
+   "components/home/CategoryScatter.tsx",
+   "components/motion/Parallax.tsx"
+  ]
+ },
+ {
+  "en": "end start",
+  "files": [
+   "components/home/CategoryScatter.tsx",
+   "components/motion/Parallax.tsx"
+  ]
+ },
+ {
+  "en": "Life in Portugal · 01–09",
+  "files": [
+   "components/home/CategoryScatter.tsx"
+  ]
+ },
+ {
+  "en": "living through",
+  "files": [
+   "components/home/CategoryScatter.tsx",
+   "components/shared/CategoryHeader.tsx"
+  ]
+ },
+ {
+  "en": "A season is made of small rituals: the market on Saturday, the same surf break at dawn, the tasca where they start your order when you walk in. Nine ways in.",
+  "files": [
+   "components/home/CategoryScatter.tsx"
+  ]
+ },
+ {
+  "en": "Best for:",
+  "files": [
+   "components/home/DestinationRows.tsx"
+  ]
+ },
+ {
+  "en": "Twelve harbors,",
+  "files": [
+   "components/home/DestinationRows.tsx"
+  ]
+ },
+ {
+  "en": "one Portugal",
+  "files": [
+   "components/home/DestinationRows.tsx"
+  ]
+ },
+ {
+  "en": "Cities, surf towns, quiet countryside and Atlantic islands. Typical monthly budgets are for one person, all in: home, workspace, food and getting around. Prices show in your chosen currency.",
+  "files": [
+   "components/home/DestinationRows.tsx"
+  ]
+ },
+ {
+  "en": "· Budgets are placeholder estimates.",
+  "files": [
+   "components/home/DestinationRows.tsx"
+  ]
+ },
+ {
+  "en": "all destinations",
+  "files": [
+   "components/home/DestinationRows.tsx"
+  ]
+ },
+ {
+  "en": "Encrypted upload links, never email attachments.",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "Stored encrypted, in the EU, with every access logged.",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "Seen only by your specialist and, for visas, our partner lawyers.",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "Never used for marketing, never sold, never shared beyond your plan.",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "Your documents, handled with care",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "Planning a season means sharing things that matter: passport scans, proof of income, bank statements and visa paperwork. We treat every page as if it were our own.",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "Our deletion promise.",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "Ask, and we permanently delete every document you have shared with us within",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "days, and confirm it in writing.",
+  "files": [
+   "components/home/DocumentsTrust.tsx"
+  ]
+ },
+ {
+  "en": "All of Portugal, not just Porto. Twelve places we know street by street, from the Douro’s terraces and Lisbon’s hills to the Algarve coast and two Atlantic archipelagos.",
+  "files": [
+   "components/home/MapTransition.tsx"
+  ]
+ },
+ {
+  "en": "Terracotta rooftops of Lisbon stepping down to the Tagus, with a white church tower",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "slowing down",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "Your harbor",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "in Portugal",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "Discover",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "— a season of",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "a season of",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "One to twelve months in Portugal’s best cities, coastlines, countryside and islands. Your home, workspace, visa guidance and community, planned end to end by one specialist.",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "We make a big move",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "feel simple",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "We don’t just find you a rental.",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "We handle the whole move: before you leave, the week you land, and every month after. The right town, a home that works, a desk, the paperwork, and people to share a table with.",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "From Lisbon’s hills to an Azorean crater lake, Porto Season is your harbor for the length of your stay.",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "start start",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "end end",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "auto {0}vh",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "inset({0}% 0 0 0)",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "Introduction",
+  "files": [
+   "components/home/MaskHero.tsx"
+  ]
+ },
+ {
+  "en": "Solo & couples",
+  "files": [
+   "components/home/ServiceCards.tsx"
+  ]
+ },
+ {
+  "en": "Remote workers, career-breakers and creatives. A home with a real desk, a neighborhood that fits, and people to meet from week one.",
+  "files": [
+   "components/home/ServiceCards.tsx"
+  ]
+ },
+ {
+  "en": "School-term and full-year stays with international school guidance, family-friendly towns and homes with room to grow.",
+  "files": [
+   "components/home/ServiceCards.tsx"
+  ]
+ },
+ {
+  "en": "Who we plan for",
+  "files": [
+   "components/home/ServiceCards.tsx"
+  ]
+ },
+ {
+  "en": "A season you can rely on",
+  "files": [
+   "components/home/StatsPeople.tsx"
+  ]
+ },
+ {
+  "en": "Placeholder figures",
+  "files": [
+   "components/home/StatsPeople.tsx",
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Real numbers will replace these before launch.",
+  "files": [
+   "components/home/StatsPeople.tsx"
+  ]
+ },
+ {
+  "en": "Your plan",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "We match your town, home and workspace to how you live and work, then show you the honest costs.",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "Your visa",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "Clear guidance on the right route, with applications handled by our partner immigration lawyers.",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "Your arrival",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "Airport pickup, a local SIM, help with your NIF and bank account, and a welcome week to find your feet.",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "Community dinners, a specialist who answers quickly, and small problems solved before they grow.",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "How we make",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "it easy",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "Before, during and after",
+  "files": [
+   "components/home/StepsZigzag.tsx"
+  ]
+ },
+ {
+  "en": "Display prices in (",
+  "files": [
+   "components/layout/CurrencySwitcher.tsx"
+  ]
+ },
+ {
+  "en": "Get in touch",
+  "files": [
+   "components/layout/Footer.tsx"
+  ]
+ },
+ {
+  "en": "plan my season",
+  "files": [
+   "components/layout/Footer.tsx",
+   "components/layout/MegaMenu.tsx"
+  ]
+ },
+ {
+  "en": "Footer",
+  "files": [
+   "components/layout/Footer.tsx"
+  ]
+ },
+ {
+  "en": "Menu",
+  "files": [
+   "components/layout/Footer.tsx",
+   "components/layout/Header.tsx",
+   "components/layout/MegaMenu.tsx"
+  ]
+ },
+ {
+  "en": "Location",
+  "files": [
+   "components/layout/Footer.tsx"
+  ]
+ },
+ {
+  "en": "Skip to content",
+  "files": [
+   "components/layout/Header.tsx"
+  ]
+ },
+ {
+  "en": "Close",
+  "files": [
+   "components/layout/Header.tsx",
+   "components/planner/PlannerModal.tsx",
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Porto Season, home",
+  "files": [
+   "components/layout/Logo.tsx"
+  ]
+ },
+ {
+  "en": "Plans & homes",
+  "files": [
+   "components/layout/MegaMenu.tsx"
+  ]
+ },
+ {
+  "en": "All homes",
+  "files": [
+   "components/layout/MegaMenu.tsx",
+   "components/shared/HomesBrowser.tsx"
+  ]
+ },
+ {
+  "en": "About us",
+  "files": [
+   "components/layout/MegaMenu.tsx"
+  ]
+ },
+ {
+  "en": "Visas",
+  "files": [
+   "components/layout/MegaMenu.tsx",
+   "data/posts.ts",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Booking info & FAQ",
+  "files": [
+   "components/layout/MegaMenu.tsx",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Site menu",
+  "files": [
+   "components/layout/MegaMenu.tsx"
+  ]
+ },
+ {
+  "en": "inset(0 0 100% 0)",
+  "files": [
+   "components/layout/MegaMenu.tsx"
+  ]
+ },
+ {
+  "en": "inset(0 0 0% 0)",
+  "files": [
+   "components/layout/MegaMenu.tsx"
+  ]
+ },
+ {
+  "en": "useUI must be inside UIProvider",
+  "files": [
+   "components/layout/UIProvider.tsx"
+  ]
+ },
+ {
+  "en": "When and how long",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Where and what vibe",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Your life setup",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Who’s coming",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "How to reach you",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "1 month",
+  "files": [
+   "components/planner/SeasonPlanner.tsx",
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "2 months",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "3 months",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "6 months",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "9 months",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "12 months",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Custom",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Yes",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "A desk at home",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Coworking",
+  "files": [
+   "components/planner/SeasonPlanner.tsx",
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Both",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "City apartment",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Beach house",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Quinta (country house)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Island home",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "No preference",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Sea view",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Walkable",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Outdoor space",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Pet-friendly",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Remote salary",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Freelance / own business",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Passive income or pension",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Not working",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "EU, EEA or Swiss",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Visa-exempt (e.g. US, UK, Canada, Australia, Brazil)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Needs a Schengen visa",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Not sure",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "City energy",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Surf town",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Quiet countryside",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Island life",
+  "files": [
+   "components/planner/SeasonPlanner.tsx",
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Wine country",
+  "files": [
+   "components/planner/SeasonPlanner.tsx",
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Not sure yet",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Thank you,",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Your season request is with us. Your specialist will be in touch within one working day (Lisbon time) by",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "email at",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Likely visa path · guidance only",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Season planner",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Planner progress",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Step {0} of {1}: {2}",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Step",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Steps",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Start month",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Choose…",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Year",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "How long",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Roughly how long?",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "e.g. 4 months, or a school year",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Are your dates flexible?",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "What vibe are you after? Pick any",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Any destinations in mind? (optional)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Will you be working remotely?",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "What workspace do you need?",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Home type",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Must-haves (optional)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Adults",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Children",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Remove a child",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Add a child",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Child",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "School needs (optional)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "e.g. British curriculum, Year 4",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Passport (helps us show the likely visa path)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Nationality (optional)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "e.g. Canadian",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Main income during your stay",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Budget per month, all in (EUR)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "per month",
+  "files": [
+   "components/planner/SeasonPlanner.tsx",
+   "components/shared/HomeCard.tsx"
+  ]
+ },
+ {
+  "en": "Name",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Anything else? (optional)",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Pets, accessibility needs, a town you’ve fallen for…",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "I’m happy for Porto Season to contact me about my season and to store these details as described in the",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "privacy policy",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "We couldn’t send that just now. Your answers are saved; please try again, or email",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Your answers are saved on this device as you go.",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "← Back",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Sending…",
+  "files": [
+   "components/planner/SeasonPlanner.tsx",
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Send my season request",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Final step",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Next step",
+  "files": [
+   "components/planner/SeasonPlanner.tsx"
+  ]
+ },
+ {
+  "en": "Before you fly: register with EES at the border, and apply for ETIAS ({0}) on the official EU site.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "At the border you’ll register with EES (fingerprints and photo). ETIAS ({0}) is not required yet; launch is expected in {1}.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "No visa needed",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "As an EU, EEA or Swiss citizen you can live in Portugal freely.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "For stays over three months you register your residence with the local council (a simple certificate).",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "We help with the NIF (tax number), bank account and health registration as part of your plan.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Let’s check together",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Tell your specialist your nationality and we’ll confirm the right route with our partner lawyers.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Short stay: up to {0} days",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Your season can likely fit within the Schengen short-stay rule: up to {0} days in any {1}-day period.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Days spent anywhere in the Schengen area in the previous 180 days count towards the 90.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Want to stay longer? We can look at a D8 or D7 route before you arrive.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "A short-stay visa is likely needed",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Your nationality usually needs a Schengen short-stay visa, applied for before you travel.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Our partner lawyers can confirm requirements and timings for your passport.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Likely route: D8 digital nomad visa",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "The threshold rises with the minimum wage, and with each family member who joins you.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Typical documents: contract or client agreements, recent payslips or invoices, bank statements, accommodation and health insurance.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Applications are prepared and filed with our partner immigration lawyers.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Likely route: D7 passive income visa",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "For regular passive income such as pensions, rentals or dividends. The guide figure is around {0} per month for a single applicant{1}.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "The threshold increases for a spouse and for each child.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Typical documents: proof of income, bank statements, accommodation and health insurance.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Let’s talk it through",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Long stays without work or passive income need a closer look. There are options, and our partner lawyers will advise.",
+  "files": [
+   "components/planner/visaPath.ts"
+  ]
+ },
+ {
+  "en": "Choose another category",
+  "files": [
+   "components/shared/CategoryHeader.tsx"
+  ]
+ },
+ {
+  "en": "Life in Portugal categories",
+  "files": [
+   "components/shared/CategoryHeader.tsx"
+  ]
+ },
+ {
+  "en": "Thank you",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Your message is with us. Your specialist will reply within one working day (Lisbon time).",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Contact form",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Tell us a little about your season and we’ll come back with the best options.",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "First name",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Last name",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Email address",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Message: where, when, who’s coming",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Company",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Prefer to tell us everything at once?",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Use the full season planner →",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Something went wrong. Please try again or email",
+  "files": [
+   "components/shared/ContactForm.tsx"
+  ]
+ },
+ {
+  "en": "Shall we begin?",
+  "files": [
+   "components/shared/ContactForm.tsx",
+   "components/shared/CtaHero.tsx"
+  ]
+ },
+ {
+  "en": "One-bed rent",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "per month, flexible desk",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Coffee",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "an espresso at the counter",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Dinner for two",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "a good neighborhood restaurant",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Cost of living",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Typical prices we see in",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": ". Shown in your chosen currency. Your plan quote lists exact costs.",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Home internet around",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Mbps",
+  "files": [
+   "components/shared/CostClimate.tsx",
+   "components/shared/HomeCard.tsx"
+  ]
+ },
+ {
+  "en": "Climate",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "by month",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Typical daytime highs and night lows (°C)",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": ", sea temperature",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "and rainy days. Placeholder averages.",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Climate by month in",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Month",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "High",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Low",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Sea",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "Rainy days",
+  "files": [
+   "components/shared/CostClimate.tsx"
+  ]
+ },
+ {
+  "en": "starts with a hello",
+  "files": [
+   "components/shared/CtaHero.tsx"
+  ]
+ },
+ {
+  "en": "Tell us when, where and who. Your specialist replies within one working day, Lisbon time.",
+  "files": [
+   "components/shared/CtaHero.tsx"
+  ]
+ },
+ {
+  "en": "Price",
+  "files": [
+   "components/shared/ExperienceRows.tsx"
+  ]
+ },
+ {
+  "en": "per person",
+  "files": [
+   "components/shared/ExperienceRows.tsx"
+  ]
+ },
+ {
+  "en": "Included in",
+  "files": [
+   "components/shared/ExperienceRows.tsx"
+  ]
+ },
+ {
+  "en": "Where",
+  "files": [
+   "components/shared/ExperienceRows.tsx"
+  ]
+ },
+ {
+  "en": "add it to my season",
+  "files": [
+   "components/shared/ExperienceRows.tsx"
+  ]
+ },
+ {
+  "en": "FAQs",
+  "files": [
+   "components/shared/FaqBlock.tsx"
+  ]
+ },
+ {
+  "en": "FAQ topics",
+  "files": [
+   "components/shared/FaqTabs.tsx"
+  ]
+ },
+ {
+  "en": "{0} bed",
+  "files": [
+   "components/shared/HomeCard.tsx"
+  ]
+ },
+ {
+  "en": "Filter by home type",
+  "files": [
+   "components/shared/HomesBrowser.tsx"
+  ]
+ },
+ {
+  "en": "Destination",
+  "files": [
+   "components/shared/HomesBrowser.tsx"
+  ]
+ },
+ {
+  "en": "Anywhere",
+  "files": [
+   "components/shared/HomesBrowser.tsx"
+  ]
+ },
+ {
+  "en": "No listed homes match yet. We source homes to order: tell us what you need in the season planner.",
+  "files": [
+   "components/shared/HomesBrowser.tsx"
+  ]
+ },
+ {
+  "en": "Last updated",
+  "files": [
+   "components/shared/LegalArticle.tsx"
+  ]
+ },
+ {
+  "en": "Placeholder",
+  "files": [
+   "components/shared/PlaceholderFlag.tsx"
+  ]
+ },
+ {
+  "en": "Converted from €{0} at a placeholder rate",
+  "files": [
+   "components/shared/Price.tsx"
+  ]
+ },
+ {
+  "en": "Visa disclaimer",
+  "files": [
+   "components/shared/VisaDisclaimer.tsx"
+  ]
+ },
+ {
+  "en": "Visa applications are handled by our partner immigration lawyers,",
+  "files": [
+   "components/shared/VisaDisclaimer.tsx"
+  ]
+ },
+ {
+  "en": ". Always check the official sources:",
+  "files": [
+   "components/shared/VisaDisclaimer.tsx"
+  ]
+ },
+ {
+  "en": "Designed to fit the Schengen short-stay rule for visa-exempt travelers: up to",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "days in any",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "-day period, counted across all Schengen countries. If you have travelled in Europe in the last six months, tell us and we’ll check your dates.",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "Stays beyond 90 days usually need a national visa. Remote workers often use the D8 (minimum",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "a month for a single applicant in",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "); people with passive income often use the D7 (around",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "a month",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": ", to be confirmed",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "). Applications are handled by our partner immigration lawyers,",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "Term-length stays may fit the",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "rule; a school year needs a national visa for each family member, and income thresholds rise with family size. We map it out with our partner lawyers before you commit.",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "Read our full visa guide →",
+  "files": [
+   "components/shared/VisaNote.tsx"
+  ]
+ },
+ {
+  "en": "Atlantic waves",
+  "files": [
+   "components/sound/SoundProvider.tsx"
+  ]
+ },
+ {
+  "en": "Café terrace",
+  "files": [
+   "components/sound/SoundProvider.tsx"
+  ]
+ },
+ {
+  "en": "Harbor gulls",
+  "files": [
+   "components/sound/SoundProvider.tsx"
+  ]
+ },
+ {
+  "en": "Lisbon tram bells",
+  "files": [
+   "components/sound/SoundProvider.tsx"
+  ]
+ },
+ {
+  "en": "useSound must be used inside SoundProvider",
+  "files": [
+   "components/sound/SoundProvider.tsx"
+  ]
+ },
+ {
+  "en": "Turn off the sounds of Portugal",
+  "files": [
+   "components/sound/SoundToggle.tsx"
+  ]
+ },
+ {
+  "en": "Turn on the sounds of Portugal",
+  "files": [
+   "components/sound/SoundToggle.tsx"
+  ]
+ },
+ {
+  "en": "Sound on",
+  "files": [
+   "components/sound/SoundToggle.tsx"
+  ]
+ },
+ {
+  "en": "Sound off",
+  "files": [
+   "components/sound/SoundToggle.tsx"
+  ]
+ },
+ {
+  "en": "Map of Portugal showing Porto Season’s twelve destinations, including Madeira and the Azores",
+  "files": [
+   "components/svg/PortugalMap.tsx"
+  ]
+ },
+ {
+  "en": "Spain",
+  "files": [
+   "components/svg/PortugalMap.tsx"
+  ]
+ },
+ {
+  "en": "Atlantic Ocean",
+  "files": [
+   "components/svg/PortugalMap.tsx"
+  ]
+ },
+ {
+  "en": "Azores",
+  "files": [
+   "components/svg/PortugalMap.tsx",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Madeira",
+  "files": [
+   "components/svg/PortugalMap.tsx",
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The quickest way to feel at home is to know your streets. From Alfama’s lanes in Lisbon to Bonfim in Porto and the old town of Funchal, we walk you through the bakeries, markets and corners that locals actually use.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Alfama at dawn: “Bread, fado and washing lines”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Guided walk",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Lisbon",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "An early walk through Lisbon’s oldest quarter before the day-trippers arrive. We start with fresh bread and coffee, climb past the viewpoints and stop at a small fado house where the owner tells the neighborhood’s story. You finish knowing where to shop, eat and sit in the sun.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Porto beyond the river: “Bonfim and the quiet east”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Porto",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A slow walk through Porto’s residential east, away from the Ribeira crowds. We visit a traditional grocer, a ceramics studio and a café where the same neighbors meet every morning. It is the best introduction to everyday Porto life.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Funchal market morning: “Fruit you have never tasted”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A morning in Funchal’s farmers’ market and the old town around it, tasting island fruit and learning what is in season. We finish on a street of painted doors with a cup of poncha or coffee. Practical tips on shopping and daily life are part of the walk.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Surf & sea",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "surf & sea",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Portugal has more than 800 kilometres of Atlantic coast. Learn to surf in Ericeira, swim in the warm lagoon waters off Tavira or watch whales from a small boat in the Azores, with people who know the sea well.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Ericeira surf month: “From foam to green waves”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Weekly class",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Twice weekly, 4 weeks",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Ericeira",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Eight small-group lessons with a certified coach, matched to your level and the day’s conditions. Boards and wetsuits are included, and sessions move between beginner beaches and gentle reef breaks. By the end of the month most guests are catching unbroken waves on their own.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Ria Formosa by boat: “Islands, oysters and flamingos”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Day trip",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Tavira & the eastern Algarve",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A small boat trip through the lagoon’s channels and salt marshes, with a local skipper who has fished here all his life. We stop on a barrier island to swim, visit an oyster farm and watch the birdlife. Bring a hat and a swimsuit.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Whales and dolphins: “Out into the open Atlantic”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "The Azores (São Miguel)",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A trip with a marine biologist on a small, responsibly run boat, guided by lookouts on the cliffs who spot the whales. Common dolphins are seen on most trips, and sperm whales are often present. Spring and summer bring the best chances of seeing migrating species.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Food & markets",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "food & markets",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Portuguese food is generous, seasonal and built on good markets. Cook with a home cook in Porto, learn the Alentejo’s slow-cooked dishes in Évora or simply learn to shop well at your local market in Lisbon.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Market to table: “Shop, cook, eat”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Workshop",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Meet a home cook at the market hall, choose fish and vegetables together and learn how to tell what is fresh. Back in her kitchen you cook three classic dishes and sit down to eat them with a glass of wine. You go home with recipes and the confidence to shop like a local.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Petiscos night: “Small plates, long evening”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Food walk",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "An evening of small plates at four family-run tascas, from bolinhos de bacalhau to slow-cooked tripe for the brave. Your guide explains the history of each dish and how to order without a menu. Drinks are included, and so is a final glass of tawny port.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Alentejo kitchen: “Bread, herbs and patience”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Évora & the Alentejo",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A day in a farmhouse kitchen learning the Alentejo’s simple, herb-rich cooking: açorda, migas and slow-roasted pork. We bake bread in a wood oven and finish with a long lunch outdoors. A good way to understand why people here never rush a meal.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Language",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A little Portuguese changes everything, from the market to the neighbors. We arrange friendly group and private classes in Lisbon, Porto and Coimbra, plus language exchanges where you practise over coffee.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Portuguese for daily life: “Café, market, pharmacy”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Weekly, 8 weeks",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Lisbon, Porto or Coimbra",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A small group course focused on European Portuguese for real situations: ordering, shopping, small talk and appointments. Classes are two hours a week with a native teacher, plus short homework you can do on your commute. Most guests can manage everyday conversations by the end.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Language exchange evenings: “Trocar palavras”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Community evening",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "2h, weekly",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Lisbon and Porto",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A relaxed weekly evening where Portuguese speakers who want to practise English meet guests who want to practise Portuguese. Tables switch language every half hour. It is the easiest way to make local friends.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Coimbra immersion: “Two weeks in Portuguese”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Intensive course",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "2 weeks",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Coimbra",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Four hours of class each morning in a historic university town, with afternoon activities in Portuguese. You stay in a home in the old town and practise everywhere you go. Ideal for guests on a longer stay who want to make real progress quickly.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "wine country",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Portugal makes extraordinary wine at very fair prices. Spend a weekend in the Douro’s terraced vineyards, taste the bold reds of the Alentejo or join a harvest, guided by the families who make it.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Douro harvest weekend: “Pick, tread, taste”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Weekend escape",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "2 days",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Douro Valley",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Two days on a family quinta during the September harvest. You pick grapes in the morning, help with treading in the old stone lagares in the evening and share the workers’ lunch in between. Accommodation, meals and train tickets from Porto are included.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Alentejo wine and cork: “From oak to glass”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A day visiting a small winery that ages wine in clay amphorae, followed by a walk through a cork oak forest with a cork harvester. Lunch is at a country restaurant. You learn why the Alentejo landscape looks the way it does.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Port lodge evening: “Tawny, ruby, white”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Tasting",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A private tasting in a family-owned port lodge, guided by the cellar master. You compare styles and ages and learn how port is made and blended. A good evening to bring visiting friends.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Hiking & nature",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "hiking & nature",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Some of Europe’s best walking is in Portugal. Follow Madeira’s levadas through laurel forest, walk the Rota Vicentina cliffs in the Algarve or hike between crater lakes in the Azores.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Levada walks: “Along the water, through the clouds”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Guided hike",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A guided walk along one of Madeira’s historic irrigation channels, through laurel forest that has grown here for millions of years. Routes are chosen for your fitness and the day’s weather. Transport, snacks and a local guide are included.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Rota Vicentina weekend: “Cliffs and fishermen’s trails”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Lagos & the western Algarve",
+  "files": [
+   "data/categories.ts",
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Two days walking the Fishermen’s Trail along the wild southwest coast, with luggage moved for you between guesthouses. Expect sandy paths, high cliffs and empty beaches. Dinner is fresh fish in a village restaurant.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Sete Cidades: “The rim of the crater”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A ridge walk around the huge Sete Cidades crater, looking down on its twin lakes, one blue and one green. The path is mostly gentle, and the views change with every cloud. We finish with a soak in a thermal pool.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Craft & azulejos",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "craft & azulejos",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Portugal’s hand-painted tiles cover churches, stations and ordinary houses. Learn to paint your own in Lisbon, throw pots with a ceramicist in Porto or meet the people who weave, carve and cork-craft across the country.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Paint your own azulejo: “Cobalt on white”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A small workshop with a tile painter, learning the traditional technique of painting cobalt blue onto glazed tiles. You design and paint your own tile, which is fired and ready to collect a week later. No drawing skills needed.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Ceramics course: “Clay, wheel, kiln”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Weekly, 6 weeks",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A six-week course in a small studio, learning to throw, trim and glaze your own cups and bowls. Classes are small and relaxed, and there is open studio time between sessions. You keep everything you make.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Cork craft day: “Bark that grows back”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Meet a craftsman who works with cork, learn how it is harvested every nine years without harming the tree, and make a small object of your own. The visit includes a walk among cork oaks. A good family activity.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A season is only as good as the people you share it with. In every destination, from Lisbon to Ericeira and Ponta do Sol, we host dinners, walks and coworking days that turn neighbors into friends.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "The long table: “Dinner with everyone”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Community dinner",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "3h, monthly",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Every destination",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A monthly dinner for guests, our local people and a few friends, around one long table in a family restaurant. It is simple, generous and the place where most friendships start. Partners and children are always welcome.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Coworking Fridays: “Work together, lunch together”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Weekly meetup",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Weekly",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Lisbon, Porto, Ericeira and Madeira",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A weekly shared workday at a coworking space, with a group lunch in the middle. Bring your laptop and your questions about life in Portugal. It is an easy way to meet other remote workers without forcing it.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Sunset walks: “The golden hour club”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Community walk",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Coast and islands",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A weekly walk along the coast timed to the sunset, ending at a café or beach bar. Pace is gentle and everyone is welcome. Locals often join, especially in summer.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "island life",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Madeira and the Azores are Portugal at its most dramatic: volcanic, green and surrounded by deep ocean. Swim in natural lava pools, soak in hot springs in Furnas or settle into Ponta do Sol’s remote-work community.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Furnas hot springs: “Stew from the ground”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A day in the volcanic valley of Furnas, watching cozido stew being lifted out of the hot earth where it has cooked for hours. After lunch, soak in warm, iron-rich thermal pools in a botanical garden. Bring a dark swimsuit, because the water stains.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Lava pools: “Swim in the rocks”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A drive along Madeira’s north coast to the natural lava pools of Porto Moniz, with stops at waterfalls and viewpoints on the way. Swim in calm, sea-filled pools sheltered from the waves. Lunch is grilled fish in a fishing village.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Ponta do Sol: “A week to settle in”",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Welcome week",
+  "files": [
+   "data/categories.ts",
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "1 week",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "A first week designed for island life: an introduction to the remote-work community, a bus and car-hire briefing, a market morning and a first levada walk. You end the week with friends and a routine. Included in every Madeira stay.",
+  "files": [
+   "data/categories.ts"
+  ]
+ },
+ {
+  "en": "Jan",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Feb",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Mar",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Apr",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "May",
+  "files": [
+   "data/destinations.ts",
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Jun",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Jul",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Aug",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Sep",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Oct",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Nov",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Dec",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cities",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Coast",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Countryside",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Islands",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Seven hills, river light and a café on every corner.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Remote workers",
+  "files": [
+   "data/destinations.ts",
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Couples",
+  "files": [
+   "data/destinations.ts",
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Culture lovers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Lisbon is a capital that still feels walkable, with trams climbing past tiled façades and viewpoints at the top of almost every street. You can work from a sunny apartment in the morning, eat grilled sardines at lunch and be on a beach by the Tagus estuary within half an hour. It is the easiest place in Portugal to arrive, settle and meet people quickly.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want a real city rhythm, good food and an easy social life, with the sea never far away.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Príncipe Real",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Leafy squares, independent shops and quiet streets a short walk from Bairro Alto’s evenings.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Campo de Ourique",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A flat, residential grid with a great market hall, bakeries and an easy family feel.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Alfama",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The oldest quarter: steep lanes, washing lines, fado on warm nights and river views.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre is standard in most central buildings, with 500 Mbps to 1 Gbps common. Mobile 5G coverage is strong.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The largest remote-work and expat community in Portugal, with meetups, language exchanges and coworking events most nights of the week.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Granite, river mist and port lodges glowing at dusk.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Creatives",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Food lovers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Porto is compact, hilly and full of character, built in granite and azulejo along the Douro river. Life here is a little calmer and a little cheaper than in Lisbon, with a strong local identity and a serious food scene. The Atlantic beaches of Foz and Matosinhos are a short bus ride from the centre.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who like a city with texture and a slightly slower pace, and who don’t mind a rainier winter in exchange for it.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Bonfim",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A residential, creative neighborhood with new cafés, galleries and calm streets east of the centre.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cedofeita",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Design shops, small restaurants and easy access to everything, ten minutes’ walk from the river.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Foz do Douro",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Where the river meets the ocean: seafront walks, sunsets and a quieter, village feel.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre is widely available across the city. Older granite buildings can have thick walls, so we check Wi-Fi in every room.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A growing, friendly remote-work scene, plus a strong arts and university crowd. Easier to get to know locals than in Lisbon.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cascais & Sintra",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cascais",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Seaside promenades, forested hills and Lisbon 40 minutes away.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Outdoor lovers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cascais is a polished seaside town with a long coastal promenade, sheltered beaches and a direct train to Lisbon. Inland, the hills of Sintra are cooler and greener, full of palaces, misty forest trails and old quintas. Together they offer a calmer, outdoor life with the capital close enough for a day.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Families and couples who want safe streets, beaches and good schools nearby, without giving up city access.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cascais centro",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Walk to the beach, the market and the train, with cafés and restaurants on every street.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Estoril",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Residential and green, with a long seafront path linking small beaches all the way to Cascais.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Sintra village",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cooler, wooded and romantic, with palaces above and hiking trails from the doorstep.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre is standard in Cascais and Estoril. A few rural Sintra properties rely on 4G or 5G routers, which we test before you arrive.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A settled international community, many of them families, with clubs, sailing, surf schools and weekend markets.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A whitewashed fishing town on a world-class surf coast.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Surfers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Career breaks",
+  "files": [
+   "data/destinations.ts",
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Ericeira is a small fishing town of white and blue houses above the Atlantic, at the heart of a protected surf reserve. Mornings start with checking the waves, days are for work or long cliff walks, and evenings end with fresh fish by the harbour. Lisbon is about 50 minutes away by car or bus.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Anyone who wants the ocean to set the rhythm of their days, from first-time surfers to people taking a proper break.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Old town",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cobbled lanes, small squares and sea views, with everything within a few minutes’ walk.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Ribamar",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A quiet village just north of town, close to the main reef breaks.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Foz do Lizandro",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A wide river-mouth beach to the south, good for beginners and long evening walks.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre covers the town itself. Outlying villas can be slower, so we list a tested speed for every home.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A tight, outdoorsy community of surfers, remote workers and young families. Easy to meet people in the water or at the weekly dinners.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Comporta",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Rice fields, pine forest and empty white beaches.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Slow living",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Comporta is a string of low-key villages between rice paddies, cork and pine forest and a long Atlantic beach. Life is barefoot and unhurried, with storks on the chimneys and sandy roads to the sea. It is quiet outside summer, which is exactly why people come.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want nature and space more than nightlife, and who are happy to drive for supplies and company.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Comporta village",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The small centre, with a few restaurants, a grocery and the rice museum.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Carvalhal",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A quieter village to the south with access to wide, empty beaches.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Melides",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Rolling hills, a lagoon by the sea and a growing creative community.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre is reaching more homes, but many rural houses use 4G or 5G routers. We test every home and add a backup router where needed.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Small and seasonal. Off-season it is a handful of creatives, families and long-stayers, and we organise regular dinners to bring them together.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Lagos",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Golden cliffs, sea caves and a lively harbour town.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Sun seekers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Lagos is a historic walled town with a busy marina and some of the most dramatic coastline in Europe: ochre cliffs, grottoes and sheltered coves. West of town the coast turns wild towards Sagres and the Costa Vicentina, with surf, hiking and very few buildings. Winters are mild and sunny, which makes it a favourite for long stays.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want sunshine most of the year, an active outdoor life and an easy, sociable town.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Lagos old town",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Inside and around the old walls: markets, cafés and the beach a few minutes away.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Praia da Luz",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A relaxed village with a long beach and a strong family and international community.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Sagres",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The southwestern tip of Europe, wind-swept and surf-focused, with huge skies.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre is widely available in Lagos and Luz. Some rural homes towards Sagres rely on 5G routers.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A big, friendly international community of surfers, sailors, families and remote workers, with plenty of meetups year-round.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Tavira",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A quiet river town, salt pans and warm island beaches.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Retirees",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Tavira is one of the prettiest towns in the Algarve: a Roman bridge, church towers, hipped roofs and a river running into the Ria Formosa lagoon. The beaches are on barrier islands reached by small ferries, and the sea is the warmest in mainland Portugal. It is calm, traditional and very easy to live in.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want warm weather, a gentle pace and a real Portuguese town rather than a resort.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Tavira centre",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Both banks of the river, with the market, cafés and ferries to the island beaches.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Santa Luzia",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A small fishing village known for octopus, with a waterfront promenade.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Cabanas de Tavira",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A relaxed lagoon village facing a long island beach, popular with families.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre in town and most surrounding villages. Expect reliable speeds for video calls.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A settled community of long-stayers and retirees, plus local life that carries on all year. Smaller and quieter than the western Algarve.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Évora",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A walled Roman town in a sea of cork oaks and vines.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Wine lovers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Évora is a UNESCO-listed university town with a Roman temple, whitewashed lanes and a lively main square, surrounded by the rolling plains of the Alentejo. Days are slow and generous, built around long lunches, local wine and country walks among cork oaks and olive groves. In 2027 the town is European Capital of Culture, with a year-long programme of events.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want space, quiet and culture at a gentle price, and who enjoy the countryside more than the beach.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Inside the walls",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The historic centre, with the Praça do Giraldo, the cathedral and everything on foot.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Rural Évora",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Quintas and farmhouses among cork oaks, ten to twenty minutes from town by car.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Monsaraz",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A tiny hilltop village above the Alqueva lake, famous for its dark, starry skies.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre is good in town. Rural quintas often use 5G routers, which we test and back up before you arrive.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A university town with a young local crowd and a small but growing international community, set to be busier during the 2027 culture year.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "European Capital of Culture 2027",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Douro",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Terraced vineyards falling steeply to a slow green river.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Writers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Hikers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The Douro Valley is one of the oldest wine regions in the world, with hand-built terraces stepping down to the river for mile after mile. Small villages, family quintas and riverside railway stations set the scale of daily life. It is deeply peaceful, especially outside the harvest, and Porto is under two hours away by train.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want deep quiet and beautiful views to write, think or simply rest, with wine as a very pleasant side effect.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Pinhão",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A small riverside village at the heart of the valley, with a tiled train station.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Peso da Régua",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The largest town in the valley, with shops, a market and good rail links to Porto.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Lamego",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A handsome cathedral town on the south bank, with a famous baroque stairway.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Variable. Village homes often have fibre, while hillside quintas use 4G or 5G. We only offer homes that pass a video-call test.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Small and rural. Most of your community will be winemakers, neighbors and fellow guests, and we organise regular get-togethers.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A university hill town of libraries, river walks and student songs.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Language learners",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Budget-conscious",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Coimbra is home to one of the oldest universities in Europe, set on a hill above the Mondego river. It is a real Portuguese city with a young population, affordable living and very little tourist gloss. The coast at Figueira da Foz is under an hour away, and both Lisbon and Porto are easy by fast train.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want to live like a local, learn Portuguese properly and keep costs down, in a city with real history.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Alta",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "The old upper town around the university, with steep lanes and wide views.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Baixa",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The lower town: shops, cafés and the riverside, flat and easy to get around.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Santa Clara",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Across the river, quieter and residential, with green parks and city views.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre is standard across the city, with reliable speeds for calls and uploads.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Mostly local and academic. Language exchanges and university events make it easy to meet Portuguese people rather than only other visitors.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Madeira (Funchal and Ponta do Sol)",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Spring all year, cliffside levadas and Atlantic sunsets.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Madeira is a volcanic island of steep green mountains, banana terraces and walking trails that follow old irrigation channels called levadas. Funchal is a proper small city with markets, gardens and a harbour, while Ponta do Sol on the sunny south coast has an established remote-work community. Temperatures barely change through the year, so winter here feels like late spring.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who want mild weather all year, outdoor adventure on the doorstep and an easy community from the first week.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Funchal old town",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Painted doors, the farmers’ market and the seafront, with everything on foot.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Ponta do Sol",
+  "files": [
+   "data/destinations.ts",
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A small, sunny village on the south coast, popular with remote workers.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Calheta",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Further west, with a sheltered sandy beach, a marina and quiet hillside homes.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre in Funchal and most of the south coast. Mountain villages can be patchier, which we flag on each home.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "One of the best-organised remote-work communities in Europe, especially around Ponta do Sol, plus a long-standing international crowd in Funchal.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Crater lakes, hot springs and whales in the open Atlantic.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Nature lovers",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "São Miguel is the largest island of the Azores, halfway between Europe and North America. It is intensely green, with volcanic crater lakes, tea plantations, thermal pools and dairy pastures running down to the sea. Ponta Delgada is a small, friendly city, and the rest of the island is a short drive away.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "People who love nature and changeable weather, and want somewhere truly different without leaving Portugal or the EU.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Ponta Delgada",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The island’s capital: black-and-white pavements, a marina and most of the cafés.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Furnas",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "A valley village of hot springs, steaming fumaroles and stew cooked in the ground.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Ribeira Grande",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "The north coast, with surf beaches, a tea estate nearby and a growing creative scene.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Fibre in Ponta Delgada and larger villages, linked to the mainland by subsea cable. Rural homes vary, so we test each one.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "Small, welcoming and outdoorsy, with a mix of islanders, returning emigrants and nature-loving newcomers.",
+  "files": [
+   "data/destinations.ts"
+  ]
+ },
+ {
+  "en": "What is included in a plan?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Every plan includes a vetted home, a proper place to work, airport pickup, a local SIM, a welcome week and our community events. Longer plans add help with your NIF and local admin, planned weekend escapes and, for Full year and Family season, visa guidance with our partner immigration lawyers. Family season also includes school guidance. Flights, food, everyday spending and optional experiences are not included unless we say so.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "How does my specialist work with me?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "You have one dedicated specialist from your first call to the day you leave. They help you choose a destination and home, coordinate visa guidance and school visits where relevant, and stay in touch by email or video call throughout your stay. Our local hosts take care of things on the ground, and your specialist makes sure nothing falls between the gaps.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Is the internet good enough for remote work?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Yes. We test the connection in every home before we offer it and list the measured speed on each listing. Most city homes have fibre at 500 Mbps or more. Rural and island homes can be slower, so where needed we add a backup 4G or 5G router. Every destination also has a coworking option nearby, and we can arrange a membership for you.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Should I rent monthly or sign a yearly lease?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "For stays of up to three months, a furnished monthly rental is usually simplest and gives you flexibility. For six months or more, a longer lease almost always costs less per month and is often needed for residence applications. We negotiate either on your behalf, check the contract and explain the terms in plain English before you sign.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "When is the best time to go?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "It depends on where. Lisbon and Porto are lovely from March to June and September to November. The Algarve has mild, sunny winters, which makes it a favorite from October to April. The Alentejo and the Douro are best in spring and autumn, as July and August can pass 35°C. Madeira is pleasant all year, and the Azores are greenest and calmest from May to October. Each destination page shows typical temperatures and rainfall by month.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Do I need a car?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Not in Lisbon, Porto or Coimbra, which have good public transport and fast trains between them. On the coast, in the countryside and on the islands a car makes life much easier, and in Comporta, the Douro and the Azores it is close to essential. We can arrange a long-term rental. Licences from many countries can be used for a limited period, and residents may need to exchange theirs, so check the rules for your licence with us before you travel.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What about healthcare and insurance?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Portugal has good public and private healthcare. For short stays you need comprehensive travel or international health insurance, and visa applications normally require proof of health cover. EU travelers can use their European Health Insurance Card for necessary care. Residents can register with the local health centre once their residence is in place. We can point you to clinics, pharmacies and English-speaking doctors in every destination.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What happens if something goes wrong during my stay?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Contact your specialist or local host at any time. If the boiler breaks, we arrange a repair. If a home falls short of what we promised, we fix it or move you. For anything urgent at night or at weekends, there is an emergency line for guests in season. In a medical emergency, call 112 first, then let us know so we can help.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "How does booking work?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Start with the season planner or a call with a specialist. We send you a written proposal with homes, dates and a full price. When you are happy, you confirm with a deposit and we reserve your home. Visa guidance, school visits and admin are then scheduled in the months before you arrive.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "How do payments and deposits work?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "We ask for a [30]% deposit to confirm your plan and reserve your home. The balance for your first month is due [60] days before arrival, and for longer stays each following month is paid [30] days in advance. A refundable damage deposit of [one month’s rent] is held for the home and returned within [30] days of departure. Exact terms are set out in your proposal.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Which currencies can I pay in?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "All prices are set in euros. You can view approximate prices in other currencies on the site, but invoices are issued in euros and payable by bank transfer or card. Card payments may carry a [X]% fee.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What is not included in the price?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Flights, food, local transport, optional experiences with a listed price, visa application fees, lawyers’ fees for the application itself and school fees are not included. Utilities are included for stays up to three months and, for longer leases, are usually paid directly. Your proposal lists exactly what is and is not covered.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Can the price change after I book?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "No. Once your deposit is paid, the price for the confirmed dates and home is fixed. The only exceptions are changes you ask for, such as extra months or a different home, and government fees outside our control.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What is your cancellation policy?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "If you cancel more than [90] days before arrival, we refund everything except a [€500] planning fee. Between [90] and [30] days, we keep the [30]% deposit. Within [30] days, the first month is non-refundable. If your visa is refused despite a complete application, we refund [all payments except the planning fee]. These terms are placeholders and will be confirmed in your proposal.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Can I change destination halfway through my season?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Yes, and many guests do: a few months in Lisbon followed by a few on the coast or in Madeira is a lovely way to see more of Portugal. Tell us as early as you can, ideally [30] days ahead. We find the new home, move you and adjust the price to match.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Can I extend my stay?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Usually, yes, subject to the home’s availability and your immigration status. If you are visiting under short-stay rules, remember the {schengenDays}-day limit in any {schengenWindow}-day period. Staying longer than that needs a national visa, which must be applied for in advance. Your specialist will tell you what is possible before you commit.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What if I need to leave early?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Life happens. If you need to leave early, let your specialist know. Months already paid are non-refundable, but we will try to re-let the home and refund [50]% of any recovered rent. We strongly recommend travel insurance that covers curtailment.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Do I need travel insurance?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Yes. We ask every guest to have travel insurance that covers cancellation, curtailment and medical care from the day they book. For residence visas, specific health cover is usually required as well, and our partner lawyers will tell you what is accepted.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "How long can I stay without a visa?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "If you hold a passport that is visa-exempt for the Schengen area, such as a US, UK, Canadian or Australian passport, you can stay up to {schengenDays} days in any {schengenWindow}-day period. That limit covers the whole Schengen area, not just Portugal, and it is a rolling window, so recent trips count. Our Taster and Season plans are designed to fit within it. To stay longer you need a national visa, applied for before you travel. This is guidance only, not legal advice.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What is the difference between the D8 and the D7 visa?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "The D8, often called the digital nomad visa, is for people working remotely for employers or clients outside Portugal. The D7 is for people with regular passive income, such as pensions, rental income, dividends or royalties. Both can lead to residence. Which one fits depends on your income, work and plans, and our partner immigration lawyers, {visaPartner}, will confirm the right route for you. This is guidance only, not legal advice.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "How much income do I need for a D8 or D7 visa?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "The D8 currently requires remote-work income of at least {d8Income} a month for a single applicant, which is four times the Portuguese minimum wage. The D7 threshold is linked to the minimum wage, currently around {d7Income} a month for a single applicant. Both rise when the minimum wage rises, and extra amounts apply for a partner and children. Savings and other evidence may also be considered. Your figures will be confirmed by our partner lawyers, {visaPartner}. This is guidance only, not legal advice.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Do you handle my visa application?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "We guide you, but we do not submit visa applications ourselves. Applications are prepared and handled by our partner immigration lawyers, {visaPartner}, who are qualified to advise on your case. We help you understand the options, gather documents, and coordinate timings with your home and plan. Final requirements always come from the Portuguese consulate and AIMA. This is guidance only, not legal advice.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Do I need a NIF and a Portuguese bank account?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "A NIF is your Portuguese tax number, and you need one for almost everything: a lease, utilities, a phone contract and opening a bank account. Non-residents can get one through a fiscal representative, which we help arrange. A Portuguese bank account is usually required for visa applications and makes paying rent and bills much easier. We help with both as part of the Season, Full year and Family season plans.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What are EES and ETIAS?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "EES, the EU Entry/Exit System, is now in operation. Non-EU travelers register fingerprints and a facial image at the border on their first entry, replacing passport stamps. ETIAS is a separate online travel authorization for visa-exempt travelers, with a fee of {etiasFee}. It is currently {etiasStatus}. Only ever apply through the official EU travel portal. This is guidance only, not legal advice.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Will I have to pay tax in Portugal?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "It depends on how long you stay, where you are tax resident and your home country’s rules. Spending more than 183 days in Portugal in a year, or having a habitual residence here, can make you tax resident. We do not give tax advice. Please speak to a qualified tax adviser in Portugal and in your home country before you commit to a long stay, and we are happy to introduce you to one.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What are the options for schools?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Lisbon, Cascais, Porto, the Algarve and Madeira have international schools with British, American and IB curricula, and many children also thrive in Portuguese state or private schools. Places at popular international schools can be limited, so start early, ideally six to nine months ahead. On the Family season plan we help you shortlist schools, arrange visits and manage applications. Fees are paid directly to the school.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Can we come for just one school term?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Yes. Many international schools accept students for a single term, and a term of three to four months is our most popular family season. Note that a stay longer than {schengenDays} days in any {schengenWindow}-day period needs a national visa for visa-exempt travelers, so a full term may require one. We will help you plan dates and visas together.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Can you plan a season for someone with access needs?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Yes. Tell us what you need and we will only suggest homes that meet it, with step-free access, lifts, walk-in showers or ground-floor bedrooms where required. Some towns, such as Lisbon and Porto, are very hilly and have uneven cobbled streets, while others, like Tavira and Campo de Ourique in Lisbon, are flatter. We will be honest about what each place is like.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Can I bring my dog or cat?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Often, yes. Some of our homes accept pets, and Portugal is generally dog-friendly. Pets travelling from outside the EU need a microchip, a rabies vaccination and an animal health certificate, and some countries require a blood test months in advance. We will match you with pet-friendly homes and point you to vets in your destination.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Can you arrange childcare and activities?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Yes. We can introduce you to vetted babysitters and nannies, holiday camps and after-school clubs, from surf and football to music and art. Portuguese family life is very child-friendly, and children are welcome in almost every restaurant.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "How do you handle my documents and personal data?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Passport scans, income documents and visa paperwork are stored encrypted and shared only with our partner immigration lawyers, {visaPartner}, when you ask us to. Access is logged, and we never sell or share your data for marketing. You can ask us to delete your documents at any time, and we will do so within {deletionDays} days, unless the law requires us to keep something.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Do I need to speak Portuguese?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "No, especially in Lisbon, Porto and the Algarve, where English is widely spoken. But a little Portuguese goes a long way, particularly in smaller towns and with older neighbors. We offer classes and language exchanges in every plan, and locals really appreciate the effort.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "I am an EU citizen. Is anything different?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Yes, it is much simpler. EU, EEA and Swiss citizens can live in Portugal without a visa. For stays over three months you register your residence with the local council. Everything else in our plans, from the home to the community, works in the same way.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "What time zone is Portugal in?",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "Mainland Portugal and Madeira are on Western European Time, the same as the UK, with summer time from late March to late October. The Azores are one hour behind. That makes Portugal convenient for working with Europe, and overlaps with the US East Coast in the afternoon.",
+  "files": [
+   "data/faqs.ts"
+  ]
+ },
+ {
+  "en": "City apartments",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Beach houses",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Quintas",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Island homes",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa do Miradouro",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A desk by a tall window overlooking the rooftops, with an ergonomic chair and a second monitor.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A light-filled apartment on a quiet street, with a balcony over the rooftops towards the river.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Set on the second floor of a restored nineteenth-century building, this apartment has high ceilings, original wooden floors and tall windows that catch the afternoon light. The second bedroom works as a guest room or a dedicated office. Príncipe Real’s gardens, cafés and bakeries are a few minutes’ walk away, and the metro is close for trips across the city.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Balcony with river glimpses",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Restored wooden floors",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Washer and dryer",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Fully equipped kitchen",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Lift in the building",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Ten minutes’ walk to a coworking space",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa Azulejo",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A built-in desk in a quiet corner of the living room, with a good chair and a lamp.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A calm one-bedroom behind a tiled façade, a short walk from the market hall.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A tiled façade, a small courtyard and a bright, simple interior make this an easy place to settle. Campo de Ourique is flat by Lisbon standards, with a covered market, good bakeries and the 28 tram at the end of the street. It suits a single guest or a couple who want a local neighborhood rather than the busy centre.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Tiled façade and small courtyard",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Flat, walkable neighborhood",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Washing machine",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Air conditioning and heating",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Market hall five minutes away",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa da Ribeira",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A separate study with a large oak desk, a monitor and a door that closes for calls.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A restored townhouse floor with granite walls, oak floors and a separate study.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "This apartment occupies a full floor of a traditional Porto townhouse, carefully restored with exposed granite, oak floors and a modern kitchen. The study makes long working weeks comfortable. Bonfim is one of the city’s most relaxed neighborhoods, with independent cafés and a short walk downhill to the river.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Separate study",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Exposed granite walls",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Two bathrooms",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Dishwasher and washer-dryer",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Underfloor heating in the bathrooms",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Fifteen minutes’ walk to the river",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa da Alta",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A desk under a window with views across the Mondego, plus a comfortable reading chair.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A characterful one-bedroom near the old university, with views over the river.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Tucked into the lanes of the upper town, this apartment has thick stone walls, a cosy living room and a desk with a view over the river and rooftops. You are close to the university, libraries and the evening cafés where students gather. It is a lovely, affordable base for language learners and writers.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "River and rooftop views",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Thick stone walls, cool in summer",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Heating for winter",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Five minutes to the university",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa das Ondas",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A desk facing the sea in the upstairs living room, with a standing desk option.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A whitewashed house above the surf, with a terrace for sunset and an outdoor shower.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A bright, simple house in the village of Ribamar, a short walk from the reef breaks and a few minutes’ drive from Ericeira’s old town. The upstairs living room and terrace look straight out to sea. There is space for boards and wetsuits, an outdoor shower and a small garden for drying everything in the sun.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Sea-view terrace",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Outdoor shower",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Board and wetsuit storage",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Standing desk option",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Wood-burning stove for winter",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Walk to the surf",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa dos Pinheiros",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A garden studio with a long table, a fan and a backup 5G router for calls.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A low, timber-and-reed house in the pines, with a pool and a garden studio.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Set in a pine clearing between the rice fields and the beach, this house is built for slow, barefoot days. Wide doors open onto a pool and a garden, and the separate studio makes a peaceful place to work. The beach is a five-minute drive or a longer walk through the forest. A car is essential here.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Private pool",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Separate garden studio",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Backup 5G router",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Outdoor kitchen and grill",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Bicycles included",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Five minutes’ drive to the beach",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa da Falésia",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A bright office room with a desk for two, ideal for couples who both work remotely.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A family-sized villa with a pool, a few minutes’ walk from the beach at Luz.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A classic Algarve villa with whitewashed walls, a shaded terrace and a pool in a walled garden. Praia da Luz is a relaxed village with a long sandy beach, cafés and a friendly international community. Lagos is ten minutes away by car, and the cliff path towards Burgau starts nearby.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Office room for two",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Shaded terrace",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Air conditioning",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Walk to the beach",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Family-friendly village",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Quinta do Socalco",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Near Pinhão",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A desk in the old library with views over the terraces, and a 5G router as backup.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A stone farmhouse on a working wine estate, with terraced vines falling to the river.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "This farmhouse sits on a small family wine estate above Pinhão, with views down the terraces to the Douro. Inside are stone walls, wooden beams and a big kitchen table made for long lunches. The owners make their own wine and olive oil, and guests are welcome to join the harvest in September.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Vineyard views",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Working wine estate",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Pool among the vines",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Wood-burning stove",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Ten minutes to Pinhão station",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Monte do Sobreiro",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Countryside outside Évora",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A cool, whitewashed study with a large desk and a view of the cork oaks.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A whitewashed Alentejo farmhouse among cork oaks, fifteen minutes from Évora.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A traditional monte with thick white walls, blue-trimmed windows and a terrace looking over cork oaks and olive trees. Inside it is cool in summer and warm by the fire in winter. Évora’s walled centre, with its 2027 culture programme, is fifteen minutes away by car.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Cork oak and olive grove setting",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Saltwater pool",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Fireplace",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Fibre internet",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Fifteen minutes to Évora",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa da Levada",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A desk on a covered terrace with ocean views, and a second desk indoors for cooler days.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A hillside house above the sea, with banana terraces below and sunsets every evening.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Perched on the sunny slopes above Ponta do Sol, this house looks out over banana terraces to the Atlantic. Both the indoor desk and the covered terrace are set up for full working days. The village, with its cafés and remote-work community, is a short drive down the hill, and levada walks start almost from the door.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Ocean-view working terrace",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Two workspaces",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Garden with fruit trees",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Levada trails nearby",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Five minutes’ drive to the village",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Casa da Lagoa",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Near Ponta Delgada",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A desk by a large window looking over green pastures to the sea.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A basalt stone cottage among green fields, ten minutes from Ponta Delgada.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "A restored cottage of black basalt stone with white window frames, set among the fields just outside Ponta Delgada. It is cosy and practical, with a wood stove for wet evenings and a garden full of hydrangeas. Crater lakes, hot springs and whale-watching boats are all within an easy drive.",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Restored basalt stone walls",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Garden with sea views",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Ten minutes to Ponta Delgada",
+  "files": [
+   "data/homes.ts"
+  ]
+ },
+ {
+  "en": "Porto and the Douro river at golden hour, with the Dom Luís I bridge",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Colourful houses of Porto’s Ribeira along the Douro river",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Porto’s riverside hills seen across the Douro at sunset",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "The Dom Luís I bridge lit up over the Douro at dusk",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Terracotta rooftops of Alfama, Lisbon, under a soft blue sky",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Lisbon rooftops stepping down towards the Tagus",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Praça do Comércio and the Rua Augusta arch in Lisbon",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Lisbon’s Baixa rooftops and Praça do Comércio from above",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Lisbon’s hills and São Jorge castle at night",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A yellow tram on a sunny Lisbon street",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A surfer inside a turquoise wave",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A surfer riding a breaking wave",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Waves rolling onto a beach at sunset",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A quiet beach with gentle waves in morning light",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A family holding hands walking into the sea",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A glass of red wine overlooking rows of vines",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Friends raising glasses of red wine",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Steel vats lining a winery cellar",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Layers of misty hills at dawn",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A wooden footbridge through a green forest",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A diver among a shoal of fish in clear water",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Two hands holding cups of coffee with latte art",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Cappuccinos on a café table among plants",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A plated dinner on a candlelit table",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Shared plates of grilled food on a wooden table",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A bright café with people working at tables",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Three people working together on laptops",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Friends laughing around a table with laptops",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A crowd gathered under string lights at an evening event",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Friends with arms around each other watching a sunset",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A group of friends sitting together looking at the view",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Friends laughing together on a mountain hike",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A traveler with a backpack walking down a narrow old street",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A stack of handmade ceramic cups",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Someone meditating on a deck at sunrise",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A notebook, map and camera laid out for trip planning",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A smiling child with paint on her face",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A smiling woman standing at a desk with a laptop",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A bright living room with plants and a sofa",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A light-filled lounge with armchairs and a desk",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A living room with a blue sofa and herringbone floor",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A calm bedroom with linen bedding and plants",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A bright kitchen with lemons on the counter",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A warm living room with tall windows and wooden furniture",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A neutral living room with a linen sofa",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "An open living space with leather sofa and gallery wall",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "An open-plan living room with wood panelling",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A simple studio with a black sofa and plants",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A whitewashed country house with arches around a pool at dusk",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A white house with a pool under a blue sky",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A modern house with a long pool and lawn",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "A low house opening onto a pool and garden",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a woman with short red hair",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a smiling man with glasses",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a laughing woman",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a man with short dark hair",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a smiling man with a beard",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a woman in a denim jacket",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a woman in soft blue light",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a woman with long brown hair",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Portrait of a young man outdoors",
+  "files": [
+   "data/images.ts"
+  ]
+ },
+ {
+  "en": "Privacy Policy",
+  "files": [
+   "data/legal.ts",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "How {0} collects, uses and protects your personal information.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Who we are",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "{0} plans tailor-made journeys. We are the controller of the personal information described in this policy. You can reach us at {1} or by post at {2}.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "What we collect",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "When you send an enquiry we collect what you choose to give us: your name, email address and, if you add them, your phone number, travel dates, number of travellers, interests, budget range and any message.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "When we plan and arrange a journey for you we may also need the names, dates of birth, passport details, dietary needs, health or mobility information and emergency contacts of everyone travelling. We ask for these only when they are needed to make the arrangements, and we treat health information with extra care.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Like every website, our hosting provider records technical information such as your IP address, browser type and the pages requested, so that the site can be delivered and kept secure.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "How we use it and our legal basis",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We use your information to reply to your enquiry, prepare proposals and quotes, make and manage bookings with hotels, guides, drivers and other suppliers, look after you while you travel, and keep the records we are required to keep by law.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Our legal bases are: taking steps at your request before entering into a contract and performing that contract; your consent where we ask for it (for example, the consent box on our enquiry form, or to keep in touch about future trips); our legitimate interest in running and securing our business; and compliance with legal obligations such as accounting and tax rules.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We do not sell your personal information and we do not use it for automated decision-making.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Who we share it with",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We share only what is needed with the suppliers who provide your journey (accommodation, transport, guides and activity providers), with insurers or emergency services if you need help while travelling, and with service providers who help us run the business, such as our website host and email provider, under contracts that require them to protect it.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "The service providers involved in this website are:{0}",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Some suppliers and service providers are outside your country. Where information is transferred outside the UK or the European Economic Area, we make sure appropriate safeguards are in place, such as standard contractual clauses.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "How long we keep it",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We keep enquiries that do not lead to a booking for up to two years, then delete them. We keep booking records for as long as the law requires for accounting and tax purposes, usually up to seven years after your journey.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Your rights",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "You can ask for a copy of your information, ask us to correct or delete it, object to or restrict how we use it, ask for it to be transferred, and withdraw any consent you have given at any time. Write to {0}; we reply within one month.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "If you are unhappy with how we have handled your information, please tell us first. You also have the right to complain to the data protection authority in the country where you live or work.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Security",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We use reputable providers, encrypted connections (HTTPS) and limited access to protect your information. No method of transmission over the internet is completely secure, so please do not send passport scans or card details by ordinary email unless we ask you to.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Cookies",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Our use of cookies and similar technologies is explained in our <a href=\"/cookies/\">Cookie Policy</a>.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Changes to this policy",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We may update this policy from time to time. The date at the top shows when it last changed.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Booking Terms",
+  "files": [
+   "data/legal.ts",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "The terms on which {0} plans and arranges tailor-made journeys. Please read them before you confirm a booking.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "About these terms",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "These terms apply to every journey arranged by {0} (“we”, “us”), contact {1}, {2}. “You” means the person making the booking and everyone travelling on it. The person who makes the booking confirms that they are authorised to accept these terms on behalf of everyone named on it.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Enquiries and proposals",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Every journey starts with an enquiry and a conversation. We then send a written proposal with an itinerary and a quote. Proposals and quotes are free and are not a booking: places are not held until a booking is confirmed, and availability and prices can change until then.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Prices",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Our quotes are tailor-made and state what is and is not included. Unless the quote says otherwise, international flights, travel insurance, visas, tips, and personal expenses are not included. Once a booking is confirmed we will not change its price except where permitted by law, for example because of changes in transport costs, taxes or fees imposed by third parties or exchange rates, and we will tell you as early as possible and explain how the change was calculated.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Booking, deposit and balance",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "A booking is confirmed when you accept the proposal, pay the deposit stated in it and we send you a written confirmation. The deposit secures the arrangements and is used to pay suppliers.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "The balance is due by the date stated in your confirmation, usually some weeks before you travel. If the balance is not received on time we may treat the booking as cancelled by you and apply the cancellation charges below. Bookings made close to departure may require full payment at the time of booking.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Changes by you",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "If you want to change your booking after it is confirmed, tell us in writing as soon as possible. We will do our best to help, but changes depend on availability and suppliers’ own conditions. We will pass on any extra cost and may charge a reasonable fee for the work involved; both will be agreed with you before we make the change.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "You may transfer your booking to another person who meets any conditions of the journey, provided you give us reasonable notice before departure. You and the new traveller are jointly responsible for any balance and for any extra costs arising from the transfer.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Cancellation by you",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "You may cancel at any time by writing to us. Because we pay suppliers in advance, cancellation charges apply; they increase as departure gets closer and are set out in your proposal and confirmation before you book. Where suppliers refund us, we will pass the refund on to you less the cancellation charge. Your travel insurance may cover cancellation charges in some circumstances.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "You may cancel without a charge if unavoidable and extraordinary circumstances at your destination significantly affect the journey, such as war, natural disaster or a serious outbreak of disease, as recognised by the relevant government travel advice.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Changes and cancellation by us",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We plan carefully, but occasionally we have to make changes. If a change is minor we will tell you as soon as we can. If we have to make a significant change, or cancel your journey, we will tell you as soon as possible and offer you the choice of the changed arrangements, an alternative journey of equivalent or higher standard if available, or a full refund of the money you have paid us.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We will not cancel your journey after the balance is due unless we are forced to by unavoidable and extraordinary circumstances, or because you have not paid.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Travel insurance",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Comprehensive travel insurance is a condition of booking. It must cover cancellation and curtailment, medical treatment, repatriation and any activities included in your journey. Please arrange it when you book and send us the policy details before you travel.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Passports, visas and health",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Each traveller is responsible for holding a valid passport, any visas and entry permits, and meeting the health and vaccination requirements for every country on the itinerary, including any rules on passport validity and blank pages. We will share general guidance, but requirements change: please check the official government advice for your nationality before you book and again before you travel. We are not responsible for costs arising from missing or incorrect documents.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Please tell us before you book about any medical condition, disability or reduced mobility that may affect your journey, so that we can advise whether the arrangements are suitable.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Our responsibilities and limits",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We are responsible for making sure that the arrangements we book are provided as described, by suppliers we have selected with reasonable care. If something goes wrong, tell us or the supplier straight away so that it can be put right.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We are not responsible where a failure is caused by you, by a third party not connected with providing your journey, or by unavoidable and extraordinary circumstances beyond our control. Where we are liable, our liability is limited as permitted by law and by the international conventions that apply to air, sea and rail travel and to hotels. Nothing in these terms limits liability for death or personal injury caused by negligence, or any other liability that cannot be limited by law.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Excursions or services that you book directly with a local supplier during your journey are not part of our arrangements, and we are not responsible for them.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Your responsibilities",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "We ask you to follow the reasonable instructions of our suppliers, respect local laws and customs, and not behave in a way that puts others at risk or causes damage. We may end the journey of anyone who does, without refund.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Complaints",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "If you have a problem during your journey, tell the supplier and us at once so that we can try to resolve it on the spot. If it is not resolved, write to us at {0} within 28 days of your return and we will reply promptly. If we cannot agree, you may be able to use an alternative dispute resolution scheme.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Governing law",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "These terms are governed by the law that applies where our business is established, and any dispute will be dealt with by the courts there. This does not take away any protection given to you by the mandatory consumer laws of the country where you live.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Cookie Policy",
+  "files": [
+   "data/legal.ts",
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "What {0} stores on your device when you use this website, and how to control it.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Cookies and similar technologies",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Cookies are small text files that a website saves in your browser. Similar technologies, such as local storage, work in much the same way. They can be strictly necessary for a site to work, or used for things like analytics and advertising, which need your consent.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "What this site uses",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "This site does not use advertising or tracking cookies, and does not set cookies of its own. It uses only the following, which are strictly necessary for features you ask for:{0}Because these are strictly necessary, they do not need consent, and nothing is stored until you use the feature concerned.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "This site does not use any cookies or similar technologies: no analytics, no advertising and no tracking. It does not store anything in your browser.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Third-party content",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Photographs on this site are loaded from an image delivery service, which receives your IP address and browser details in order to send the images to you, in the same way as any website you visit. It does not set cookies through this site.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "Consent and how to withdraw it",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "If we ever add analytics or any other cookies that are not strictly necessary, we will ask for your consent first, through a banner on the site, and update this policy. You will be able to withdraw your consent at any time from the same place.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "You can also delete cookies and site data, or block them, in your browser settings at any time. Blocking strictly necessary storage may stop some features from working.",
+  "files": [
+   "data/legal.ts"
+  ]
+ },
+ {
+  "en": "A vetted home",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A furnished home we have visited, photographed and tested, with a proper bed, a real kitchen and a lease that suits your dates.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A place to work",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A desk and chair set up for long days, fast tested internet, and coworking nearby if you want company.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Airport pickup",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Someone waiting at arrivals to drive you home and show you how everything works.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Local SIM",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A Portuguese SIM or eSIM with generous data, ready the moment you land.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "NIF and admin help",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Help getting your Portuguese tax number (NIF), plus the small admin that makes daily life easier.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A first week of neighborhood walks, market visits and introductions, so you feel at home quickly.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Community events",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Regular dinners, walks and meetups with other guests and our people in Portugal.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Weekend escapes",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Planned weekends away to other corners of Portugal, booked and arranged for you.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Visa guidance",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Clear guidance on your options and an introduction to our partner immigration lawyers, who handle the application.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "School guidance",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Help shortlisting international or local schools, arranging visits and managing applications.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Taster",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A home and workspace to test the life.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "One month to find out whether Portugal suits you. We set you up in a home with a proper workspace, meet you at the airport and introduce you to your neighborhood, so you can spend the month living rather than organising.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A furnished one-month home in the destination you choose, checked in person by our team.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A real desk, a good chair and tested Wi-Fi, so your working days feel normal from day one.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A driver at arrivals and a walk-through of your home, the boiler and the nearest bakery.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A local SIM or eSIM with plenty of data for the whole month.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A first week of short neighborhood walks and introductions to help you settle fast.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "An invitation to every guest dinner and meetup that happens during your month.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Week 1",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Arrive and settle",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Airport pickup, a walk around your neighborhood, the market, the pharmacy and the best coffee nearby. Your desk is ready on Monday morning.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Week 2",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Find your rhythm",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Work in the mornings, explore in the afternoons. Try the coworking space, join a guest dinner and book a Portuguese taster class.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Week 3",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Go a little further",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A day trip along the coast or into the hills, a cooking class, and a few evenings out with people you have met.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Week 4",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Decide what’s next",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A call with your specialist about how it felt, and what a longer season could look like if you want to come back.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "First-timers",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Season",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "up to 3 months",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Long enough to belong, planned to fit short-stay rules.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A season of up to three months, designed to fit within the Schengen short-stay rules for visa-exempt travelers. Enough time to learn the language basics, build a routine and make real friends, with weekend escapes to see more of Portugal.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A furnished home for your whole season, chosen with you from homes we have visited and vetted.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A dedicated workspace at home and a coworking option nearby for days when you want company.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Pickup on arrival and a full walk-through of your home and neighborhood.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A local SIM or eSIM with generous data, topped up for the length of your stay.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Help getting a NIF if you need one, plus help with gym memberships, transport cards and local admin.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A welcome week of walks, market visits and introductions to our local people.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Weekly community events, from long dinners to coastal walks and language exchanges.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Two planned weekend escapes to other regions, with transport and stays booked for you.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Arrive and unpack properly",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Pickup, welcome walk, SIM, transport card and a first market shop. You unpack fully, because this home is yours for the season.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Build a routine",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A regular coworking day, a weekly Portuguese class and a standing table at the guest dinner. The café starts to know your order.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A weekend escape",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Two nights somewhere new: the Douro for the vineyards, the Alentejo for the quiet, or the Algarve coast. Booked and arranged by us.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Live like a local",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A surf lesson, a tile-painting workshop or a long hike, depending on where you are. A check-in call with your specialist to plan the next month.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Full year",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "6–12 months",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A proper life in Portugal, with the paperwork handled.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Six to twelve months to live in Portugal properly. We guide you through the right visa, usually the D8 or D7, and introduce you to our partner immigration lawyers who handle the application. Then we find your home, set up your admin and make sure you are part of a community from the start.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A long-let home on a proper lease, vetted by us and negotiated at a monthly rate that reflects a longer stay.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A home office set up for full-time work, plus a coworking membership option nearby.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Pickup on arrival, a full home walk-through and help with the first big shop.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A local SIM or eSIM on day one, and help moving to a Portuguese contract if you want one.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Help with your NIF, a Portuguese bank account, utility contracts and registering with the local health centre.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A welcome week to get your bearings, with introductions to neighbors and local services.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Year-round community events, so you have friends in town long after the welcome week.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A weekend escape each season to see more of Portugal: wine country, the islands, the mountains.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Guidance on the D8 or D7 and an introduction to our partner immigration lawyers, who prepare and submit your application.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Land and settle in",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Pickup, keys, welcome walk and SIM. We book your first appointments for the bank and any outstanding residence steps.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Admin, done together",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Bank account, utilities, health centre registration and a transport pass. Your specialist comes along or arranges help where it is useful.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Find your people",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Start a weekly language class, join a guest dinner and try a club, a choir or a running group. We make the introductions.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Look up and around",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Your first weekend escape, and a check-in with your specialist about the months ahead: renewals, school terms or a change of scene.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Early retirees",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Long-term movers",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Family season",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "a school term (3–4 months) or a full school year",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A season abroad the whole family will remember.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A school term or a full school year in Portugal, planned around your children. We help you choose schools, find a family home near them and set up the routines that make a new country feel safe and fun, with visa guidance for longer stays.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A family home with space for everyone, close to schools, parks and a good weekly market.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A quiet workspace away from the living areas, so work and family time stay separate.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Pickup with child seats and room for all the luggage, and a home walk-through on arrival.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Local SIMs or eSIMs for the adults, and advice on a sensible setup for older children.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Help with NIFs for the whole family, bank accounts and health centre registration.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A family welcome week: playgrounds, the pediatric clinic, sports clubs and the best ice cream.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Family-friendly community events where children make friends and parents find their people.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Weekend escapes planned with children in mind, from farm stays to island beaches.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Guidance on visa options for the whole family and an introduction to our partner immigration lawyers.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Help shortlisting international schools with British, American and IB curricula, or local schools, plus visits and applications.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Arrive as a family",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Pickup with child seats, a walk to school and the nearest park, and a calm first weekend to let everyone adjust.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "First days at school",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "School starts with a visit and an introduction to teachers. We help with uniforms, lunch plans and the school run.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "After-school life",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Surf club, football or swimming for the children, a Portuguese class for the adults, and a family dinner with other guests.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A family weekend away",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "A weekend escape planned for small legs: a farm stay in the Alentejo or a beach town on the coast. Then a check-in with your specialist.",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "School-age children",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "Parents working remotely",
+  "files": [
+   "data/plans.ts"
+  ]
+ },
+ {
+  "en": "The D8 digital nomad visa, explained",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "Who the D8 is for, how much income you need in 2026, the two routes it offers and the documents you will typically be asked for.",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "Why Évora is the place to be in 2027",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "A walled Roman town, Alentejo wine, cork forests and a year as European Capital of Culture. Here is why we think 2027 is Évora’s year.",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "Lisbon vs Porto for a long stay",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "Two very different cities, both wonderful to live in. We compare cost, weather, community and day-to-day life to help you choose.",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "How to plan a season in Portugal",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "From choosing how long to stay to booking your first coworking day, a practical timeline for planning one to twelve months in Portugal.",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "Planning",
+  "files": [
+   "data/posts.ts"
+  ]
+ },
+ {
+  "en": "Guests hosted",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Solo travelers, couples and families who have spent a season with us.",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Average stay",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Long enough to have a favorite café and a neighbor who waves.",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Repeat guests",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Guests who came back for another season, often somewhere new.",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Homes vetted",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Homes we have visited, tested and photographed in person.",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "From Lisbon and Porto to the Douro, the Algarve and the islands.",
+  "files": [
+   "data/stats.ts"
+  ]
+ },
+ {
+  "en": "Your stay",
+  "files": [
+   "data/types.ts"
+  ]
+ },
+ {
+  "en": "Payment & booking",
+  "files": [
+   "data/types.ts"
+  ]
+ },
+ {
+  "en": "Cancellations & changes",
+  "files": [
+   "data/types.ts"
+  ]
+ },
+ {
+  "en": "Families & accessibility",
+  "files": [
+   "data/types.ts"
+  ]
+ },
+ {
+  "en": "Miscellaneous",
+  "files": [
+   "data/types.ts"
+  ]
+ },
+ {
+  "en": "Euro",
+  "files": [
+   "config/currency.ts"
+  ]
+ },
+ {
+  "en": "US dollar",
+  "files": [
+   "config/currency.ts"
+  ]
+ },
+ {
+  "en": "British pound",
+  "files": [
+   "config/currency.ts"
+  ]
+ },
+ {
+  "en": "Canadian dollar",
+  "files": [
+   "config/currency.ts"
+  ]
+ },
+ {
+  "en": "Australian dollar",
+  "files": [
+   "config/currency.ts"
+  ]
+ },
+ {
+  "en": "Brazilian real",
+  "files": [
+   "config/currency.ts"
+  ]
+ },
+ {
+  "en": "About",
+  "files": [
+   "config/nav.ts"
+  ]
+ },
+ {
+  "en": "Your harbor in Portugal, for a season.",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Welcome to your season.",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "A season in Portugal, planned end to end by one dedicated specialist.",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Porto Season plans one to twelve months of living, working and slowing down anywhere in Portugal: Lisbon, Porto, the coast, the Alentejo, the Douro, Madeira and the Azores. Home, workspace, visa guidance and community, handled by one specialist.",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Lisbon, Portugal",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Second Home Lisboa, Mercado da Ribeira, Avenida 24 de Julho 50, 1200-479 Lisboa, Portugal",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Second Home Lisboa",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Mercado da Ribeira",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Avenida 24 de Julho 50",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "1200-479 Lisboa, Portugal",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Mercado da Ribeira, Avenida 24 de Julho 50",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Lisboa",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Monday to Friday",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Saturday",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Sunday",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "Closed",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "All times are Lisbon time (WET/WEST).",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "[PARTNER NAME]",
+  "files": [
+   "config/site.ts"
+  ]
+ },
+ {
+  "en": "AIMA, Agency for Integration, Migration and Asylum",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "Portuguese consular network (Vistos portal)",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "EU official travel portal (EES & ETIAS)",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "EU short-stay calculator",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "Guidance only, not legal advice. Verified as of {0}.",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "Schengen short stay",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "Visa-exempt travelers can stay up to 90 days in any 180-day period across the whole Schengen area, not just Portugal.",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "D8 digital nomad visa",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "For people working remotely for employers or clients outside Portugal. Temporary stay (up to one year) or residence route.",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "D7 passive income visa",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "For people with regular passive income such as pensions, rental income, dividends or royalties.",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "EES (EU Entry/Exit System)",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "Non-EU travelers register fingerprints and a facial image at the border on first entry. Passport stamps are being replaced by this digital record.",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "ETIAS travel authorization",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "2027 (no firm date yet)",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "A €20 online pre-travel authorization for visa-exempt travelers. Launch has been postponed to 2027 and there is no firm date yet. You do not need it today.",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "A €20 online pre-travel authorization for visa-exempt travelers. Apply only on the official EU site before you travel.",
+  "files": [
+   "config/visa.ts"
+  ]
+ },
+ {
+  "en": "useCurrency must be used inside CurrencyProvider",
+  "files": [
+   "lib/currency.tsx"
+  ]
+ },
+ {
+  "en": "until you clear it",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "remembers the currency you chose for showing prices",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "remembers whether you turned the ambient sound on or off",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "until you send the planner or clear it",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "saves your answers in the season planner on this device so you can finish later; it is deleted when you send it",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "Vercel",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "hosts this website and processes enquiry form submissions",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "Documents for your visa, lease and paperwork",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "If you choose to share documents such as passport scans, proof of income or bank statements, we use them only to arrange your stay and, with your permission, to share them with our partner immigration lawyers so that they can advise on and prepare your visa application. We ask you to send them through an encrypted link, not by ordinary email.",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "Documents are stored encrypted, access is limited and logged, and we permanently delete them once they are no longer needed for your stay or as soon as you ask us to, unless the law requires us to keep them.",
+  "files": [
+   "lib/legal.ts"
+  ]
+ },
+ {
+  "en": "Please add your first name",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Please add your last name",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Tell us a little about your season (10+ characters)",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "January",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "February",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "March",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "April",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "June",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "July",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "August",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "September",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "October",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "November",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "December",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Add an age",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Age 0–17",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Choose a start month",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Choose how long you’d like to stay",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Let us know if your dates are flexible",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Tell us roughly how long",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Pick at least one vibe (or “not sure yet”)",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Are you working remotely?",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Choose a home type",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Choose a workspace option",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "At least one adult",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Choose the closest option",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Choose your main income type",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Add a monthly budget",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Budget looks low: at least €500",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Please add your name",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "Please agree so we can contact you",
+  "files": [
+   "lib/schemas.ts"
+  ]
+ },
+ {
+  "en": "required before you travel",
+  "files": [
+   "lib/tokens.ts"
+  ]
+ },
+ {
+  "en": "not yet required (launch expected in {0})",
+  "files": [
+   "lib/tokens.ts"
+  ]
+ }
+]

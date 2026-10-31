@@ -1,3 +1,4 @@
+import { tp } from '@/lib/i18n/t';
 export function Marquee({
   children,
   duration = 60,
@@ -12,7 +13,7 @@ export function Marquee({
   label?: string;
 }) {
   return (
-    <div className={`marquee overflow-hidden ${className}`} aria-label={label} role={label ? 'region' : undefined}>
+    <div className={`marquee overflow-hidden ${className}`} aria-label={tp(label)} role={label ? 'region' : undefined}>
       <div
         className="marquee-track flex w-max"
         style={{ '--marquee-duration': `${duration}s`, '--marquee-direction': reverse ? 'reverse' : 'normal' } as React.CSSProperties}

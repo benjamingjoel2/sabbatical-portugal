@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import { t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
 import type { ImageKey } from '@/data/images';
 import { Photo } from './Photo';
 import { ArrowRight } from '@/components/svg/Icons';
@@ -29,13 +30,12 @@ export function CtaHero({
           <Photo k={image} sizes="26rem" />
         </div>
         <div className="px-5 pb-8 pt-4">
-          <h2 className="tight-display text-[clamp(1.75rem,1.4rem+1.2vw,2.25rem)] leading-[1]">{lines.join(' ')}</h2>
+          <h2 className="tight-display text-[clamp(1.75rem,1.4rem+1.2vw,2.25rem)] leading-[1]">{tp(lines).join(' ')}</h2>
           <p className="mt-3 text-[0.875rem] font-light leading-snug text-shell/80">
-            Tell us when, where and who. Your specialist replies within one working day, Lisbon time.
-          </p>
+            {t("Tell us when, where and who. Your specialist replies within one working day, Lisbon time.")}</p>
         </div>
         <Link href={href} className="group flex h-14 items-center justify-between bg-shell px-5 text-[1rem] font-medium text-harbor transition-colors hover:bg-terracotta hover:text-shell">
-          {label}
+          {tp(label)}
           <ArrowRight className="h-3 w-7 transition-transform group-hover:translate-x-1" />
         </Link>
       </div>

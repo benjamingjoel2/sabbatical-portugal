@@ -1,5 +1,6 @@
 'use client';
 
+import { tp } from '@/lib/i18n/t';
 import { AnimatePresence, m as motion } from 'framer-motion';
 import { useId, useState } from 'react';
 import { Chevron, Plus } from '@/components/svg/Icons';
@@ -48,7 +49,7 @@ export function Accordion({
                   variant === 'cards' ? 'px-4 py-4 text-[0.9375rem] font-medium' : 'py-5 text-lg md:text-xl'
                 }`}
               >
-                <span>{it.q}</span>
+                <span>{tp(it.q)}</span>
                 {variant === 'cards' ? (
                   <Plus className={`mt-1 h-3 w-3 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`} />
                 ) : (
@@ -69,7 +70,7 @@ export function Accordion({
                   className="overflow-hidden"
                 >
                   <div className={`text-[0.875rem] leading-relaxed text-harbor/80 ${variant === 'cards' ? 'px-4 pb-5' : 'pb-6 pr-8'}`}>
-                    {it.a}
+                    {tp(it.a)}
                   </div>
                 </motion.div>
               )}

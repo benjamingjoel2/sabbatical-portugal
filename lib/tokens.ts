@@ -1,5 +1,6 @@
 import { site } from '@/config/site';
 import { visa } from '@/config/visa';
+import { t, tf } from '@/lib/i18n/t';
 
 const euro = (n: number) => `€${n.toLocaleString('en-GB')}`;
 
@@ -13,10 +14,10 @@ export function fillTokens(text: string): string {
     etiasFee: euro(visa.etias.feeEur),
     etiasStatus:
       visa.etias.status === 'required'
-        ? 'required before you travel'
-        : `not yet required (launch expected in ${visa.etias.expectedLaunch})`,
+        ? t('required before you travel')
+        : tf('not yet required (launch expected in {0})', visa.etias.expectedLaunch),
     visaPartner: site.visaPartner,
     deletionDays: site.documentDeletionDays,
   };
-  return text.replace(/\{(\w+)\}/g, (m, k: string) => map[k] ?? m);
+  return t(text).replace(/\{(\w+)\}/g, (m, k: string) => map[k] ?? m);
 }

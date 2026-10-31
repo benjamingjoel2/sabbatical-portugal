@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
 import { m as motion, useReducedMotion } from 'framer-motion';
 import { AZORES, AZORES_VIEW, GEO_PINS, MADEIRA, MADEIRA_VIEW, MAINLAND_VIEW, PORTUGAL_MAINLAND, SPAIN } from './portugalGeo';
 import { destinations } from '@/data/destinations';
@@ -55,7 +56,7 @@ export function PortugalMap({
 
   return (
     <svg viewBox="0 0 760 640" className={className} role="img" aria-labelledby="pt-map-title">
-      <title id="pt-map-title">Map of Portugal showing Porto Season’s twelve destinations, including Madeira and the Azores</title>
+      <title id="pt-map-title">{t("Map of Portugal showing Porto Season’s twelve destinations, including Madeira and the Azores")}</title>
       <defs>
         <clipPath id="clip-mainland">
           <rect x={m.x} y={m.y} width={m.w} height={m.h} />
@@ -80,11 +81,9 @@ export function PortugalMap({
           <path d={PORTUGAL_MAINLAND} fill="#FBFAF6" stroke="#14263B" strokeWidth="1" strokeLinejoin="round" />
         </g>
         <text x={m.x + 312} y={m.y + 300} className="fill-harbor/35 text-[13px] uppercase tracking-[0.3em]" textAnchor="middle">
-          Spain
-        </text>
+          {t("Spain")}</text>
         <text x={m.x + 14} y={m.y + 240} className="fill-harbor/40 text-[10px] uppercase tracking-[0.3em]" transform={`rotate(-90 ${m.x + 14} ${m.y + 240})`} textAnchor="middle">
-          Atlantic Ocean
-        </text>
+          {t("Atlantic Ocean")}</text>
       </g>
       <rect x={m.x} y={m.y} width={m.w} height={m.h} fill="none" stroke="#14263B" strokeOpacity="0.25" />
 
@@ -97,8 +96,7 @@ export function PortugalMap({
       </g>
       <rect x={az.x} y={az.y} width={az.w * az.s} height={az.h * az.s} fill="none" stroke="#14263B" strokeOpacity="0.25" />
       <text x={az.x + 10} y={az.y + az.h * az.s - 12} className="fill-harbor text-[12px] uppercase tracking-[0.2em]">
-        Azores
-      </text>
+        {t("Azores")}</text>
 
       {/* Madeira inset */}
       <g clipPath="url(#clip-madeira)">
@@ -109,8 +107,7 @@ export function PortugalMap({
       </g>
       <rect x={md.x} y={md.y} width={md.w * md.s} height={md.h * md.s} fill="none" stroke="#14263B" strokeOpacity="0.25" />
       <text x={md.x + 10} y={md.y + md.h * md.s - 12} className="fill-harbor text-[12px] uppercase tracking-[0.2em]">
-        Madeira
-      </text>
+        {t("Madeira")}</text>
 
       {/* Pins */}
       {destinations.map((d, i) => {
@@ -132,7 +129,7 @@ export function PortugalMap({
               onMouseLeave={() => onHover?.(null)}
               onFocus={() => onHover?.(d.slug)}
               onBlur={() => onHover?.(null)}
-              aria-label={d.name}
+              aria-label={tp(d.name)}
             >
               <circle cx={p.x} cy={p.y} r={on ? 10 : 7} className="fill-terracotta/25 transition-all duration-300" />
               <circle cx={p.x} cy={p.y} r="3.5" className={on ? 'fill-terracotta' : 'fill-harbor'} />
@@ -143,7 +140,7 @@ export function PortugalMap({
                 className={`text-[12px] font-medium transition-colors ${on ? 'fill-terracotta' : 'fill-harbor'}`}
                 style={{ paintOrder: 'stroke', stroke: '#FBFAF6', strokeWidth: 3, strokeLinejoin: 'round' }}
               >
-                {d.shortName}
+                {tp(d.shortName)}
               </text>
             </Link>
           </motion.g>

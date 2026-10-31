@@ -1,5 +1,6 @@
 'use client';
 
+import { tp } from '@/lib/i18n/t';
 import { animate, useInView, useReducedMotion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
@@ -21,7 +22,7 @@ export function Counter({ value, decimals = 0, duration = 2.2 }: { value: number
 
   return (
     <span ref={ref} className="tabular-nums">
-      {n.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}
+      {tp(n.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }))}
     </span>
   );
 }

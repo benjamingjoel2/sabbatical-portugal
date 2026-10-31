@@ -1,5 +1,6 @@
 'use client';
 
+import { t, tp } from '@/lib/i18n/t';
 import { useEffect, useState } from 'react';
 import { faqTabs, type FaqTab } from '@/data/types';
 import { faqs } from '@/data/faqs';
@@ -8,7 +9,8 @@ import { TabList } from './Tabs';
 import { Accordion } from './Accordion';
 
 /** Kultiveret booking info: tab row (■ marks active), FAQ cards below. Deep-linkable via ?tab=. */
-export function FaqTabs() {
+/** `items` lets the server pass FAQs already translated and filled, so long answers need no client dictionary. */
+export function FaqTabs({ items = faqs }: { items?: typeof faqs }) {
   const [tab, setTab] = useState<FaqTab>('your-stay');
 
   useEffect(() => {
@@ -23,12 +25,12 @@ export function FaqTabs() {
     window.history.replaceState(null, '', url);
   };
 
-  const list = faqs.filter((f) => f.tab === tab);
+  const list = items.filter((f) => f.tab === tab);
   return (
     <div>
-      <TabList tabs={faqTabs} value={tab} onChange={change} idBase="faq" label="FAQ topics" />
+      <TabList tabs={faqTabs} value={tab} onChange={change} idBase="faq" label={t("FAQ topics")} />
       <div role="tabpanel" id={`faq-panel-${tab}`} aria-labelledby={`faq-tab-${tab}`} className="mt-8" tabIndex={0}>
-        <Accordion key={tab} variant="cards" items={list.map((f) => ({ id: f.id, q: f.q, a: <p>{fillTokens(f.a)}</p> }))} defaultOpen={list[0] ? [list[0].id] : []} />
+        <Accordion key={tab} variant="cards" items={list.map((f) => ({ id: f.id, q: f.q, a: <p>{tp(fillTokens(f.a))}</p> }))} defaultOpen={list[0] ? [list[0].id] : []} />
       </div>
     </div>
   );

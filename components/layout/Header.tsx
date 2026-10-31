@@ -1,10 +1,12 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
+import { usePathname } from '@/lib/i18n/navigation';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
 import { useState } from 'react';
 import { Logo } from './Logo';
+import { LanguageSwitcher } from '@/components/i18n/LanguageSwitcher';
 import { CurrencySwitcher } from './CurrencySwitcher';
 import { SoundToggle } from '@/components/sound/SoundToggle';
 import { useUI } from './UIProvider';
@@ -32,11 +34,11 @@ export function Header() {
         href="#main"
         className="sr-only z-[60] bg-harbor px-4 py-3 text-sm text-shell focus:not-sr-only focus:fixed focus:left-2 focus:top-2"
       >
-        Skip to content
-      </a>
+        {t("Skip to content")}</a>
       <div className="flex h-[var(--header-h)] items-center justify-between gap-4 px-gutter">
         <Logo />
         <div className="flex items-center gap-2 md:gap-3">
+          <LanguageSwitcher className="hidden md:flex" />
           <SoundToggle />
           <CurrencySwitcher className="hidden md:block" id="currency-header" />
           <Link
@@ -45,8 +47,7 @@ export function Header() {
               light ? 'border-shell hover:bg-shell hover:text-harbor' : 'border-harbor hover:bg-harbor hover:text-shell'
             }`}
           >
-            Plan my season
-          </Link>
+            {t("Plan my season")}</Link>
           <button
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -56,7 +57,7 @@ export function Header() {
               menuOpen ? 'bg-harbor text-shell' : light ? 'bg-shell text-harbor' : 'bg-harbor text-shell hover:bg-terracotta'
             }`}
           >
-            <span>{menuOpen ? 'Close' : 'Menu'}</span>
+            <span>{tp(menuOpen ? 'Close' : 'Menu')}</span>
             <span aria-hidden className="relative block h-2 w-3.5">
               <span className={`absolute left-0 h-px w-full bg-current transition-transform duration-300 ${menuOpen ? 'top-1 rotate-45' : 'top-0'}`} />
               <span className={`absolute left-0 h-px w-full bg-current transition-transform duration-300 ${menuOpen ? 'top-1 -rotate-45' : 'top-2'}`} />

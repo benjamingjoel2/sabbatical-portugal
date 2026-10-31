@@ -1,3 +1,4 @@
+import { tp } from '@/lib/i18n/t';
 import { Accordion } from './Accordion';
 import type { Faq } from '@/data/types';
 import { fillTokens } from '@/lib/tokens';
@@ -14,10 +15,10 @@ export function FaqBlock({ faqs, title = ['FAQs'], footnote }: { faqs: Faq[]; ti
     <section className="bg-shell px-gutter py-20 md:py-28">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="grid gap-8 md:grid-cols-2">
-        <h2 className="text-statement">{title.join(' ')}</h2>
+        <h2 className="text-statement">{tp(title).join(' ')}</h2>
         <div>
-          <Accordion variant="cards" items={faqs.map((f) => ({ id: f.id, q: f.q, a: <p>{fillTokens(f.a)}</p> }))} />
-          {footnote && <div className="mt-8">{footnote}</div>}
+          <Accordion variant="cards" items={faqs.map((f) => ({ id: f.id, q: f.q, a: <p>{tp(fillTokens(f.a))}</p> }))} />
+          {footnote && <div className="mt-8">{tp(footnote)}</div>}
         </div>
       </div>
     </section>

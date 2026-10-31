@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
 import { useState } from 'react';
 import { PortugalMap } from '@/components/svg/PortugalMap';
 import { destinations } from '@/data/destinations';
@@ -14,9 +15,7 @@ export function MapTransition() {
     <section className="bg-shell px-gutter pb-24 pt-16 md:pb-32 md:pt-24" aria-labelledby="map-title">
       <Reveal>
         <h2 id="map-title" className="text-statement indent-[clamp(2rem,30vw,28rem)]">
-          All of Portugal, not just Porto. Twelve places we know street by street, from the Douro’s terraces and Lisbon’s
-          hills to the Algarve coast and two Atlantic archipelagos.
-        </h2>
+          {t("All of Portugal, not just Porto. Twelve places we know street by street, from the Douro’s terraces and Lisbon’s hills to the Algarve coast and two Atlantic archipelagos.")}</h2>
       </Reveal>
 
       <div className="mt-16 grid gap-12 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:items-center">
@@ -31,8 +30,8 @@ export function MapTransition() {
                 onBlur={() => setHover(null)}
                 className={`transition-colors ${hover && hover !== d.slug ? 'text-harbor/30' : 'hover:text-terracotta'}`}
               >
-                {d.shortName}
-                <sup className="ml-1 text-[0.4em] font-medium tracking-normal">{String(i + 1).padStart(2, '0')}</sup>
+                {tp(d.shortName)}
+                <sup className="ml-1 text-[0.4em] font-medium tracking-normal">{tp(String(i + 1).padStart(2, '0'))}</sup>
               </Link>
             </li>
           ))}

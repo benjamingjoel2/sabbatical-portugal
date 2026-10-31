@@ -1,5 +1,6 @@
 'use client';
 
+import { tp } from '@/lib/i18n/t';
 import { AnimatePresence, m as motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { ease } from '@/config/theme';
@@ -32,12 +33,12 @@ export function RotatingWord({
   return (
     <span className={`relative inline-grid align-baseline ${className}`}>
       <span className="sr-only">
-        {srPrefix}
-        {words.join(', ')}
+        {tp(srPrefix)}
+        {tp(words).join(', ')}
       </span>
       {/* reserve width of the longest word */}
       <span aria-hidden className="invisible col-start-1 row-start-1 whitespace-nowrap">
-        {words.reduce((a, b) => (b.length > a.length ? b : a))}
+        {tp(words.reduce((a, b) => (b.length > a.length ? b : a)))}
       </span>
       <AnimatePresence mode="popLayout" initial={false}>
         <motion.span
@@ -53,7 +54,7 @@ export function RotatingWord({
               animate={{ y: '0%', transition: { duration: 0.7, ease, delay: k * 0.022 } }}
               exit={{ y: '-110%', transition: { duration: 0.45, ease, delay: k * 0.012 } }}
             >
-              {ch === ' ' ? ' ' : ch}
+              {tp(ch === ' ' ? ' ' : ch)}
             </motion.span>
           ))}
         </motion.span>

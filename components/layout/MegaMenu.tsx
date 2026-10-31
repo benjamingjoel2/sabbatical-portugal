@@ -1,13 +1,15 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { lhref, t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
+import { usePathname } from '@/lib/i18n/navigation';
 import { AnimatePresence, m as motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { useUI } from './UIProvider';
 import { Photo } from '@/components/shared/Photo';
 import { ArrowLink } from '@/components/shared/Buttons';
 import { CurrencySwitcher } from './CurrencySwitcher';
+import { LanguageSwitcher } from '@/components/i18n/LanguageSwitcher';
 import { destinations } from '@/data/destinations';
 import { categories } from '@/data/categories';
 import { plans } from '@/data/plans';
@@ -97,7 +99,7 @@ export function MegaMenu() {
           id="mega-menu"
           role="dialog"
           aria-modal="true"
-          aria-label="Site menu"
+          aria-label={t("Site menu")}
           ref={panel}
           className="fixed inset-0 z-40 overflow-y-auto bg-azulejo-mist text-harbor"
           initial={{ clipPath: 'inset(0 0 100% 0)' }}
@@ -129,7 +131,7 @@ export function MegaMenu() {
 
             {/* Links column */}
             <div className="flex flex-col justify-between gap-12">
-              <nav aria-label="Menu" className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
+              <nav aria-label={t("Menu")} className="grid gap-x-10 gap-y-8 sm:grid-cols-2">
                 {groups.map((grp, i) => (
                   <div
                     key={grp.title}
@@ -138,14 +140,14 @@ export function MegaMenu() {
                     className={grp.cols === 2 ? 'sm:col-span-2 lg:col-span-1' : ''}
                   >
                     <Link href={grp.href} className="text-[1.5rem] leading-tight tracking-[-0.02em] transition-colors hover:text-terracotta md:text-[1.75rem]">
-                      {grp.title}
+                      {tp(grp.title)}
                     </Link>
                     <ul className={`mt-3 grid gap-x-6 gap-y-1 text-[0.875rem] ${grp.cols === 2 ? 'grid-cols-2' : ''}`}>
                       {grp.links.map((l) => (
                         <li key={l.href}>
                           <Link href={l.href} className="group inline-flex gap-1 transition-colors hover:text-terracotta">
-                            {l.label}
-                            {l.num && <sup className="text-[0.55rem] text-harbor/60">{l.num}</sup>}
+                            {tp(l.label)}
+                            {l.num && <sup className="text-[0.55rem] text-harbor/60">{tp(l.num)}</sup>}
                           </Link>
                         </li>
                       ))}
@@ -155,13 +157,13 @@ export function MegaMenu() {
               </nav>
 
               <div>
-                <a href={`mailto:${site.contact.email}`} className="text-statement block break-all hover:text-terracotta">
-                  {site.contact.email}
+                <a href={lhref(`mailto:${site.contact.email}`)} className="text-statement block break-all hover:text-terracotta">
+                  {tp(site.contact.email)}
                 </a>
                 <ArrowLink href="/plan-my-season" large>
-                  plan my season
-                </ArrowLink>
+                  {t("plan my season")}</ArrowLink>
                 <div className="mt-6 flex items-center gap-6 md:hidden">
+                  <LanguageSwitcher />
                   <CurrencySwitcher id="currency-menu" />
                 </div>
               </div>

@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import { t } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
 
 /** Text logo placeholder in the Kultiveret manner: a tight, heavy grotesk wordmark. */
 export function Logo({ className = '' }: { className?: string }) {
@@ -6,9 +7,8 @@ export function Logo({ className = '' }: { className?: string }) {
     <Link
       href="/"
       className={`tight-display whitespace-nowrap text-[1.625rem] leading-none transition-opacity hover:opacity-70 md:text-[2.125rem] ${className}`}
-      aria-label="Porto Season, home"
+      aria-label={t("Porto Season, home")}
     >
-      Porto Season
-    </Link>
+      {t("Porto Season")}</Link>
   );
 }
