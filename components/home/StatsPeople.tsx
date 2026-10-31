@@ -1,3 +1,4 @@
+import { t, tp } from '@/lib/i18n/t';
 import { stats } from '@/data/stats';
 import { Counter } from '@/components/motion/Counter';
 import { PlaceholderFlag } from '@/components/shared/PlaceholderFlag';
@@ -10,12 +11,12 @@ export function StatsRow({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
         return (
           <li key={s.label} className="border-t border-harbor/20 pt-4">
             <p className="tight-display text-[clamp(3rem,2rem+3.6vw,5.5rem)] leading-none">
-              <Counter value={s.value} decimals={decimals} />
-              {s.suffix}
-              {s.unit && <sup className="ml-1 text-[0.25em] font-medium tracking-normal">{s.unit}</sup>}
+              <Counter value={s.value} decimals={tp(decimals)} />
+              {tp(s.suffix)}
+              {s.unit && <sup className="ml-1 text-[0.25em] font-medium tracking-normal">{tp(s.unit)}</sup>}
             </p>
-            <p className="mt-3 text-[0.9375rem]">{s.label}</p>
-            <p className="mt-1 max-w-[14rem] text-[0.8125rem] leading-snug opacity-70">{s.description}</p>
+            <p className="mt-3 text-[0.9375rem]">{tp(s.label)}</p>
+            <p className="mt-1 max-w-[14rem] text-[0.8125rem] leading-snug opacity-70">{tp(s.description)}</p>
           </li>
         );
       })}
@@ -29,11 +30,9 @@ export function StatsPeople() {
       <div className="px-gutter">
         <div className="mb-14 grid gap-6 md:grid-cols-2 md:items-end">
           <h2 id="stats-title" className="tight-display text-mega">
-            A season you can rely on
-          </h2>
+            {t("A season you can rely on")}</h2>
           <p className="flex flex-wrap items-center gap-2 text-[0.8125rem] md:justify-self-end">
-            <PlaceholderFlag label="Placeholder figures" /> Real numbers will replace these before launch.
-          </p>
+            <PlaceholderFlag label={t("Placeholder figures")} /> {t("Real numbers will replace these before launch.")}</p>
         </div>
         <StatsRow />
       </div>

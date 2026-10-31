@@ -1,5 +1,6 @@
 'use client';
 
+import { t, tp } from '@/lib/i18n/t';
 import { m as motion, useMotionTemplate, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { PORTUGAL_PATH, PORTUGAL_VIEWBOX } from '@/components/svg/paths';
@@ -23,8 +24,8 @@ function HeroCopy() {
   return (
     <>
       <h1 className="hero-caps text-display-xl lg:text-[clamp(2.75rem,4.2vw,5rem)]">
-        <span className="block">Your harbor</span>
-        <span className="block">in Portugal</span>
+        <span className="block">{t("Your harbor")}</span>
+        <span className="block">{t("in Portugal")}</span>
       </h1>
     </>
   );
@@ -38,7 +39,7 @@ function DiscoverButton() {
   };
   return (
     <PillButton type="button" tone="outline" onClick={onClick}>
-      Discover <span aria-hidden>↓</span>
+      {t("Discover ")}<span aria-hidden>↓</span>
     </PillButton>
   );
 }
@@ -47,19 +48,16 @@ function HeroAside() {
   return (
     <div className="max-w-[22rem]">
       <p className="tight-display text-[clamp(1.6rem,1.1rem+1.6vw,2.6rem)] leading-[1.02] tracking-[-0.045em]">
-        <span className="text-harbor/45">— a season of </span>
-        <RotatingWord words={rotating} className="text-azulejo" srPrefix="a season of " />
-        <span className="block text-harbor/45">in Portugal</span>
+        <span className="text-harbor/45">{t("— a season of ")}</span>
+        <RotatingWord words={rotating} className="text-azulejo" srPrefix={t("a season of ")} />
+        <span className="block text-harbor/45">{t("in Portugal")}</span>
       </p>
       <p className="mt-6 hidden text-[0.9375rem] leading-relaxed text-harbor/80 sm:block">
-        One to twelve months in Portugal’s best cities, coastlines, countryside and islands. Your home, workspace,
-        visa guidance and community, planned end to end by one specialist.
-      </p>
+        {t("One to twelve months in Portugal’s best cities, coastlines, countryside and islands. Your home, workspace, visa guidance and community, planned end to end by one specialist.")}</p>
       <div className="mt-7 flex flex-wrap gap-2">
         <DiscoverButton />
         <Pill href="/plan-my-season" tone="dark">
-          Plan my season
-        </Pill>
+          {t("Plan my season")}</Pill>
       </div>
     </div>
   );
@@ -69,16 +67,14 @@ function IntroCopy({ light = true }: { light?: boolean }) {
   return (
     <div className={`grid gap-8 md:grid-cols-2 ${light ? 'text-shell' : 'text-harbor'}`}>
       <h2 className="hero-caps text-display-xl">
-        <span className="block">We make a big move</span>
-        <span className="block">feel simple</span>
+        <span className="block">{t("We make a big move")}</span>
+        <span className="block">{t("feel simple")}</span>
       </h2>
       <div className="max-w-[26rem] space-y-4 self-end text-[0.9375rem] leading-relaxed md:justify-self-end">
-        <p className="font-medium">We don’t just find you a rental.</p>
+        <p className="font-medium">{t("We don’t just find you a rental.")}</p>
         <p>
-          We handle the whole move: before you leave, the week you land, and every month after. The right town, a home
-          that works, a desk, the paperwork, and people to share a table with.
-        </p>
-        <p>From Lisbon’s hills to an Azorean crater lake, Porto Season is your harbor for the length of your stay.</p>
+          {t("We handle the whole move: before you leave, the week you land, and every month after. The right town, a home that works, a desk, the paperwork, and people to share a table with.")}</p>
+        <p>{t("From Lisbon’s hills to an Azorean crater lake, Porto Season is your harbor for the length of your stay.")}</p>
       </div>
     </div>
   );
@@ -127,7 +123,7 @@ export function MaskHero() {
               className="relative mx-auto h-[60vh] w-[30vh]"
               style={{ maskImage: maskUrl, WebkitMaskImage: maskUrl, maskSize: 'contain', WebkitMaskSize: 'contain', maskRepeat: 'no-repeat', WebkitMaskRepeat: 'no-repeat', maskPosition: 'center' }}
             >
-              <Image src={heroSrc} alt={heroAlt} fill priority sizes="40vh" className="object-cover" />
+              <Image src={heroSrc} alt={tp(heroAlt)} fill priority sizes="40vh" className="object-cover" />
             </div>
             <HeroAside />
           </div>
@@ -145,7 +141,7 @@ export function MaskHero() {
   }
 
   return (
-    <section id="hero" ref={ref} className="relative bg-shell" aria-label="Introduction">
+    <section id="hero" ref={ref} className="relative bg-shell" aria-label={t("Introduction")}>
       {/* Pinned image stage: only images move here, never text */}
       <div className="sticky top-0 h-screen overflow-hidden" aria-hidden>
         <GridLines />

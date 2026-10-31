@@ -1,5 +1,6 @@
 'use client';
 
+import { t, tp } from '@/lib/i18n/t';
 import { currencies, currencyMeta, type CurrencyCode } from '@/config/currency';
 import { useCurrency } from '@/lib/currency';
 
@@ -8,7 +9,7 @@ export function CurrencySwitcher({ className = '', id = 'currency' }: { classNam
   return (
     <div className={`relative ${className}`}>
       <label htmlFor={id} className="sr-only">
-        Display prices in ({currencyMeta[currency].label})
+        {t("Display prices in (")}{tp(currencyMeta[currency].label)})
       </label>
       <select
         id={id}
@@ -18,7 +19,7 @@ export function CurrencySwitcher({ className = '', id = 'currency' }: { classNam
       >
         {currencies.map((c) => (
           <option key={c} value={c} className="text-harbor">
-            {c}
+            {tp(c)}
           </option>
         ))}
       </select>

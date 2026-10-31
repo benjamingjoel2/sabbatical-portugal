@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
 import { useState } from 'react';
 import { contactSchema, type ContactInput } from '@/lib/schemas';
 import { site } from '@/config/site';
@@ -45,7 +46,7 @@ export function ContactForm({ className = '' }: { className?: string }) {
   const field = (name: keyof ContactInput, label: string, props: React.InputHTMLAttributes<HTMLInputElement> = {}) => (
     <div className="field">
       <label htmlFor={`cf-${name}`} className="eyebrow text-shell/70">
-        {label}
+        {tp(label)}
       </label>
       <input
         id={`cf-${name}`}
@@ -57,7 +58,7 @@ export function ContactForm({ className = '' }: { className?: string }) {
       />
       {errors[name] && (
         <p id={`cf-${name}-err`} className="text-[0.8125rem] text-[#f1b49b]">
-          {errors[name]}
+          {tp(errors[name])}
         </p>
       )}
     </div>
@@ -67,25 +68,22 @@ export function ContactForm({ className = '' }: { className?: string }) {
     <div className={`bg-harbor text-shell shadow-2xl shadow-harbor-deep/30 ${className}`}>
       {status === 'sent' ? (
         <div className="flex min-h-[24rem] flex-col justify-center gap-4 p-6 md:p-8" role="status">
-          <p className="tight-display text-[2.25rem]">Thank you</p>
+          <p className="tight-display text-[2.25rem]">{t("Thank you")}</p>
           <p className="max-w-md text-[0.9375rem] font-light leading-relaxed text-shell/85">
-            Your message is with us. Your specialist will reply within one working day (Lisbon time).
-          </p>
-          <p className="tight-display text-[1.5rem]">{site.signOff}</p>
+            {t("Your message is with us. Your specialist will reply within one working day (Lisbon time).")}</p>
+          <p className="tight-display text-[1.5rem]">{tp(site.signOff)}</p>
         </div>
       ) : (
-        <form onSubmit={onSubmit} noValidate aria-label="Contact form">
+        <form onSubmit={onSubmit} noValidate aria-label={t("Contact form")}>
           <p className="px-6 pt-6 text-[1rem] font-light text-shell/85 md:px-8">
-            Tell us a little about your season and we’ll come back with the best options.
-          </p>
+            {t("Tell us a little about your season and we’ll come back with the best options.")}</p>
           <div className="grid gap-x-8 gap-y-7 p-6 md:grid-cols-2 md:p-8">
-            {field('firstName', 'First name', { autoComplete: 'given-name', required: true })}
-            {field('lastName', 'Last name', { autoComplete: 'family-name', required: true })}
-            <div className="md:col-span-2">{field('email', 'Email address', { type: 'email', autoComplete: 'email', required: true })}</div>
+            {tp(field('firstName', 'First name', { autoComplete: 'given-name', required: true }))}
+            {tp(field('lastName', 'Last name', { autoComplete: 'family-name', required: true }))}
+            <div className="md:col-span-2">{tp(field('email', 'Email address', { type: 'email', autoComplete: 'email', required: true }))}</div>
             <div className="field md:col-span-2">
               <label htmlFor="cf-message" className="eyebrow text-shell/70">
-                Message: where, when, who’s coming
-              </label>
+                {t("Message: where, when, who’s coming")}</label>
               <textarea
                 id="cf-message"
                 name="message"
@@ -97,23 +95,22 @@ export function ContactForm({ className = '' }: { className?: string }) {
               />
               {errors.message && (
                 <p id="cf-message-err" className="text-[0.8125rem] text-[#f1b49b]">
-                  {errors.message}
+                  {tp(errors.message)}
                 </p>
               )}
             </div>
             <div className="hidden" aria-hidden>
-              <label htmlFor="cf-company">Company</label>
+              <label htmlFor="cf-company">{t("Company")}</label>
               <input id="cf-company" name="company" tabIndex={-1} autoComplete="off" />
             </div>
             <p className="text-[0.8125rem] text-shell/70 md:col-span-2">
-              Prefer to tell us everything at once?{' '}
+              {t("Prefer to tell us everything at once?")}{' '}
               <Link href="/plan-my-season" className="underline underline-offset-2 hover:text-terracotta">
-                Use the full season planner →
-              </Link>
+                {t("Use the full season planner →")}</Link>
             </p>
             {status === 'error' && (
               <p className="text-[0.8125rem] text-[#f1b49b] md:col-span-2" role="alert">
-                Something went wrong. Please try again or email {site.contact.email}.
+                {t("Something went wrong. Please try again or email ")}{tp(site.contact.email)}.
               </p>
             )}
           </div>
@@ -122,7 +119,7 @@ export function ContactForm({ className = '' }: { className?: string }) {
             disabled={status === 'sending'}
             className="group flex h-14 w-full items-center justify-between bg-shell px-6 text-[1rem] font-medium text-harbor transition-colors hover:bg-terracotta hover:text-shell disabled:opacity-60 md:px-8"
           >
-            <span>{status === 'sending' ? 'Sending…' : 'Shall we begin?'}</span>
+            <span>{tp(status === 'sending' ? 'Sending…' : 'Shall we begin?')}</span>
             <span aria-hidden className="transition-transform group-hover:translate-x-1">
               →
             </span>

@@ -1,5 +1,6 @@
 'use client';
 
+import { tp } from '@/lib/i18n/t';
 import { useRef } from 'react';
 
 /** Kultiveret-style text tabs: active marked with a small square. Fully keyboard accessible. */
@@ -30,7 +31,7 @@ export function TabList<T extends string>({
     }
   };
   return (
-    <div role="tablist" aria-label={label} className="flex flex-wrap gap-x-5 gap-y-2">
+    <div role="tablist" aria-label={tp(label)} className="flex flex-wrap gap-x-5 gap-y-2">
       {tabs.map((t, i) => {
         const active = t.slug === value;
         return (
@@ -49,7 +50,7 @@ export function TabList<T extends string>({
             className={`flex items-center gap-2 text-[0.875rem] transition-opacity ${active ? 'opacity-100' : 'opacity-50 hover:opacity-80'}`}
           >
             <span aria-hidden className={`h-1.5 w-1.5 bg-terracotta ${active ? 'opacity-100' : 'opacity-0'}`} />
-            {t.label}
+            {tp(t.label)}
           </button>
         );
       })}

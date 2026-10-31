@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
 import { AnimatePresence, m as motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { categories } from '@/data/categories';
@@ -27,8 +28,8 @@ export function CategoryHeader({ current }: { current: Category }) {
   return (
     <div ref={ref} className="sticky top-[var(--header-h)] z-30 -mt-px bg-shell/90 px-gutter py-3 backdrop-blur-md">
       <div className="tight-display flex flex-wrap items-baseline gap-x-4 text-[clamp(1.75rem,1.2rem+2.2vw,2.5rem)]">
-        <span className="text-harbor/45">living through</span>
-        <span className="tabular-nums">({current.number})</span>
+        <span className="text-harbor/45">{t("living through")}</span>
+        <span className="tabular-nums">({tp(current.number)})</span>
         <button
           type="button"
           aria-expanded={open}
@@ -36,18 +37,18 @@ export function CategoryHeader({ current }: { current: Category }) {
           onClick={() => setOpen((o) => !o)}
           className="inline-flex items-baseline gap-2 lowercase transition-colors hover:text-terracotta"
         >
-          {current.label}
+          {tp(current.label)}
           <span aria-hidden className={`text-[0.5em] transition-transform ${open ? 'rotate-180' : ''}`}>
             ▾
           </span>
-          <span className="sr-only">Choose another category</span>
+          <span className="sr-only">{t("Choose another category")}</span>
         </button>
       </div>
       <AnimatePresence>
         {open && (
           <motion.nav
             id="category-list"
-            aria-label="Life in Portugal categories"
+            aria-label={t("Life in Portugal categories")}
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
@@ -63,8 +64,8 @@ export function CategoryHeader({ current }: { current: Category }) {
                     onClick={() => setOpen(false)}
                     className={`inline-flex items-baseline gap-3 transition-colors hover:text-terracotta ${c.slug === current.slug ? '' : 'text-harbor/45'}`}
                   >
-                    <span className="text-[0.45em] tabular-nums">{c.number}</span>
-                    {c.label}
+                    <span className="text-[0.45em] tabular-nums">{tp(c.number)}</span>
+                    {tp(c.label)}
                     {c.slug === current.slug && <span aria-hidden className="text-[0.5em]">▸</span>}
                   </Link>
                 </li>

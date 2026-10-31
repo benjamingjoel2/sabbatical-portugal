@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/i18n/Link';
 import { ArrowUpRight } from '@/components/svg/Icons';
 
 type Tone = 'light' | 'dark' | 'outline' | 'outline-light';

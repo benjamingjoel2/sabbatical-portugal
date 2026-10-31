@@ -1,5 +1,6 @@
 'use client';
 
+import { t, tp } from '@/lib/i18n/t';
 import { AnimatePresence, m as motion } from 'framer-motion';
 import { useState } from 'react';
 import type { Experience } from '@/data/types';
@@ -30,13 +31,13 @@ export function ExperienceRows({ items }: { items: Experience[] }) {
                   className="grid w-full gap-4 px-4 py-6 text-left transition-colors hover:bg-limestone md:grid-cols-[1.4fr_1fr_auto] md:items-end md:px-5 md:py-8"
                 >
                   <span className={`text-[clamp(1.5rem,1.1rem+1.4vw,2.5rem)] leading-[1.05] tracking-[-0.02em] transition-opacity ${open && !isOpen ? 'opacity-50' : ''}`}>
-                    {e.title}
+                    {tp(e.title)}
                   </span>
                   <span className="flex items-center gap-2 text-[0.8125rem] text-harbor/70">
                     <span aria-hidden className="h-1.5 w-1.5 bg-harbor/70" />
-                    {e.tag} · {e.where}
+                    {tp(e.tag)} · {tp(e.where)}
                   </span>
-                  <span className="text-[0.8125rem] text-harbor/70 md:text-right">{e.duration}</span>
+                  <span className="text-[0.8125rem] text-harbor/70 md:text-right">{tp(e.duration)}</span>
                 </button>
                 <AnimatePresence initial={false}>
                   {isOpen && (
@@ -58,30 +59,28 @@ export function ExperienceRows({ items }: { items: Experience[] }) {
                           </div>
                         </div>
                         <div className="text-[0.9375rem] leading-relaxed">
-                          <p>{e.description}</p>
+                          <p>{tp(e.description)}</p>
                           <dl className="mt-6 space-y-3 text-[0.875rem]">
                             {e.fromPrice !== undefined && (
                               <div>
-                                <dt className="font-medium">Price</dt>
+                                <dt className="font-medium">{t("Price")}</dt>
                                 <dd>
-                                  From <Price eur={e.fromPrice} /> per person
-                                </dd>
+                                  {t("From ")}<Price eur={e.fromPrice} /> {t("per person")}</dd>
                               </div>
                             )}
                             {e.includedIn && e.includedIn.length > 0 && (
                               <div>
-                                <dt className="font-medium">Included in</dt>
-                                <dd>{e.includedIn.map((s) => plans.find((p) => p.slug === s)?.name ?? s).join(', ')} plans</dd>
+                                <dt className="font-medium">{t("Included in")}</dt>
+                                <dd>{tp(e.includedIn.map((s) => plans.find((p) => p.slug === s)?.name ?? s)).join(', ')} {t("plans")}</dd>
                               </div>
                             )}
                             <div>
-                              <dt className="font-medium">Where</dt>
-                              <dd>{e.where}</dd>
+                              <dt className="font-medium">{t("Where")}</dt>
+                              <dd>{tp(e.where)}</dd>
                             </div>
                           </dl>
                           <ArrowLink href="/plan-my-season" className="mt-8">
-                            add it to my season
-                          </ArrowLink>
+                            {t("add it to my season")}</ArrowLink>
                         </div>
                       </div>
                     </motion.div>

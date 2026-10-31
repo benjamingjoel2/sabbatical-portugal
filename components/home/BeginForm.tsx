@@ -1,3 +1,4 @@
+import { t } from '@/lib/i18n/t';
 import { Photo } from '@/components/shared/Photo';
 import { ContactForm } from '@/components/shared/ContactForm';
 import { Reveal } from '@/components/motion/Reveal';
@@ -12,8 +13,7 @@ export function BeginForm() {
       </div>
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_minmax(0,34rem)] lg:items-end">
         <h2 id="begin-title" className="tight-display text-mega text-shell [text-shadow:0_1px_30px_rgba(12,24,38,0.35)]">
-          The best seasons start with a conversation
-        </h2>
+          {t("The best seasons start with a conversation")}</h2>
         <Reveal y={60}>
           <ContactForm />
         </Reveal>

@@ -1,5 +1,6 @@
 'use client';
 
+import { tp } from '@/lib/i18n/t';
 import { useEffect, useState } from 'react';
 import { lisbonDate, lisbonTime } from '@/lib/lisbonTime';
 
@@ -13,9 +14,9 @@ export function LiveClock({ className = '' }: { className?: string }) {
   }, []);
   return (
     <div className={className}>
-      <p className="min-h-[1.5em]">{now ? lisbonDate(now) : ' '}</p>
+      <p className="min-h-[1.5em]">{tp(now ? lisbonDate(now) : ' ')}</p>
       <p className="min-h-[1.5em] tabular-nums" aria-live="off">
-        {now ? lisbonTime(now) : ' '}
+        {tp(now ? lisbonTime(now) : ' ')}
       </p>
     </div>
   );

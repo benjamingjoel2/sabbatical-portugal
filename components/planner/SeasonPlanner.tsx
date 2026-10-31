@@ -1,5 +1,6 @@
 'use client';
 
+import { lhref, t, tf, tp } from '@/lib/i18n/t';
 import { AnimatePresence, m as motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -104,7 +105,7 @@ function ErrorText({ id, msg }: { id: string; msg?: string }) {
   if (!msg) return null;
   return (
     <p id={id} className="mt-1.5 text-[0.8125rem] text-[#f1b49b]">
-      {msg}
+      {tp(msg)}
     </p>
   );
 }
@@ -136,7 +137,7 @@ function Chips({
   };
   return (
     <fieldset aria-describedby={error ? `${name}-err` : undefined} aria-invalid={!!error}>
-      <legend className={labelCls}>{legend}</legend>
+      <legend className={labelCls}>{tp(legend)}</legend>
       <div className="mt-3 flex flex-wrap gap-1.5">
         {options.map((o) => (
           <label
@@ -153,7 +154,7 @@ function Chips({
               onChange={() => toggle(o)}
               className="sr-only"
             />
-            {labels[o] ?? o}
+            {tp(labels[o] ?? o)}
           </label>
         ))}
       </div>
@@ -302,28 +303,27 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
         </div>
         <div className="space-y-6 p-6 md:p-8" role="status">
           <h2 ref={headingRef} tabIndex={-1} className="font-display-caps text-display-m outline-none">
-            Thank you, {state.contact.name.split(' ')[0]}
+            {t("Thank you, ")}{tp(state.contact.name.split(' ')[0])}
           </h2>
           <p className="text-[0.9375rem] leading-relaxed text-shell/85">
-            Your season request is with us. Your specialist will be in touch within one working day (Lisbon time) by{' '}
-            email at {state.contact.email}.
+            {t("Your season request is with us. Your specialist will be in touch within one working day (Lisbon time) by")}{' '}
+            {t("email at ")}{tp(state.contact.email)}.
           </p>
           <div className="border border-shell/20 p-5">
-            <p className="eyebrow text-shell/60">Likely visa path · guidance only</p>
-            <p className="mt-2 font-display font-semibold text-[1.375rem] leading-tight tracking-[-0.04em]">{guidance.title}</p>
-            <p className="mt-3 text-[0.875rem] leading-relaxed text-shell/85">{guidance.summary}</p>
+            <p className="eyebrow text-shell/60">{t("Likely visa path · guidance only")}</p>
+            <p className="mt-2 font-display font-semibold text-[1.375rem] leading-tight tracking-[-0.04em]">{tp(guidance.title)}</p>
+            <p className="mt-3 text-[0.875rem] leading-relaxed text-shell/85">{tp(guidance.summary)}</p>
             <ul className="mt-3 list-disc space-y-1.5 pl-5 text-[0.8125rem] text-shell/80">
               {guidance.points.map((p) => (
-                <li key={p}>{p}</li>
+                <li key={p}>{tp(p)}</li>
               ))}
             </ul>
             <VisaDisclaimer tone="light" className="mt-5" />
           </div>
-          <p className="font-display font-semibold text-[1.5rem] tracking-[-0.04em]">{site.signOff}</p>
+          <p className="font-display font-semibold text-[1.5rem] tracking-[-0.04em]">{tp(site.signOff)}</p>
           {onDone && (
             <button type="button" onClick={onDone} className="h-11 bg-shell px-5 text-[0.9375rem] font-medium text-harbor hover:bg-terracotta hover:text-shell">
-              Close
-            </button>
+              {t("Close")}</button>
           )}
         </div>
       </div>
@@ -332,7 +332,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
 
   /* ---------- Steps ---------- */
   return (
-    <div className="flex flex-col bg-harbor text-shell" aria-label="Season planner">
+    <div className="flex flex-col bg-harbor text-shell" aria-label={t("Season planner")}>
       <div className={`relative overflow-hidden ${compact ? 'h-28' : 'h-36 md:h-44'}`}>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
@@ -350,11 +350,11 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
         <div
           className="absolute inset-x-0 bottom-0 h-1 bg-harbor/50"
           role="progressbar"
-          aria-label="Planner progress"
+          aria-label={t("Planner progress")}
           aria-valuemin={1}
           aria-valuemax={STEP_KEYS.length}
           aria-valuenow={step + 1}
-          aria-valuetext={`Step ${step + 1} of ${STEP_KEYS.length}: ${STEP_TITLES[key]}`}
+          aria-valuetext={tf("Step {0} of {1}: {2}", step + 1, STEP_KEYS.length, STEP_TITLES[key])}
         >
           <motion.div className="h-full bg-terracotta" animate={{ width: `${((step + 1) / STEP_KEYS.length) * 100}%` }} transition={{ duration: 0.6, ease }} />
         </div>
@@ -371,12 +371,12 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
         <div ref={bodyRef} className="grow space-y-7 p-6 md:p-8">
           <div>
             <p className="eyebrow text-shell/50">
-              Step {step + 1} of {STEP_KEYS.length}
+              {t("Step ")}{tp(step + 1)} {t("of ")}{tp(STEP_KEYS.length)}
             </p>
             <h2 ref={headingRef} tabIndex={-1} className="mt-2 font-display font-semibold text-[1.5rem] leading-none tracking-[-0.04em] outline-none">
-              {STEP_TITLES[key]}
+              {tp(STEP_TITLES[key])}
             </h2>
-            <ol className="mt-4 flex gap-1.5" aria-label="Steps">
+            <ol className="mt-4 flex gap-1.5" aria-label={t("Steps")}>
               {STEP_KEYS.map((k, i) => (
                 <li key={k}>
                   <button
@@ -386,7 +386,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                     aria-current={i === step ? 'step' : undefined}
                     className={`text-[0.6875rem] tabular-nums transition-opacity disabled:cursor-not-allowed ${i === step ? 'opacity-100' : i < step ? 'opacity-60 hover:opacity-100' : 'opacity-25'}`}
                   >
-                    <span className="sr-only">{STEP_TITLES[k]}: </span>0{i + 1}
+                    <span className="sr-only">{tp(STEP_TITLES[k])}: </span>0{tp(i + 1)}
                   </button>
                 </li>
               ))}
@@ -398,8 +398,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="startMonth" className={labelCls}>
-                    Start month
-                  </label>
+                    {t("Start month")}</label>
                   <select
                     id="startMonth"
                     value={state.when.startMonth}
@@ -407,17 +406,16 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                     className={`${inputCls} [&>option]:text-harbor`}
                     {...inv('startMonth')}
                   >
-                    <option value="">Choose…</option>
+                    <option value="">{t("Choose…")}</option>
                     {months.map((m) => (
-                      <option key={m}>{m}</option>
+                      <option key={m}>{tp(m)}</option>
                     ))}
                   </select>
                   <ErrorText id="startMonth-err" msg={err('startMonth')} />
                 </div>
                 <div>
                   <label htmlFor="startYear" className={labelCls}>
-                    Year
-                  </label>
+                    {t("Year")}</label>
                   <select
                     id="startYear"
                     value={state.when.startYear}
@@ -425,14 +423,14 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                     className={`${inputCls} [&>option]:text-harbor`}
                   >
                     {[2026, 2027, 2028].map((y) => (
-                      <option key={y}>{y}</option>
+                      <option key={y}>{tp(y)}</option>
                     ))}
                   </select>
                 </div>
               </div>
               <Chips
                 name="length"
-                legend="How long"
+                legend={t("How long")}
                 options={lengthOptions}
                 value={state.when.length}
                 onChange={(v) => update('when', { length: v as string })}
@@ -442,13 +440,12 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               {state.when.length === 'custom' && (
                 <div>
                   <label htmlFor="customLength" className={labelCls}>
-                    Roughly how long?
-                  </label>
+                    {t("Roughly how long?")}</label>
                   <input
                     id="customLength"
                     value={state.when.customLength}
                     onChange={(e) => update('when', { customLength: e.target.value })}
-                    placeholder="e.g. 4 months, or a school year"
+                    placeholder={t("e.g. 4 months, or a school year")}
                     className={inputCls}
                     {...inv('customLength')}
                   />
@@ -457,7 +454,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               )}
               <Chips
                 name="flexible"
-                legend="Are your dates flexible?"
+                legend={t("Are your dates flexible?")}
                 options={['yes', 'no']}
                 value={state.when.flexible}
                 onChange={(v) => update('when', { flexible: v as string })}
@@ -470,7 +467,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
           {key === 'where' && (
             <>
               <fieldset aria-describedby={err('vibes') ? 'vibes-err' : undefined} aria-invalid={!!err('vibes')}>
-                <legend className={labelCls}>What vibe are you after? Pick any</legend>
+                <legend className={labelCls}>{t("What vibe are you after? Pick any")}</legend>
                 <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
                   {vibeOptions.map((v) => {
                     const on = state.where.vibes.includes(v);
@@ -498,12 +495,12 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                         />
                         <span className={`absolute inset-0 transition-colors ${on ? 'bg-harbor-deep/20' : 'bg-harbor-deep/50'}`} />
                         <span className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-[0.8125rem]">
-                          {vibeCards[v].label}
+                          {tp(vibeCards[v].label)}
                           <span
                             aria-hidden
                             className={`grid h-4 w-4 place-items-center border text-[0.6rem] ${on ? 'border-terracotta bg-terracotta' : 'border-shell/70'}`}
                           >
-                            {on ? '✓' : ''}
+                            {tp(on ? '✓' : '')}
                           </span>
                         </span>
                       </label>
@@ -514,7 +511,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               </fieldset>
               <Chips
                 name="destinations"
-                legend="Any destinations in mind? (optional)"
+                legend={t("Any destinations in mind? (optional)")}
                 options={destinations.map((d) => d.slug)}
                 value={state.where.destinations}
                 onChange={(v) => update('where', { destinations: v as string[] })}
@@ -528,7 +525,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
             <>
               <Chips
                 name="remote"
-                legend="Will you be working remotely?"
+                legend={t("Will you be working remotely?")}
                 options={['yes', 'no']}
                 value={state.life.remote}
                 onChange={(v) => update('life', { remote: v as string, workspace: v === 'no' ? '' : state.life.workspace })}
@@ -538,7 +535,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               {state.life.remote === 'yes' && (
                 <Chips
                   name="workspace"
-                  legend="What workspace do you need?"
+                  legend={t("What workspace do you need?")}
                   options={workspaceOptions}
                   value={state.life.workspace}
                   onChange={(v) => update('life', { workspace: v as string })}
@@ -548,7 +545,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               )}
               <Chips
                 name="homeType"
-                legend="Home type"
+                legend={t("Home type")}
                 options={homeTypeOptions}
                 value={state.life.homeType}
                 onChange={(v) => update('life', { homeType: v as string })}
@@ -557,8 +554,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               />
               <div className="max-w-[10rem]">
                 <label htmlFor="bedrooms" className={labelCls}>
-                  Bedrooms
-                </label>
+                  {t("Bedrooms")}</label>
                 <select
                   id="bedrooms"
                   value={state.life.bedrooms}
@@ -567,14 +563,14 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                 >
                   {['0', '1', '2', '3', '4', '5'].map((b) => (
                     <option key={b} value={b}>
-                      {b === '0' ? 'Studio' : b}
+                      {tp(b === '0' ? 'Studio' : b)}
                     </option>
                   ))}
                 </select>
               </div>
               <Chips
                 name="mustHaves"
-                legend="Must-haves (optional)"
+                legend={t("Must-haves (optional)")}
                 options={mustHaveOptions}
                 value={state.life.mustHaves}
                 onChange={(v) => update('life', { mustHaves: v as string[] })}
@@ -589,8 +585,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="adults" className={labelCls}>
-                    Adults
-                  </label>
+                    {t("Adults")}</label>
                   <input
                     id="adults"
                     type="number"
@@ -605,11 +600,11 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                   <ErrorText id="adults-err" msg={err('adults')} />
                 </div>
                 <div>
-                  <p className={labelCls}>Children</p>
+                  <p className={labelCls}>{t("Children")}</p>
                   <div className="mt-2 flex items-center gap-3">
                     <button
                       type="button"
-                      aria-label="Remove a child"
+                      aria-label={t("Remove a child")}
                       disabled={state.who.children.length === 0}
                       onClick={() => update('who', { children: state.who.children.slice(0, -1) })}
                       className="grid h-8 w-8 place-items-center border border-shell/40 disabled:opacity-30"
@@ -617,11 +612,11 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                       −
                     </button>
                     <span aria-live="polite" className="w-6 text-center tabular-nums">
-                      {state.who.children.length}
+                      {tp(state.who.children.length)}
                     </span>
                     <button
                       type="button"
-                      aria-label="Add a child"
+                      aria-label={t("Add a child")}
                       disabled={state.who.children.length >= 8}
                       onClick={() => update('who', { children: [...state.who.children, { age: '', schoolNeeds: '' }] })}
                       className="grid h-8 w-8 place-items-center border border-shell/40 disabled:opacity-30"
@@ -635,8 +630,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                 <div key={i} className="grid grid-cols-[5rem_1fr] gap-4">
                   <div>
                     <label htmlFor={`child-${i}-age`} className={labelCls}>
-                      Child {i + 1} age
-                    </label>
+                      {t("Child ")}{tp(i + 1)} {t("age")}</label>
                     <input
                       id={`child-${i}-age`}
                       type="number"
@@ -656,12 +650,11 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                   </div>
                   <div>
                     <label htmlFor={`child-${i}-school`} className={labelCls}>
-                      School needs (optional)
-                    </label>
+                      {t("School needs (optional)")}</label>
                     <input
                       id={`child-${i}-school`}
                       value={c.schoolNeeds}
-                      placeholder="e.g. British curriculum, Year 4"
+                      placeholder={t("e.g. British curriculum, Year 4")}
                       onChange={(e) => {
                         const children = [...state.who.children];
                         children[i] = { ...c, schoolNeeds: e.target.value };
@@ -674,7 +667,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               ))}
               <Chips
                 name="nationality"
-                legend="Passport (helps us show the likely visa path)"
+                legend={t("Passport (helps us show the likely visa path)")}
                 options={nationalityGroups}
                 value={state.who.nationality}
                 onChange={(v) => update('who', { nationality: v as string })}
@@ -683,19 +676,18 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               />
               <div>
                 <label htmlFor="nationalityDetail" className={labelCls}>
-                  Nationality (optional)
-                </label>
+                  {t("Nationality (optional)")}</label>
                 <input
                   id="nationalityDetail"
                   value={state.who.nationalityDetail}
                   onChange={(e) => update('who', { nationalityDetail: e.target.value })}
-                  placeholder="e.g. Canadian"
+                  placeholder={t("e.g. Canadian")}
                   className={inputCls}
                 />
               </div>
               <Chips
                 name="income"
-                legend="Main income during your stay"
+                legend={t("Main income during your stay")}
                 options={incomeOptions}
                 value={state.who.income}
                 onChange={(v) => update('who', { income: v as string })}
@@ -704,8 +696,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               />
               <div className="max-w-xs">
                 <label htmlFor="budget" className={labelCls}>
-                  Budget per month, all in (EUR)
-                </label>
+                  {t("Budget per month, all in (EUR)")}</label>
                 <input
                   id="budget"
                   type="number"
@@ -719,7 +710,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                   {...inv('budget')}
                 />
                 {state.who.budget && Number(state.who.budget) > 0 && (
-                  <p className="mt-1.5 text-[0.75rem] text-shell/60">≈ {format(Number(state.who.budget))} per month</p>
+                  <p className="mt-1.5 text-[0.75rem] text-shell/60">≈ {tp(format(Number(state.who.budget)))} {t("per month")}</p>
                 )}
                 <ErrorText id="budget-err" msg={err('budget')} />
               </div>
@@ -731,8 +722,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               <div className="grid gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className={labelCls}>
-                    Name
-                  </label>
+                    {t("Name")}</label>
                   <input
                     id="name"
                     autoComplete="name"
@@ -745,8 +735,7 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                 </div>
                 <div>
                   <label htmlFor="email" className={labelCls}>
-                    Email
-                  </label>
+                    {t("Email")}</label>
                   <input
                     id="email"
                     type="email"
@@ -761,14 +750,13 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
               </div>
               <div>
                 <label htmlFor="notes" className={labelCls}>
-                  Anything else? (optional)
-                </label>
+                  {t("Anything else? (optional)")}</label>
                 <textarea
                   id="notes"
                   rows={3}
                   value={state.contact.notes}
                   onChange={(e) => update('contact', { notes: e.target.value })}
-                  placeholder="Pets, accessibility needs, a town you’ve fallen for…"
+                  placeholder={t("Pets, accessibility needs, a town you’ve fallen for…")}
                   className={`${inputCls} resize-y`}
                 />
               </div>
@@ -782,10 +770,9 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
                     {...inv('consent')}
                   />
                   <span>
-                    I’m happy for Porto Season to contact me about my season and to store these details as described in the{' '}
-                    <a href="/privacy" className="underline underline-offset-2">
-                      privacy policy
-                    </a>
+                    {t("I’m happy for Porto Season to contact me about my season and to store these details as described in the")}{' '}
+                    <a href={lhref("/privacy")} className="underline underline-offset-2">
+                      {t("privacy policy")}</a>
                     .
                   </span>
                 </label>
@@ -796,28 +783,27 @@ export function SeasonPlanner({ onDone, compact = false }: { onDone?: () => void
 
           {status === 'error' && (
             <p role="alert" className="text-[0.875rem] text-[#f1b49b]">
-              We couldn’t send that just now. Your answers are saved; please try again, or email {site.contact.email}.
+              {t("We couldn’t send that just now. Your answers are saved; please try again, or email ")}{tp(site.contact.email)}.
             </p>
           )}
-          <p className="text-[0.75rem] text-shell/40">Your answers are saved on this device as you go.</p>
+          <p className="text-[0.75rem] text-shell/40">{t("Your answers are saved on this device as you go.")}</p>
         </div>
 
         {/* Footer bar (Kultiveret "1/2 · Final step →") */}
         <div className="flex items-stretch bg-shell text-harbor">
           <span className="flex items-center px-5 text-[1rem] font-medium tabular-nums">
-            {step + 1}/{STEP_KEYS.length}
+            {tp(step + 1)}/{tp(STEP_KEYS.length)}
           </span>
           {step > 0 && (
             <button type="button" onClick={() => goTo(step - 1)} className="px-3 text-[0.875rem] text-harbor/60 hover:text-harbor">
-              ← Back
-            </button>
+              {t("← Back")}</button>
           )}
           <button
             type="submit"
             disabled={status === 'sending'}
             className="group ml-auto flex h-14 grow items-center justify-end gap-6 px-5 text-[1rem] font-medium transition-colors hover:bg-terracotta hover:text-shell disabled:opacity-50"
           >
-            <span>{status === 'sending' ? 'Sending…' : step === STEP_KEYS.length - 1 ? 'Send my season request' : step === STEP_KEYS.length - 2 ? 'Final step' : 'Next step'}</span>
+            <span>{tp(status === 'sending' ? 'Sending…' : step === STEP_KEYS.length - 1 ? 'Send my season request' : step === STEP_KEYS.length - 2 ? 'Final step' : 'Next step')}</span>
             <ArrowRight className="h-3 w-7 transition-transform group-hover:translate-x-1" />
           </button>
         </div>

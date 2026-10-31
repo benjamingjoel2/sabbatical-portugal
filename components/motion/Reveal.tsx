@@ -1,5 +1,6 @@
 'use client';
 
+import { tp } from '@/lib/i18n/t';
 import { m as motion, useReducedMotion } from 'framer-motion';
 import { ease } from '@/config/theme';
 
@@ -50,7 +51,7 @@ export function RevealLines({
   const reduce = useReducedMotion();
   return (
     <Tag id={id} className={className}>
-      <span className="sr-only">{lines.join(' ')}</span>
+      <span className="sr-only">{tp(lines).join(' ')}</span>
       {lines.map((l, i) => (
         <span key={i} className="block overflow-hidden pb-[0.06em]" aria-hidden>
           <motion.span
@@ -60,7 +61,7 @@ export function RevealLines({
             viewport={{ once: true, margin: '0px 0px -8% 0px' }}
             transition={{ duration: 0.6, ease, delay: delay + i * 0.05 }}
           >
-            {l}
+            {tp(l)}
           </motion.span>
         </span>
       ))}

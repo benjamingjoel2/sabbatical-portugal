@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { site } from '@/config/site';
+import { LOCALES, localizePath } from '@/lib/i18n/config';
 import { destinations } from '@/data/destinations';
 import { plans } from '@/data/plans';
 import { homes } from '@/data/homes';
@@ -30,5 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categories.map((c) => `/life/${c.slug}`),
     ...posts.map((p) => `/journal/${p.slug}`),
   ];
-  return paths.map((p) => ({ url: new URL(p, site.url).toString(), lastModified: now }));
+  const url = (p: string, l: (typeof LOCALES)[number]) => new URL(localizePath(p, l), site.url).toString();
+  return paths.flatMap((p) =>
+    LOCALES.map((l) => ({
+      url: url(p, l),
+      lastModified: now,
+      alternates: { languages: Object.fromEntries([...LOCALES.map((x) => [x, url(p, x)]), ['x-default', url(p, 'en')]]) },
+    })),
+  );
 }

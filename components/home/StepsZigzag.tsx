@@ -1,3 +1,4 @@
+import { t, tp } from '@/lib/i18n/t';
 import { Photo } from '@/components/shared/Photo';
 import { NumberBadge } from '@/components/shared/NumberBadge';
 import { Reveal } from '@/components/motion/Reveal';
@@ -37,17 +38,17 @@ export function StepsZigzag({ title = ['How we make', 'it easy'], steps = homeSt
   return (
     <section className="bg-shell px-gutter py-20 md:py-28" aria-labelledby="steps-title">
       <h2 id="steps-title" className="tight-display text-mega">
-        {title.join(' ')}
+        {tp(title).join(' ')}
       </h2>
       <div className="mt-12 border-t border-line pt-3 md:ml-[25%]">
-        <p className="eyebrow mb-8 text-harbor/55">Before, during and after</p>
+        <p className="eyebrow mb-8 text-harbor/55">{t("Before, during and after")}</p>
         <ol className="flex flex-col gap-10">
           {steps.map((s, i) => (
             <Reveal as="li" key={s.title} className="grid grid-cols-[2.5rem_1fr] gap-x-4 gap-y-4 md:grid-cols-[2.5rem_1fr_minmax(0,14rem)] md:gap-x-8">
               <NumberBadge n={i + 1} className="mt-1" />
               <div>
-                <h3 className="text-[clamp(1.375rem,1.1rem+1vw,2rem)] leading-tight tracking-[-0.02em]">{s.title}</h3>
-                <p className="mt-2 max-w-md text-[1rem] leading-relaxed text-harbor/75">{s.text}</p>
+                <h3 className="text-[clamp(1.375rem,1.1rem+1vw,2rem)] leading-tight tracking-[-0.02em]">{tp(s.title)}</h3>
+                <p className="mt-2 max-w-md text-[1rem] leading-relaxed text-harbor/75">{tp(s.text)}</p>
               </div>
               <div className="relative col-start-2 aspect-[4/3] w-full max-w-[14rem] overflow-hidden md:col-start-3">
                 <Photo k={s.image} sizes="14rem" />

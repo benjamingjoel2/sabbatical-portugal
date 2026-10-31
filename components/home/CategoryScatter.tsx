@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { t, tp } from '@/lib/i18n/t';
+import Link from '@/components/i18n/Link';
 import { m as motion, useReducedMotion, useScroll, useTransform, type MotionValue } from 'framer-motion';
 import { useRef } from 'react';
 import { categories } from '@/data/categories';
@@ -36,8 +37,8 @@ function ScatterItem({ c, i, progress }: { c: Category; i: number; progress: Mot
           />
         </div>
         <p className="mt-1.5 text-[0.8125rem] lowercase transition-colors group-hover:text-terracotta">
-          {c.label}
-          <sup className="ml-0.5 text-[0.5625rem] font-medium">{c.number}</sup>
+          {tp(c.label)}
+          <sup className="ml-0.5 text-[0.5625rem] font-medium">{tp(c.number)}</sup>
         </p>
       </Link>
     </motion.li>
@@ -52,15 +53,13 @@ export function CategoryScatter() {
   return (
     <section ref={ref} className="relative overflow-hidden bg-shell py-20 md:py-28" aria-labelledby="life-title">
       <div className="px-gutter">
-        <p className="eyebrow text-harbor/60">Life in Portugal · 01–09</p>
+        <p className="eyebrow text-harbor/60">{t("Life in Portugal · 01–09")}</p>
         <h2 id="life-title" className="tight-display mt-4 text-[clamp(2.75rem,1.5rem+5vw,6rem)]">
-          <span className="text-harbor">living through </span>
-          <RotatingWord words={categories.map((c) => c.label)} className="text-azulejo" interval={2200} srPrefix="living through " />
+          <span className="text-harbor">{t("living through ")}</span>
+          <RotatingWord words={categories.map((c) => c.label)} className="text-azulejo" interval={2200} srPrefix={t("living through ")} />
         </h2>
         <p className="mt-6 max-w-md text-[1rem] leading-relaxed text-harbor/75">
-          A season is made of small rituals: the market on Saturday, the same surf break at dawn, the tasca where they
-          start your order when you walk in. Nine ways in.
-        </p>
+          {t("A season is made of small rituals: the market on Saturday, the same surf break at dawn, the tasca where they start your order when you walk in. Nine ways in.")}</p>
       </div>
 
       {/* Desktop scatter */}
@@ -79,8 +78,8 @@ export function CategoryScatter() {
                 <Photo k={c.image} sizes="50vw" />
               </div>
               <p className="mt-1.5 text-[0.875rem] lowercase">
-                {c.label}
-                <sup className="ml-0.5 text-[0.5625rem]">{c.number}</sup>
+                {tp(c.label)}
+                <sup className="ml-0.5 text-[0.5625rem]">{tp(c.number)}</sup>
               </p>
             </Link>
           </li>

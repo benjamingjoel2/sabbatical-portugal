@@ -1,3 +1,5 @@
+import { getLocale } from '@/lib/i18n/t';
+import { INTL_LOCALES } from '@/lib/i18n/config';
 /**
  * Every visa figure on the site lives here, with a "valid as of" date and an official source.
  * Update this file and every visa section on the site updates with it.
@@ -25,7 +27,7 @@ export const disclaimer = (date: string = visaVerifiedAsOf) =>
   `Guidance only, not legal advice. Verified as of ${formatDate(date)}.`;
 
 export function formatDate(iso: string) {
-  return new Date(iso + 'T12:00:00Z').toLocaleDateString('en-GB', {
+  return new Date(iso + 'T12:00:00Z').toLocaleDateString(INTL_LOCALES[getLocale()], {
     day: 'numeric',
     month: 'long',
     year: 'numeric',

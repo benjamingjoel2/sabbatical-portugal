@@ -2,11 +2,16 @@ import { site } from '@/config/site';
 import { legal } from '@/data/legal';
 
 /** Porto Season's legal pages: the shared text plus what this site actually stores and does. */
-export const legalPages = legal({
+import { tp } from '@/lib/i18n/t';
+
+const keepName = new Set(['name']);
+
+/** Built per request so the storage and processor lists follow the page language. */
+const buildLegalPages = () => legal({
   brand: site.name,
   email: site.contact.email,
   address: site.location.addressLines,
-  storage: [
+  storage: tp([
     { name: 'ps-currency', type: 'local storage', duration: 'until you clear it', purpose: 'remembers the currency you chose for showing prices' },
     { name: 'ps-sound', type: 'local storage', duration: 'until you clear it', purpose: 'remembers whether you turned the ambient sound on or off' },
     {
@@ -15,8 +20,8 @@ export const legalPages = legal({
       duration: 'until you send the planner or clear it',
       purpose: 'saves your answers in the season planner on this device so you can finish later; it is deleted when you send it',
     },
-  ],
-  processors: [{ name: 'Vercel', purpose: 'hosts this website and processes enquiry form submissions' }],
+  ], keepName),
+  processors: tp([{ name: 'Vercel', purpose: 'hosts this website and processes enquiry form submissions' }], keepName),
   extraPrivacy: [
     {
       h: 'Documents for your visa, lease and paperwork',
@@ -28,4 +33,5 @@ export const legalPages = legal({
   ],
 });
 
-export const getLegalPage = (slug: 'privacy' | 'terms' | 'cookies') => legalPages.find((p) => p.slug === slug)!;
+export const legalPages = buildLegalPages();
+export const getLegalPage = (slug: 'privacy' | 'terms' | 'cookies') => buildLegalPages().find((p) => p.slug === slug)!;
