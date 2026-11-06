@@ -25,7 +25,7 @@ export function HeroMosaic() {
       <section id="hero" className="bg-shell px-gutter pb-14 pt-[calc(var(--header-h)+2rem)] md:pb-20 lg:pt-[calc(var(--header-h)+3rem)]">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-end lg:gap-14">
           <div className="max-w-[34rem]">
-            <h1 className="hero-caps text-display-xl">
+            <h1 className="hero-caps text-display-xl lg:text-[clamp(2.75rem,4.2vw,5rem)]">
               <span className="block">{t("Your harbor")}</span>
               <span className="block">{t("in Portugal")}</span>
             </h1>
