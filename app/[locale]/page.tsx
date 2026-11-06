@@ -1,7 +1,7 @@
 import { initLocale } from '@/lib/i18n/server';
 import { localizeMetadata } from '@/lib/i18n/metadata';
 import type { Metadata } from 'next';
-import { MaskHero } from '@/components/home/MaskHero';
+import { HeroMosaic } from '@/components/home/HeroMosaic';
 import { MapTransition } from '@/components/home/MapTransition';
 import { ServiceCards } from '@/components/home/ServiceCards';
 import { StepsZigzag } from '@/components/home/StepsZigzag';
@@ -30,7 +30,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   await initLocale(params);
   return (
     <>
-      <MaskHero />
+      <HeroMosaic />
       <MapTransition />
       <ServiceCards />
       <StepsZigzag />
