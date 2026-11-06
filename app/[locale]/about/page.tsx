@@ -23,7 +23,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     <>
       {/* B2/B3: logo-scale title, rotating line, statement */}
       <section className="bg-shell px-gutter pb-16 pt-[calc(var(--header-h)+2rem)]">
-        <h1 className="tight-display text-[clamp(3.5rem,1.5rem+9vw,10rem)] leading-[0.8]">{t("Porto Season")}</h1>
+        <h1 className="tight-display text-[clamp(2.75rem,1.6rem+4.6vw,5.5rem)] leading-[0.9]">{t("Porto Season")}</h1>
         <p className="tight-display mt-4 text-[clamp(1.75rem,1.2rem+2.5vw,3.5rem)] text-harbor/45">
           {t("— your harbor for")}{' '}
           <RotatingWord words={tp(['a season', 'a year', 'a summer', 'a school term'])} className="text-azulejo" srPrefix={t("your harbor for ")} />

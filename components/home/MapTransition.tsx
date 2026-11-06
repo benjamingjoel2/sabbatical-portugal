@@ -3,11 +3,10 @@
 import { t, tp } from '@/lib/i18n/t';
 import Link from '@/components/i18n/Link';
 import { useState } from 'react';
-import { PortugalMap } from '@/components/svg/PortugalMap';
 import { destinations } from '@/data/destinations';
 import { Reveal } from '@/components/motion/Reveal';
 
-/** Kultiveret-style intro statement plus a line map of every destination, mainland and islands. */
+/** Kultiveret-style intro statement plus the list of every destination, mainland and islands (no map, by owner rule). */
 export function MapTransition() {
   const [hover, setHover] = useState<string | null>(null);
 
@@ -18,8 +17,8 @@ export function MapTransition() {
           {t("All of Portugal, not just Porto. Twelve places we know street by street, from the Douro’s terraces and Lisbon’s hills to the Algarve coast and two Atlantic archipelagos.")}</h2>
       </Reveal>
 
-      <div className="mt-16 grid gap-12 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:items-center">
-        <ol className="tight-display order-2 text-[clamp(1.5rem,1.1rem+1.6vw,2.5rem)] leading-[1.15] md:order-1">
+      <div className="mt-16">
+        <ol className="tight-display grid text-[clamp(1.5rem,1.1rem+1.6vw,2.5rem)] leading-[1.15] md:grid-cols-2 md:gap-x-12 lg:grid-cols-3">
           {destinations.map((d, i) => (
             <li key={d.slug}>
               <Link
@@ -36,10 +35,6 @@ export function MapTransition() {
             </li>
           ))}
         </ol>
-
-        <div className="order-1 w-full md:order-2">
-          <PortugalMap active={hover} onHover={setHover} className="h-auto w-full" />
-        </div>
       </div>
     </section>
   );
